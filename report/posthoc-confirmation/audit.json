@@ -1,0 +1,47 @@
+{
+  "state": "passed",
+  "failures": [],
+  "failure_count": 0,
+  "counts": {
+    "score_vectors": 150,
+    "auroc_values": 192,
+    "operating_cells": 768,
+    "contrast_values": 240
+  },
+  "decisions": {
+    "H1": {
+      "tinyimagenet": "contradicted",
+      "fashionmnist": "supported",
+      "places365": "supported",
+      "oxford_pets": "mixed",
+      "cifar10": "mixed",
+      "mnist": "supported",
+      "svhn": "supported",
+      "textures": "supported"
+    },
+    "H2": {
+      "tinyimagenet": "supported",
+      "fashionmnist": "supported",
+      "places365": "supported",
+      "oxford_pets": "supported",
+      "cifar10": "supported",
+      "mnist": "supported",
+      "svhn": "supported",
+      "textures": "supported"
+    }
+  },
+  "overall": {
+    "H1": "not confirmed",
+    "H2": "confirmed"
+  },
+  "declaration_sha256": "831483f8b068dbdb3a5d1c94bbcd7789f9de16c9a9309600615d92dc401cd331",
+  "summary_sha256": "f0d517a2825d218119a4432ff095aba4a7a9fb2d0503027ff80bcbe8d9138fa2",
+  "report_sha256": "84fda966f4ca353a44a7a7907ae06b364346626e9eaa2771144cb83eadbd8a05",
+  "independent_implementations": {
+    "ash": "numpy lexsort top-k + scipy.special.logsumexp",
+    "rmd": "raw second moments, numpy.cov, Cholesky whitening, cdist",
+    "auroc": "sklearn.metrics.roc_auc_score",
+    "threshold": "sorted order statistic ceil(q*n)-1"
+  },
+  "audited_at": "2026-09-29T12:36:12.959961+00:00"
+}

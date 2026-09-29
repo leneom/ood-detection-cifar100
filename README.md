@@ -2,6 +2,8 @@
 
 **最新进展与证据边界：** [2026-09-29 项目状态](docs/CURRENT_STATE.md)。旧项目评估报告的部分待办已经完成，后续以此日期化索引和 [PROGRESS](docs/PROGRESS.md) 为准。
 
+**2026-09-29 新增 — [ASH-S / RMD 预声明对比检验](report/posthoc-confirmation/REPORT.md)：** 在打分前冻结协议（[协议](docs/POSTHOC_CONFIRMATION.md)、git 提交 59e914f），用三颗隔离模型在 Tiny ImageNet、Fashion-MNIST、Places365、Oxford Pets 这四个从未算过 ASH/RMD 的人口上检验。结论：**H2「RMD > 匹配 Mahalanobis」确认**（四个人口、三 seed 全部为正，+20–28 pp AUROC）；**H1「ASH-S > Energy」未确认**（Tiny ImageNet 三 seed 全负 −0.24 pp，Fashion/Places 为正，Pets 混合）。RMD 也并不优于简单的 Energy/KNN。独立审计与 33 文件完成记录见 [completion.json](report/posthoc-confirmation/completion.json)。
+
 独立的 Out-of-Distribution Detection 研究项目。第一阶段的问题是：**固定同一个 ID classifier，仅替换 post-hoc score，MSP、Energy、MaxLogit 对自然图像 OOD 的表现如何？**
 
 当前进度：原四个自然 OOD 测试人口上的完整基准和后续诊断、三路 ID validation 隔离复验均已完成；这些已看过的 OOD 测试仍属探索性。新增的 [Tiny ImageNet-200 冻结检验](report/tinyimagenet-confirmation/REPORT.md) 使用事先声明的完整 10,000 张官方 validation、三个已冻结模型和只由 ID 拟合的温度/阈值。全部六个主要 detector × T=1/校准版本、四个接受目标均保存三 seed 结果和原始逐图输出，并通过独立复算与 91 项回归（89 通过、2 项已知跳过）。这是单个新 OOD 人口，不是完整 OpenOOD 复现或普适泛化结论。见 [机器可读结果](report/tinyimagenet-confirmation/summary.json)、[完成证据](report/tinyimagenet-confirmation/completion.json)、[实时进展](docs/PROGRESS.md) 和 [中文学习指南](docs/LEARNING_GUIDE.zh-CN.md)。

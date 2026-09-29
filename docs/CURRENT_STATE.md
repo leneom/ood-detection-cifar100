@@ -36,3 +36,13 @@ The [Oxford-IIIT Pet paired-decision diagnostic](../report/oxford-pets-paired-de
 ## Update — 2026-09-29 12:42 local
 
 The [full Oxford-IIIT Pet breed/species diagnostic](../report/oxford-pets-breed-diagnostic/REPORT.md) is complete on all 37 original breed labels and both numeric species codes, across three seeds, six methods, two existing temperature variants and four frozen ID-validation targets. Its [24-file completion record](../report/oxford-pets-breed-diagnostic/completion.json) passed independent reconstruction of 5,616 subgroup counts, 1,872 CSV rows, 144 original masks and 91 tests. This is post-result descriptive evidence; no model, method, score or threshold changed.
+
+## Update — 2026-09-29 20:37 local (WSL)
+
+The project moved to WSL (`~/research/ood_detection`) and is now a local git repository. Commit 01d676d snapshots the 12:42 state; `data/` and `runs/` stay untracked. The Windows copy under `continue learning/ood_detection` is a read-only backup that was byte-identical at 12:42.
+
+The [ASH-S / RMD contrast confirmation](../report/posthoc-confirmation/REPORT.md) is complete. Its [protocol](POSTHOC_CONFIRMATION.md) and a 73-input [declaration](POSTHOC_CONFIRMATION_DECLARATION.json) (SHA-256 831483f8…) were committed in 59e914f before any ASH or RMD score existed for the isolated classifiers. It tests method × population pairs that were never scored: Tiny ImageNet, Fashion-MNIST, Places365 and Oxford Pets, which had previously been scored only with the six original methods. **H2, RMD > matched MD, is confirmed** on all four populations and all three seeds (+19.9 to +27.6 pp AUROC). **H1, ASH-S > T=1 Energy, is not confirmed:** it is contradicted on Tiny ImageNet (−0.24 ± 0.04 pp, all seeds negative), supported on Fashion-MNIST and Places365, and mixed on Oxford Pets. RMD is not better than Energy or KNN-50 overall. An independent CPU audit reproduced 150 score vectors, 192 AUROCs, 768 operating cells and every decision. The [33-file completion record](../report/posthoc-confirmation/completion.json) binds it all.
+
+In WSL's base env, 92 tests pass. The one failure, the resume test, needs `torch.amp.GradScaler`, which torch 2.0.1 lacks. That test passes in the `cifar-cl` env (torch 2.13). No GPU was used.
+
+Next planned increment: change the representation rather than the score. For example, predeclare a training-time change and test it on the class-holdout protocol, where the post-hoc spread among the usable methods is small and absolute OOD acceptance stays high.

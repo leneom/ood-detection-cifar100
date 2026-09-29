@@ -1,0 +1,63 @@
+.....................................................................F.. [ 77%]
+.....................                                                    [100%]
+=================================== FAILURES ===================================
+___________ ProtocolTests.test_resume_matches_uninterrupted_training ___________
+
+self = <test_protocol.ProtocolTests testMethod=test_resume_matches_uninterrupted_training>
+
+    def test_resume_matches_uninterrupted_training(self):
+        with tempfile.TemporaryDirectory() as folder:
+            base = ["--dataset", "synthetic", "--model", "tiny", "--epochs", "3", "--device", "cpu", "--batch-size", "32"]
+            whole, resumed = Path(folder) / "whole", Path(folder) / "resumed"
+>           run(parser().parse_args(base + ["--output-dir", str(whole)]))
+
+tests/test_protocol.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = Namespace(dataset='synthetic', data_root='data', archive_source='../data', download=False, model='tiny', seed=0, split...eight_decay=0.0005, device='cpu', amp=False, no_deterministic=False, resume=False, output_dir='/tmp/tmpx4vu1zsb/whole')
+
+    def run(args):
+        if args.epochs <= 0 or args.batch_size <= 0 or args.lr <= 0:
+            raise ValueError("epochs, batch size, and learning rate must be positive")
+        stop = args.epochs if args.stop_after is None else args.stop_after
+        if not 0 < stop <= args.epochs:
+            raise ValueError("stop-after must lie between 1 and epochs")
+        device = ("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else args.device
+        seed_all(args.seed, not args.no_deterministic)
+        output = Path(args.output_dir)
+        output.mkdir(parents=True, exist_ok=True)
+        if not args.resume and (output / "config.json").exists():
+            raise FileExistsError("existing run: use --resume or a new output directory")
+        config = {k: v for k, v in vars(args).items() if k not in ("resume", "stop_after", "output_dir", "download", "archive_source")}
+        config["data_root"] = str(Path(args.data_root).resolve())
+        config["device"] = device
+        config["normalization"] = "cifar100_mean_std"
+        sources = training_source_hashes()
+        if args.dataset == "synthetic":
+            (images, labels), _ = synthetic(seed=args.seed)
+            val_per_class, classes = 8, 4
+        else:
+            images, labels = load_cifar(args.data_root, "cifar100", True, args.download, args.archive_source)
+            val_per_class, classes = args.val_per_class, 100
+        train_indices, val_indices = stratified_split(labels.numpy(), val_per_class, args.split_seed)
+        config["classes"] = classes
+        config["effective_val_per_class"] = val_per_class
+        split = {
+            "split_seed": args.split_seed, "train_count": len(train_indices), "val_count": len(val_indices),
+            "train_indices_sha256": index_hash(train_indices), "val_indices_sha256": index_hash(val_indices),
+            "test_used_during_training": False, "ood_used_during_training": False,
+        }
+        train_images, train_labels = images[train_indices].to(device), labels[train_indices].to(device)
+        val_images, val_labels = images[val_indices], labels[val_indices]
+        model = build_model(args.model, classes).to(device).to(memory_format=torch.channels_last)
+        optimizer = torch.optim.SGD(model.parameters(), lr=args.lr, momentum=0.9, weight_decay=args.weight_decay)
+        milestones = sorted(set(max(1, int(args.epochs * f)) for f in (0.5, 0.75, 0.9)))
+        scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=milestones, gamma=0.1)
+        amp = args.amp and device.startswith("cuda")
+>       scaler = torch.amp.GradScaler("cuda", enabled=amp)
+E       AttributeError: module 'torch.amp' has no attribute 'GradScaler'
+
+src/ood/train.py:80: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_protocol.py::ProtocolTests::test_resume_matches_uninterrupted_training
+1 failed, 92 passed in 2.14s

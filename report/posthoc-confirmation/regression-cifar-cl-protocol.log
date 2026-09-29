@@ -1,0 +1,14 @@
+..{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 0}
+{"epoch": 1, "lr": 0.1, "train_loss": 1.2593372821807862, "train_accuracy": 0.5125, "val_accuracy": 0.75, "seconds": 0.04081025900086388}
+{"epoch": 2, "lr": 0.010000000000000002, "train_loss": 0.8176923394203186, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.030243845001677983}
+{"epoch": 3, "lr": 0.0010000000000000002, "train_loss": 0.700596833229065, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.023176631999376696}
+{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 0}
+{"epoch": 1, "lr": 0.1, "train_loss": 1.2593372821807862, "train_accuracy": 0.5125, "val_accuracy": 0.75, "seconds": 0.0361309780018928}
+{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 1}
+{"epoch": 2, "lr": 0.010000000000000002, "train_loss": 0.8176923394203186, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.037645694999810075}
+{"epoch": 3, "lr": 0.0010000000000000002, "train_loss": 0.700596833229065, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.02300844099954702}
+...
+----------------------------------------------------------------------
+Ran 5 tests in 1.897s
+
+OK
