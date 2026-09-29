@@ -1,0 +1,3923 @@
+{
+  "state": "three_seed_sequential_extension_scored_and_audited",
+  "dataset": "Fashion-MNIST official test, full 10000, 28-to-32 bilinear gray-to-RGB",
+  "id_test_count": 10000,
+  "ood_count": 10000,
+  "ood_prevalence": 0.5,
+  "method_order": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis"
+  ],
+  "variants": [
+    "T1",
+    "calibrated"
+  ],
+  "targets": [
+    80,
+    90,
+    95,
+    99
+  ],
+  "seed_records": [
+    {
+      "seed": 0,
+      "checkpoint_epoch": 92,
+      "checkpoint_sha256": "e4c6672bd28d32dfff09455b3a800022341e01b48e3921ce9f8a6bb93e5a02e0",
+      "temperature": 1.3225258577076677,
+      "scoring_manifest_sha256": "2e1eec601133b1bd33b58718a966786c31e6b16ce249c86341fa7e3d937e4d7e",
+      "score_audit_sha256": "980448c0b72471d144197c0848cb4630012639bd93f48fbc28e6b58bdacfee9e",
+      "raw_logits_features": "runs/fashionmnist-extension/extract-seed0/raw.npz",
+      "per_image_scores": "runs/fashionmnist-extension/score-seed0/scores.npz",
+      "acceptance_masks": "runs/fashionmnist-extension/score-seed0/acceptance_masks.npz"
+    },
+    {
+      "seed": 1,
+      "checkpoint_epoch": 96,
+      "checkpoint_sha256": "b7119754e0f1141a45a08b0cf7fee845b2d59006b741271589d9b6759be52955",
+      "temperature": 1.3174977200125948,
+      "scoring_manifest_sha256": "62ddb2ab02eb5aa7fa5818f6d1fc8699f007bdd2fcff9219ec86adec34111fc3",
+      "score_audit_sha256": "926d65e28b8a7387696f4ee5167781d9d65af7bc55f18a78861bc90373b4b729",
+      "raw_logits_features": "runs/fashionmnist-extension/extract-seed1/raw.npz",
+      "per_image_scores": "runs/fashionmnist-extension/score-seed1/scores.npz",
+      "acceptance_masks": "runs/fashionmnist-extension/score-seed1/acceptance_masks.npz"
+    },
+    {
+      "seed": 2,
+      "checkpoint_epoch": 98,
+      "checkpoint_sha256": "27f3b5e8a79d48a72e3ac5984cabddf306d97f0e46a15b8733f19184485076b8",
+      "temperature": 1.3131369515891902,
+      "scoring_manifest_sha256": "700d7f97c2314f1a33b199301ca9b96ef86f333828cc3a83719a97b894bd693f",
+      "score_audit_sha256": "9fd001ef429a1dab6ef99eee3eaf943df615dd70eb63b2ec9b25ad923a625c30",
+      "raw_logits_features": "runs/fashionmnist-extension/extract-seed2/raw.npz",
+      "per_image_scores": "runs/fashionmnist-extension/score-seed2/scores.npz",
+      "acceptance_masks": "runs/fashionmnist-extension/score-seed2/acceptance_masks.npz"
+    }
+  ],
+  "results": {
+    "T1": {
+      "msp": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.8623550999999999,
+              0.8631551699999999,
+              0.85742828
+            ],
+            "mean": 0.8609795166666666,
+            "sample_sd": 0.003101368955515094
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8361508906083366,
+              0.8348917556925435,
+              0.823322834937928
+            ],
+            "mean": 0.831455160412936,
+            "sample_sd": 0.007070883495549939
+          },
+          "aupr_in": {
+            "seeds": [
+              0.8859044286847828,
+              0.8868555076471983,
+              0.8814817789771339
+            ],
+            "mean": 0.8847472384363716,
+            "sample_sd": 0.0028676744773651675
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.6357,
+              0.6471,
+              0.6725
+            ],
+            "mean": 0.6517666666666666,
+            "sample_sd": 0.018838612829328288
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              0.6447682976722717,
+              0.6656930446624756,
+              0.6660192012786865
+            ],
+            "mean": 0.6588268478711446,
+            "sample_sd": 0.012176153736104277
+          },
+          "validation_threshold": {
+            "seeds": [
+              0.6675851345062256,
+              0.6605062484741211,
+              0.6675692796707153
+            ],
+            "mean": 0.6652202208836874,
+            "sample_sd": 0.00408242755631574
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9577,
+              0.9478,
+              0.9506
+            ],
+            "mean": 0.9520333333333334,
+            "sample_sd": 0.0051032669275017754
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6712,
+              0.6387,
+              0.6753
+            ],
+            "mean": 0.6617333333333334,
+            "sample_sd": 0.02005251438930621
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8185,
+                0.8039,
+                0.8043
+              ],
+              "mean": 0.8089,
+              "sample_sd": 0.00831624915451673
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.3054,
+                0.2771,
+                0.2845
+              ],
+              "mean": 0.289,
+              "sample_sd": 0.01467685252361691
+            },
+            "thresholds": [
+              0.375399112701416,
+              0.3728107213973999,
+              0.36201637983322144
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8185,
+              8039,
+              8043
+            ],
+            "ood_accepted": [
+              3054,
+              2771,
+              2845
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9113,
+                0.9039,
+                0.9049
+              ],
+              "mean": 0.9067,
+              "sample_sd": 0.004014971979976924
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.5016,
+                0.4727,
+                0.4985
+              ],
+              "mean": 0.4909333333333334,
+              "sample_sd": 0.015866421566734373
+            },
+            "thresholds": [
+              0.5527666807174683,
+              0.5532853603363037,
+              0.5514348745346069
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9113,
+              9039,
+              9049
+            ],
+            "ood_accepted": [
+              5016,
+              4727,
+              4985
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9577,
+                0.9478,
+                0.9506
+              ],
+              "mean": 0.9520333333333334,
+              "sample_sd": 0.0051032669275017754
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6712,
+                0.6387,
+                0.6753
+              ],
+              "mean": 0.6617333333333334,
+              "sample_sd": 0.02005251438930621
+            },
+            "thresholds": [
+              0.6675851345062256,
+              0.6605062484741211,
+              0.6675692796707153
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9577,
+              9478,
+              9506
+            ],
+            "ood_accepted": [
+              6712,
+              6387,
+              6753
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9916,
+                0.9885,
+                0.9916
+              ],
+              "mean": 0.9905666666666667,
+              "sample_sd": 0.001789785834487835
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8877,
+                0.8769,
+                0.9165
+              ],
+              "mean": 0.8937,
+              "sample_sd": 0.020470466531078355
+            },
+            "thresholds": [
+              0.7973789572715759,
+              0.7989721894264221,
+              0.8092708587646484
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9916,
+              9885,
+              9916
+            ],
+            "ood_accepted": [
+              8877,
+              8769,
+              9165
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "energy": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.902285795,
+              0.9050568000000001,
+              0.9052083400000001
+            ],
+            "mean": 0.9041836450000001,
+            "sample_sd": 0.0016453318995799152
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8697585730908787,
+              0.8754410096813062,
+              0.8711117276876303
+            ],
+            "mean": 0.8721037701532718,
+            "sample_sd": 0.0029682709767277628
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9218563691403776,
+              0.923088962146307,
+              0.9235477151759859
+            ],
+            "mean": 0.9228310154875569,
+            "sample_sd": 0.0008746800627156397
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.5781,
+              0.5653,
+              0.5705
+            ],
+            "mean": 0.5713,
+            "sample_sd": 0.006437390775772393
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              -7.015437126159668,
+              -6.859735488891602,
+              -6.939227104187012
+            ],
+            "mean": -6.938133239746094,
+            "sample_sd": 0.0778565820374261
+          },
+          "validation_threshold": {
+            "seeds": [
+              -6.857672214508057,
+              -6.9596710205078125,
+              -6.877870082855225
+            ],
+            "mean": -6.898404439290364,
+            "sample_sd": 0.054010961405977484
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9587,
+              0.9438,
+              0.9529
+            ],
+            "mean": 0.9518,
+            "sample_sd": 0.007510659092250171
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6406,
+              0.5282,
+              0.5939
+            ],
+            "mean": 0.5875666666666667,
+            "sample_sd": 0.05646701101823374
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8171,
+                0.8116,
+                0.8095
+              ],
+              "mean": 0.8127333333333334,
+              "sample_sd": 0.003924708057083172
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1632,
+                0.1414,
+                0.1289
+              ],
+              "mean": 0.1445,
+              "sample_sd": 0.01735885940953496
+            },
+            "thresholds": [
+              -8.720573425292969,
+              -8.635651588439941,
+              -8.703392028808594
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8171,
+              8116,
+              8095
+            ],
+            "ood_accepted": [
+              1632,
+              1414,
+              1289
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9122,
+                0.9042,
+                0.9112
+              ],
+              "mean": 0.9091999999999999,
+              "sample_sd": 0.004358898943540678
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4004,
+                0.3478,
+                0.3772
+              ],
+              "mean": 0.3751333333333333,
+              "sample_sd": 0.02636082952665437
+            },
+            "thresholds": [
+              -7.560576438903809,
+              -7.513833045959473,
+              -7.473933219909668
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9122,
+              9042,
+              9112
+            ],
+            "ood_accepted": [
+              4004,
+              3478,
+              3772
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9587,
+                0.9438,
+                0.9529
+              ],
+              "mean": 0.9518,
+              "sample_sd": 0.007510659092250171
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6406,
+                0.5282,
+                0.5939
+              ],
+              "mean": 0.5875666666666667,
+              "sample_sd": 0.05646701101823374
+            },
+            "thresholds": [
+              -6.857672214508057,
+              -6.9596710205078125,
+              -6.877870082855225
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9587,
+              9438,
+              9529
+            ],
+            "ood_accepted": [
+              6406,
+              5282,
+              5939
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9918,
+                0.9886,
+                0.992
+              ],
+              "mean": 0.9908,
+              "sample_sd": 0.0019078784028338733
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8975,
+                0.8588,
+                0.9148
+              ],
+              "mean": 0.8903666666666666,
+              "sample_sd": 0.028673390684279588
+            },
+            "thresholds": [
+              -6.110519886016846,
+              -6.104887008666992,
+              -6.0292205810546875
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9918,
+              9886,
+              9920
+            ],
+            "ood_accepted": [
+              8975,
+              8588,
+              9148
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "maxlogit": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.90052146,
+              0.902063065,
+              0.901334945
+            ],
+            "mean": 0.90130649,
+            "sample_sd": 0.0007711963169485454
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8709398598380136,
+              0.8729812149333195,
+              0.8665174523604084
+            ],
+            "mean": 0.8701461757105804,
+            "sample_sd": 0.0033041651775215144
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9200704755773241,
+              0.9206313501074995,
+              0.9205574043981601
+            ],
+            "mean": 0.9204197433609945,
+            "sample_sd": 0.00030472607455711136
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.5798,
+              0.5752,
+              0.5833
+            ],
+            "mean": 0.5794333333333334,
+            "sample_sd": 0.004062429486567526
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              -6.120771884918213,
+              -5.882533073425293,
+              -5.975857257843018
+            ],
+            "mean": -5.993054072062175,
+            "sample_sd": 0.12004678521249915
+          },
+          "validation_threshold": {
+            "seeds": [
+              -5.834625720977783,
+              -5.946728229522705,
+              -5.910115718841553
+            ],
+            "mean": -5.897156556447347,
+            "sample_sd": 0.057163782441206755
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.961,
+              0.9476,
+              0.9527
+            ],
+            "mean": 0.9537666666666667,
+            "sample_sd": 0.006763381797099222
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6448,
+              0.5602,
+              0.6016
+            ],
+            "mean": 0.6022,
+            "sample_sd": 0.04230319136897358
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8206,
+                0.813,
+                0.8126
+              ],
+              "mean": 0.8154,
+              "sample_sd": 0.004507771067833874
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1718,
+                0.1544,
+                0.1444
+              ],
+              "mean": 0.15686666666666668,
+              "sample_sd": 0.013865544826415348
+            },
+            "thresholds": [
+              -8.284042358398438,
+              -8.190455436706543,
+              -8.278096199035645
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8206,
+              8130,
+              8126
+            ],
+            "ood_accepted": [
+              1718,
+              1544,
+              1444
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.913,
+                0.9045,
+                0.9115
+              ],
+              "mean": 0.9096666666666667,
+              "sample_sd": 0.004536885862938758
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4159,
+                0.3667,
+                0.3984
+              ],
+              "mean": 0.39366666666666666,
+              "sample_sd": 0.024939192716151266
+            },
+            "thresholds": [
+              -6.821229457855225,
+              -6.783763408660889,
+              -6.730213642120361
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9130,
+              9045,
+              9115
+            ],
+            "ood_accepted": [
+              4159,
+              3667,
+              3984
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.961,
+                0.9476,
+                0.9527
+              ],
+              "mean": 0.9537666666666667,
+              "sample_sd": 0.006763381797099222
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6448,
+                0.5602,
+                0.6016
+              ],
+              "mean": 0.6022,
+              "sample_sd": 0.04230319136897358
+            },
+            "thresholds": [
+              -5.834625720977783,
+              -5.946728229522705,
+              -5.910115718841553
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9610,
+              9476,
+              9527
+            ],
+            "ood_accepted": [
+              6448,
+              5602,
+              6016
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9901,
+                0.9908,
+                0.9932
+              ],
+              "mean": 0.9913666666666666,
+              "sample_sd": 0.0016258331197676159
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8627,
+                0.869,
+                0.9223
+              ],
+              "mean": 0.8846666666666666,
+              "sample_sd": 0.032743294478920916
+            },
+            "thresholds": [
+              -4.784876823425293,
+              -4.562887191772461,
+              -4.41316032409668
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9901,
+              9908,
+              9932
+            ],
+            "ood_accepted": [
+              8627,
+              8690,
+              9223
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "entropy": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.8860550249999999,
+              0.88637441,
+              0.882401155
+            ],
+            "mean": 0.88494353,
+            "sample_sd": 0.002207544942922946
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8616859152266675,
+              0.86070293014171,
+              0.8524549934176053
+            ],
+            "mean": 0.8582812795953276,
+            "sample_sd": 0.005069592970628936
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9031701458928245,
+              0.9036032942564436,
+              0.899399087969438
+            ],
+            "mean": 0.9020575093729021,
+            "sample_sd": 0.0023124246247225437
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.585,
+              0.5861,
+              0.6085
+            ],
+            "mean": 0.5932000000000001,
+            "sample_sd": 0.013261598696989788
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              2.2728419303894043,
+              2.3894193172454834,
+              2.3584909439086914
+            ],
+            "mean": 2.3402507305145264,
+            "sample_sd": 0.060391231317522324
+          },
+          "validation_threshold": {
+            "seeds": [
+              2.4034366607666016,
+              2.3407018184661865,
+              2.386385202407837
+            ],
+            "mean": 2.3768412272135415,
+            "sample_sd": 0.032438105778489566
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9598,
+              0.9459,
+              0.9518
+            ],
+            "mean": 0.9525,
+            "sample_sd": 0.0069763887506359736
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.635,
+              0.5655,
+              0.6209
+            ],
+            "mean": 0.6071333333333333,
+            "sample_sd": 0.036738308797947324
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.819,
+                0.8108,
+                0.8099
+              ],
+              "mean": 0.8132333333333333,
+              "sample_sd": 0.0050143128475727645
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.2098,
+                0.1984,
+                0.1999
+              ],
+              "mean": 0.2027,
+              "sample_sd": 0.006194352266379427
+            },
+            "thresholds": [
+              1.1572667360305786,
+              1.1801085472106934,
+              1.155301809310913
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8190,
+              8108,
+              8099
+            ],
+            "ood_accepted": [
+              2098,
+              1984,
+              1999
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9132,
+                0.8978,
+                0.908
+              ],
+              "mean": 0.9063333333333333,
+              "sample_sd": 0.00783411343633299
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4328,
+                0.3698,
+                0.4193
+              ],
+              "mean": 0.4073,
+              "sample_sd": 0.03317001658124397
+            },
+            "thresholds": [
+              1.8685965538024902,
+              1.8118844032287598,
+              1.8875974416732788
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9132,
+              8978,
+              9080
+            ],
+            "ood_accepted": [
+              4328,
+              3698,
+              4193
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9598,
+                0.9459,
+                0.9518
+              ],
+              "mean": 0.9525,
+              "sample_sd": 0.0069763887506359736
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.635,
+                0.5655,
+                0.6209
+              ],
+              "mean": 0.6071333333333333,
+              "sample_sd": 0.036738308797947324
+            },
+            "thresholds": [
+              2.4034366607666016,
+              2.3407018184661865,
+              2.386385202407837
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9598,
+              9459,
+              9518
+            ],
+            "ood_accepted": [
+              6350,
+              5655,
+              6209
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9911,
+                0.9892,
+                0.9915
+              ],
+              "mean": 0.9906,
+              "sample_sd": 0.0012288205727444825
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.867,
+                0.8486,
+                0.9124
+              ],
+              "mean": 0.876,
+              "sample_sd": 0.03283839216526898
+            },
+            "thresholds": [
+              3.047081232070923,
+              3.067253828048706,
+              3.1733834743499756
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9911,
+              9892,
+              9915
+            ],
+            "ood_accepted": [
+              8670,
+              8486,
+              9124
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "knn": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.90916776,
+              0.9004470099999999,
+              0.90490508
+            ],
+            "mean": 0.9048399500000001,
+            "sample_sd": 0.004360739797133079
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8905584630496648,
+              0.8785105476995415,
+              0.8854531164798896
+            ],
+            "mean": 0.8848407090763653,
+            "sample_sd": 0.0060472595604829605
+          },
+          "aupr_in": {
+            "seeds": [
+              0.924158286507891,
+              0.9175075026722014,
+              0.9197434320599146
+            ],
+            "mean": 0.9204697404133356,
+            "sample_sd": 0.003384357291341223
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.4932,
+              0.5378,
+              0.5075
+            ],
+            "mean": 0.5128333333333334,
+            "sample_sd": 0.02277330308350837
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              0.6473814249038696,
+              0.6558334827423096,
+              0.6522910594940186
+            ],
+            "mean": 0.6518353223800659,
+            "sample_sd": 0.0042444190019199236
+          },
+          "validation_threshold": {
+            "seeds": [
+              0.6552972793579102,
+              0.6539907455444336,
+              0.6595538854598999
+            ],
+            "mean": 0.6562806367874146,
+            "sample_sd": 0.0029090162091993813
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9596,
+              0.947,
+              0.9593
+            ],
+            "mean": 0.9552999999999999,
+            "sample_sd": 0.007189575787207517
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.545,
+              0.5263,
+              0.5486
+            ],
+            "mean": 0.5399666666666666,
+            "sample_sd": 0.011971772355559282
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8181,
+                0.8116,
+                0.8142
+              ],
+              "mean": 0.8146333333333334,
+              "sample_sd": 0.0032715949219506873
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1664,
+                0.1736,
+                0.1634
+              ],
+              "mean": 0.16779999999999998,
+              "sample_sd": 0.0052421369688324705
+            },
+            "thresholds": [
+              0.5670558214187622,
+              0.5728414058685303,
+              0.5674866437911987
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8181,
+              8116,
+              8142
+            ],
+            "ood_accepted": [
+              1664,
+              1736,
+              1634
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9152,
+                0.9001,
+                0.9111
+              ],
+              "mean": 0.9087999999999999,
+              "sample_sd": 0.00780832888651599
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.3644,
+                0.3594,
+                0.3633
+              ],
+              "mean": 0.36236666666666667,
+              "sample_sd": 0.0026274195198584785
+            },
+            "thresholds": [
+              0.6228474378585815,
+              0.6221364736557007,
+              0.6240967512130737
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9152,
+              9001,
+              9111
+            ],
+            "ood_accepted": [
+              3644,
+              3594,
+              3633
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9596,
+                0.947,
+                0.9593
+              ],
+              "mean": 0.9552999999999999,
+              "sample_sd": 0.007189575787207517
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.545,
+                0.5263,
+                0.5486
+              ],
+              "mean": 0.5399666666666666,
+              "sample_sd": 0.011971772355559282
+            },
+            "thresholds": [
+              0.6552972793579102,
+              0.6539907455444336,
+              0.6595538854598999
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9596,
+              9470,
+              9593
+            ],
+            "ood_accepted": [
+              5450,
+              5263,
+              5486
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.99,
+                0.9906,
+                0.9917
+              ],
+              "mean": 0.9907666666666666,
+              "sample_sd": 0.0008621678104251853
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8021,
+                0.8227,
+                0.8301
+              ],
+              "mean": 0.8182999999999999,
+              "sample_sd": 0.014509307357692812
+            },
+            "thresholds": [
+              0.6971491575241089,
+              0.7043097019195557,
+              0.7065168619155884
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9900,
+              9906,
+              9917
+            ],
+            "ood_accepted": [
+              8021,
+              8227,
+              8301
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "mahalanobis": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.63583603,
+              0.5842947399999999,
+              0.5950352799999999
+            ],
+            "mean": 0.6050553499999999,
+            "sample_sd": 0.027192416145309744
+          },
+          "aupr_out": {
+            "seeds": [
+              0.562496445437928,
+              0.5135830575558791,
+              0.5231173940874149
+            ],
+            "mean": 0.5330656323604073,
+            "sample_sd": 0.025929818010875356
+          },
+          "aupr_in": {
+            "seeds": [
+              0.6939091972637654,
+              0.6642629427129814,
+              0.6665421059222716
+            ],
+            "mean": 0.6749047486330061,
+            "sample_sd": 0.016497740665103885
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.9629,
+              0.9811,
+              0.9812
+            ],
+            "mean": 0.9750666666666666,
+            "sample_sd": 0.01053676104565977
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              842.5897207151273,
+              843.9238477917492,
+              855.486414688726
+            ],
+            "mean": 847.3333277318675,
+            "sample_sd": 7.09222066483523
+          },
+          "validation_threshold": {
+            "seeds": [
+              857.9840653030979,
+              861.9899114555702,
+              847.9314190115985
+            ],
+            "mean": 855.9684652567554,
+            "sample_sd": 7.242740165808401
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9539,
+              0.9558,
+              0.9481
+            ],
+            "mean": 0.9526,
+            "sample_sd": 0.004011234224026274
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9684,
+              0.9834,
+              0.9799
+            ],
+            "mean": 0.9772333333333334,
+            "sample_sd": 0.007847504911329033
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.7941,
+                0.7908,
+                0.7991
+              ],
+              "mean": 0.7946666666666666,
+              "sample_sd": 0.004178915329763653
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.7155,
+                0.8235,
+                0.8105
+              ],
+              "mean": 0.7831666666666667,
+              "sample_sd": 0.05896043871388113
+            },
+            "thresholds": [
+              624.66642376609,
+              625.325152781462,
+              630.2079290811154
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              7941,
+              7908,
+              7991
+            ],
+            "ood_accepted": [
+              7155,
+              8235,
+              8105
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.897,
+                0.9032,
+                0.899
+              ],
+              "mean": 0.8997333333333334,
+              "sample_sd": 0.0031643851430148756
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8904,
+                0.9462,
+                0.939
+              ],
+              "mean": 0.9251999999999999,
+              "sample_sd": 0.030351935687860192
+            },
+            "thresholds": [
+              731.069618477411,
+              743.8895136564141,
+              742.505207522522
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              8970,
+              9032,
+              8990
+            ],
+            "ood_accepted": [
+              8904,
+              9462,
+              9390
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9539,
+                0.9558,
+                0.9481
+              ],
+              "mean": 0.9526,
+              "sample_sd": 0.004011234224026274
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.9684,
+                0.9834,
+                0.9799
+              ],
+              "mean": 0.9772333333333334,
+              "sample_sd": 0.007847504911329033
+            },
+            "thresholds": [
+              857.9840653030979,
+              861.9899114555702,
+              847.9314190115985
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9539,
+              9558,
+              9481
+            ],
+            "ood_accepted": [
+              9684,
+              9834,
+              9799
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9914,
+                0.9943,
+                0.992
+              ],
+              "mean": 0.9925666666666667,
+              "sample_sd": 0.0015307950004273371
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.9983,
+                0.9998,
+                0.9992
+              ],
+              "mean": 0.9991,
+              "sample_sd": 0.0007549834435271021
+            },
+            "thresholds": [
+              1113.8032678576665,
+              1183.6690869614993,
+              1141.2145420279421
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9914,
+              9943,
+              9920
+            ],
+            "ood_accepted": [
+              9983,
+              9998,
+              9992
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    },
+    "calibrated": {
+      "msp": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.8784867300000001,
+              0.8785667500000001,
+              0.87405368
+            ],
+            "mean": 0.87703572,
+            "sample_sd": 0.002582832306074106
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8526862312471302,
+              0.8509432570655215,
+              0.8406837173551035
+            ],
+            "mean": 0.8481044018892517,
+            "sample_sd": 0.006485322579945324
+          },
+          "aupr_in": {
+            "seeds": [
+              0.8987404312691933,
+              0.8989790368284893,
+              0.8947596410388238
+            ],
+            "mean": 0.8974930363788355,
+            "sample_sd": 0.0023701942360975503
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.6069,
+              0.6175,
+              0.6443
+            ],
+            "mean": 0.6229,
+            "sample_sd": 0.01927589167846716
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              0.7562553289654712,
+              0.7731610229139623,
+              0.770011228167518
+            ],
+            "mean": 0.7664758600156505,
+            "sample_sd": 0.008990258224708628
+          },
+          "validation_threshold": {
+            "seeds": [
+              0.7742784873188407,
+              0.765775457913142,
+              0.7646647548829073
+            ],
+            "mean": 0.7682395667049633,
+            "sample_sd": 0.005259262014853225
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9581,
+              0.9455,
+              0.9481
+            ],
+            "mean": 0.9505666666666667,
+            "sample_sd": 0.006652317891782744
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6481,
+              0.5972,
+              0.6319
+            ],
+            "mean": 0.6257333333333333,
+            "sample_sd": 0.026004294517124184
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8168,
+                0.8074,
+                0.8064
+              ],
+              "mean": 0.8102,
+              "sample_sd": 0.0057375953151124
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.239,
+                0.223,
+                0.2253
+              ],
+              "mean": 0.2291,
+              "sample_sd": 0.008650433515148237
+            },
+            "thresholds": [
+              0.5101881281534499,
+              0.515706165277638,
+              0.5024710785398767
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8168,
+              8074,
+              8064
+            ],
+            "ood_accepted": [
+              2390,
+              2230,
+              2253
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9153,
+                0.9,
+                0.9058
+              ],
+              "mean": 0.9070333333333335,
+              "sample_sd": 0.007724204381898056
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4733,
+                0.4145,
+                0.451
+              ],
+              "mean": 0.44626666666666664,
+              "sample_sd": 0.02968439545170718
+            },
+            "thresholds": [
+              0.6889643534663912,
+              0.6742956493767008,
+              0.6782271819952082
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9153,
+              9000,
+              9058
+            ],
+            "ood_accepted": [
+              4733,
+              4145,
+              4510
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9581,
+                0.9455,
+                0.9481
+              ],
+              "mean": 0.9505666666666667,
+              "sample_sd": 0.006652317891782744
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6481,
+                0.5972,
+                0.6319
+              ],
+              "mean": 0.6257333333333333,
+              "sample_sd": 0.026004294517124184
+            },
+            "thresholds": [
+              0.7742784873188407,
+              0.765775457913142,
+              0.7646647548829073
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9581,
+              9455,
+              9481
+            ],
+            "ood_accepted": [
+              6481,
+              5972,
+              6319
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9918,
+                0.9897,
+                0.9925
+              ],
+              "mean": 0.9913333333333334,
+              "sample_sd": 0.0014571661996263011
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8852,
+                0.8756,
+                0.9197
+              ],
+              "mean": 0.8935000000000001,
+              "sample_sd": 0.023192024491190892
+            },
+            "thresholds": [
+              0.8670460392168402,
+              0.8690086449822727,
+              0.8762011682794346
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9918,
+              9897,
+              9925
+            ],
+            "ood_accepted": [
+              8852,
+              8756,
+              9197
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "energy": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.9015497299999999,
+              0.90539386,
+              0.9060395200000001
+            ],
+            "mean": 0.9043277033333333,
+            "sample_sd": 0.00242735887116711
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8670609629667508,
+              0.8748613929937004,
+              0.8712988808593275
+            ],
+            "mean": 0.8710737456065929,
+            "sample_sd": 0.003905085346423537
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9217462576911927,
+              0.9236290468082596,
+              0.9244770705958089
+            ],
+            "mean": 0.9232841250317537,
+            "sample_sd": 0.0013976992000911963
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.5863,
+              0.5718,
+              0.5735
+            ],
+            "mean": 0.5772,
+            "sample_sd": 0.00792653770570736
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              -7.860044656841971,
+              -7.723096891200294,
+              -7.769433345366511
+            ],
+            "mean": -7.784191631136259,
+            "sample_sd": 0.06965649917780897
+          },
+          "validation_threshold": {
+            "seeds": [
+              -7.745092334790082,
+              -7.796952888802806,
+              -7.713327777733264
+            ],
+            "mean": -7.751791000442051,
+            "sample_sd": 0.042213077256768886
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.959,
+              0.9446,
+              0.9545
+            ],
+            "mean": 0.9527,
+            "sample_sd": 0.007366817494685193
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6482,
+              0.5334,
+              0.6034
+            ],
+            "mean": 0.5950000000000001,
+            "sample_sd": 0.05785913929536112
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.812,
+                0.8164,
+                0.8088
+              ],
+              "mean": 0.8123999999999999,
+              "sample_sd": 0.0038157568056678046
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1505,
+                0.1441,
+                0.1237
+              ],
+              "mean": 0.13943333333333333,
+              "sample_sd": 0.01399618995774683
+            },
+            "thresholds": [
+              -9.266014339635824,
+              -9.062778138063244,
+              -9.16921152467382
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8120,
+              8164,
+              8088
+            ],
+            "ood_accepted": [
+              1505,
+              1441,
+              1237
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9125,
+                0.9009,
+                0.914
+              ],
+              "mean": 0.9091333333333335,
+              "sample_sd": 0.007169611797952044
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4102,
+                0.3401,
+                0.3867
+              ],
+              "mean": 0.379,
+              "sample_sd": 0.0356787051334546
+            },
+            "thresholds": [
+              -8.258955320296934,
+              -8.242757290772682,
+              -8.15354263931816
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9125,
+              9009,
+              9140
+            ],
+            "ood_accepted": [
+              4102,
+              3401,
+              3867
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.959,
+                0.9446,
+                0.9545
+              ],
+              "mean": 0.9527,
+              "sample_sd": 0.007366817494685193
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6482,
+                0.5334,
+                0.6034
+              ],
+              "mean": 0.5950000000000001,
+              "sample_sd": 0.05785913929536112
+            },
+            "thresholds": [
+              -7.745092334790082,
+              -7.796952888802806,
+              -7.713327777733264
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9590,
+              9446,
+              9545
+            ],
+            "ood_accepted": [
+              6482,
+              5334,
+              6034
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9916,
+                0.9885,
+                0.9922
+              ],
+              "mean": 0.9907666666666667,
+              "sample_sd": 0.0019857828011475022
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8973,
+                0.8722,
+                0.9157
+              ],
+              "mean": 0.8950666666666667,
+              "sample_sd": 0.02183582682962413
+            },
+            "thresholds": [
+              -7.217589329725816,
+              -7.153098356602613,
+              -7.103104114251872
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9916,
+              9885,
+              9922
+            ],
+            "ood_accepted": [
+              8973,
+              8722,
+              9157
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "maxlogit": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.90052146,
+              0.902063065,
+              0.901334945
+            ],
+            "mean": 0.90130649,
+            "sample_sd": 0.0007711963169485454
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8709398598380136,
+              0.8729812149333195,
+              0.8665174523604084
+            ],
+            "mean": 0.8701461757105804,
+            "sample_sd": 0.0033041651775215144
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9200704755773241,
+              0.9206313501074995,
+              0.9205574043981601
+            ],
+            "mean": 0.9204197433609945,
+            "sample_sd": 0.00030472607455711136
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.5798,
+              0.5752,
+              0.5833
+            ],
+            "mean": 0.5794333333333334,
+            "sample_sd": 0.004062429486567526
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              -6.120771884918213,
+              -5.882533073425293,
+              -5.975857257843018
+            ],
+            "mean": -5.993054072062175,
+            "sample_sd": 0.12004678521249915
+          },
+          "validation_threshold": {
+            "seeds": [
+              -5.834625720977783,
+              -5.946728229522705,
+              -5.910115718841553
+            ],
+            "mean": -5.897156556447347,
+            "sample_sd": 0.057163782441206755
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.961,
+              0.9476,
+              0.9527
+            ],
+            "mean": 0.9537666666666667,
+            "sample_sd": 0.006763381797099222
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6448,
+              0.5602,
+              0.6016
+            ],
+            "mean": 0.6022,
+            "sample_sd": 0.04230319136897358
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8206,
+                0.813,
+                0.8126
+              ],
+              "mean": 0.8154,
+              "sample_sd": 0.004507771067833874
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1718,
+                0.1544,
+                0.1444
+              ],
+              "mean": 0.15686666666666668,
+              "sample_sd": 0.013865544826415348
+            },
+            "thresholds": [
+              -8.284042358398438,
+              -8.190455436706543,
+              -8.278096199035645
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8206,
+              8130,
+              8126
+            ],
+            "ood_accepted": [
+              1718,
+              1544,
+              1444
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.913,
+                0.9045,
+                0.9115
+              ],
+              "mean": 0.9096666666666667,
+              "sample_sd": 0.004536885862938758
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4159,
+                0.3667,
+                0.3984
+              ],
+              "mean": 0.39366666666666666,
+              "sample_sd": 0.024939192716151266
+            },
+            "thresholds": [
+              -6.821229457855225,
+              -6.783763408660889,
+              -6.730213642120361
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9130,
+              9045,
+              9115
+            ],
+            "ood_accepted": [
+              4159,
+              3667,
+              3984
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.961,
+                0.9476,
+                0.9527
+              ],
+              "mean": 0.9537666666666667,
+              "sample_sd": 0.006763381797099222
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6448,
+                0.5602,
+                0.6016
+              ],
+              "mean": 0.6022,
+              "sample_sd": 0.04230319136897358
+            },
+            "thresholds": [
+              -5.834625720977783,
+              -5.946728229522705,
+              -5.910115718841553
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9610,
+              9476,
+              9527
+            ],
+            "ood_accepted": [
+              6448,
+              5602,
+              6016
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9901,
+                0.9908,
+                0.9932
+              ],
+              "mean": 0.9913666666666666,
+              "sample_sd": 0.0016258331197676159
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8627,
+                0.869,
+                0.9223
+              ],
+              "mean": 0.8846666666666666,
+              "sample_sd": 0.032743294478920916
+            },
+            "thresholds": [
+              -4.784876823425293,
+              -4.562887191772461,
+              -4.41316032409668
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9901,
+              9908,
+              9932
+            ],
+            "ood_accepted": [
+              8627,
+              8690,
+              9223
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "entropy": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.89802616,
+              0.8981701700000001,
+              0.8958711800000001
+            ],
+            "mean": 0.8973558366666667,
+            "sample_sd": 0.0012877650342485924
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8700313566614375,
+              0.87070135130959,
+              0.8642116019722219
+            ],
+            "mean": 0.8683147699810831,
+            "sample_sd": 0.003569203551052387
+          },
+          "aupr_in": {
+            "seeds": [
+              0.9154094167663511,
+              0.9151782123781447,
+              0.9126350612280825
+            ],
+            "mean": 0.914407563457526,
+            "sample_sd": 0.001539378765060255
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.5755,
+              0.5669,
+              0.5815
+            ],
+            "mean": 0.5746333333333333,
+            "sample_sd": 0.007338483040338362
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              3.0680355375216184,
+              3.1413346813923178,
+              3.096989341808184
+            ],
+            "mean": 3.10211985357404,
+            "sample_sd": 0.03691791890503933
+          },
+          "validation_threshold": {
+            "seeds": [
+              3.15058431680219,
+              3.1106074218902173,
+              3.142486253368894
+            ],
+            "mean": 3.1345593306871002,
+            "sample_sd": 0.021134453129974275
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9577,
+              0.946,
+              0.954
+            ],
+            "mean": 0.9525666666666667,
+            "sample_sd": 0.005980245256955066
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.6143,
+              0.5488,
+              0.607
+            ],
+            "mean": 0.5900333333333333,
+            "sample_sd": 0.0358951714487246
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.821,
+                0.8164,
+                0.8104
+              ],
+              "mean": 0.8159333333333333,
+              "sample_sd": 0.005315386470740678
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1784,
+                0.1666,
+                0.1603
+              ],
+              "mean": 0.16843333333333332,
+              "sample_sd": 0.00918821709219658
+            },
+            "thresholds": [
+              1.9523190176371052,
+              1.9882384993677527,
+              1.917366945983167
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8210,
+              8164,
+              8104
+            ],
+            "ood_accepted": [
+              1784,
+              1666,
+              1603
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9145,
+                0.9031,
+                0.9115
+              ],
+              "mean": 0.9097,
+              "sample_sd": 0.005909314681077643
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.4111,
+                0.3615,
+                0.3984
+              ],
+              "mean": 0.39033333333333325,
+              "sample_sd": 0.025765157351224036
+            },
+            "thresholds": [
+              2.7144926098827695,
+              2.6975603184171053,
+              2.7236805073514962
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9145,
+              9031,
+              9115
+            ],
+            "ood_accepted": [
+              4111,
+              3615,
+              3984
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9577,
+                0.946,
+                0.954
+              ],
+              "mean": 0.9525666666666667,
+              "sample_sd": 0.005980245256955066
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.6143,
+                0.5488,
+                0.607
+              ],
+              "mean": 0.5900333333333333,
+              "sample_sd": 0.0358951714487246
+            },
+            "thresholds": [
+              3.15058431680219,
+              3.1106074218902173,
+              3.142486253368894
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9577,
+              9460,
+              9540
+            ],
+            "ood_accepted": [
+              6143,
+              5488,
+              6070
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9922,
+                0.9879,
+                0.9913
+              ],
+              "mean": 0.9904666666666667,
+              "sample_sd": 0.002267891825756521
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8848,
+                0.8365,
+                0.9105
+              ],
+              "mean": 0.8772666666666668,
+              "sample_sd": 0.037570777651431866
+            },
+            "thresholds": [
+              3.6754897282401355,
+              3.6360278045634766,
+              3.7150537919660076
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9922,
+              9879,
+              9913
+            ],
+            "ood_accepted": [
+              8848,
+              8365,
+              9105
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "knn": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.90916776,
+              0.9004470099999999,
+              0.90490508
+            ],
+            "mean": 0.9048399500000001,
+            "sample_sd": 0.004360739797133079
+          },
+          "aupr_out": {
+            "seeds": [
+              0.8905584630496648,
+              0.8785105476995415,
+              0.8854531164798896
+            ],
+            "mean": 0.8848407090763653,
+            "sample_sd": 0.0060472595604829605
+          },
+          "aupr_in": {
+            "seeds": [
+              0.924158286507891,
+              0.9175075026722014,
+              0.9197434320599146
+            ],
+            "mean": 0.9204697404133356,
+            "sample_sd": 0.003384357291341223
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.4932,
+              0.5378,
+              0.5075
+            ],
+            "mean": 0.5128333333333334,
+            "sample_sd": 0.02277330308350837
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              0.6473814249038696,
+              0.6558334827423096,
+              0.6522910594940186
+            ],
+            "mean": 0.6518353223800659,
+            "sample_sd": 0.0042444190019199236
+          },
+          "validation_threshold": {
+            "seeds": [
+              0.6552972793579102,
+              0.6539907455444336,
+              0.6595538854598999
+            ],
+            "mean": 0.6562806367874146,
+            "sample_sd": 0.0029090162091993813
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9596,
+              0.947,
+              0.9593
+            ],
+            "mean": 0.9552999999999999,
+            "sample_sd": 0.007189575787207517
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.545,
+              0.5263,
+              0.5486
+            ],
+            "mean": 0.5399666666666666,
+            "sample_sd": 0.011971772355559282
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.8181,
+                0.8116,
+                0.8142
+              ],
+              "mean": 0.8146333333333334,
+              "sample_sd": 0.0032715949219506873
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.1664,
+                0.1736,
+                0.1634
+              ],
+              "mean": 0.16779999999999998,
+              "sample_sd": 0.0052421369688324705
+            },
+            "thresholds": [
+              0.5670558214187622,
+              0.5728414058685303,
+              0.5674866437911987
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              8181,
+              8116,
+              8142
+            ],
+            "ood_accepted": [
+              1664,
+              1736,
+              1634
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9152,
+                0.9001,
+                0.9111
+              ],
+              "mean": 0.9087999999999999,
+              "sample_sd": 0.00780832888651599
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.3644,
+                0.3594,
+                0.3633
+              ],
+              "mean": 0.36236666666666667,
+              "sample_sd": 0.0026274195198584785
+            },
+            "thresholds": [
+              0.6228474378585815,
+              0.6221364736557007,
+              0.6240967512130737
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              9152,
+              9001,
+              9111
+            ],
+            "ood_accepted": [
+              3644,
+              3594,
+              3633
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9596,
+                0.947,
+                0.9593
+              ],
+              "mean": 0.9552999999999999,
+              "sample_sd": 0.007189575787207517
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.545,
+                0.5263,
+                0.5486
+              ],
+              "mean": 0.5399666666666666,
+              "sample_sd": 0.011971772355559282
+            },
+            "thresholds": [
+              0.6552972793579102,
+              0.6539907455444336,
+              0.6595538854598999
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9596,
+              9470,
+              9593
+            ],
+            "ood_accepted": [
+              5450,
+              5263,
+              5486
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.99,
+                0.9906,
+                0.9917
+              ],
+              "mean": 0.9907666666666666,
+              "sample_sd": 0.0008621678104251853
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8021,
+                0.8227,
+                0.8301
+              ],
+              "mean": 0.8182999999999999,
+              "sample_sd": 0.014509307357692812
+            },
+            "thresholds": [
+              0.6971491575241089,
+              0.7043097019195557,
+              0.7065168619155884
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9900,
+              9906,
+              9917
+            ],
+            "ood_accepted": [
+              8021,
+              8227,
+              8301
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "mahalanobis": {
+        "metrics": {
+          "auroc": {
+            "seeds": [
+              0.63583603,
+              0.5842947399999999,
+              0.5950352799999999
+            ],
+            "mean": 0.6050553499999999,
+            "sample_sd": 0.027192416145309744
+          },
+          "aupr_out": {
+            "seeds": [
+              0.562496445437928,
+              0.5135830575558791,
+              0.5231173940874149
+            ],
+            "mean": 0.5330656323604073,
+            "sample_sd": 0.025929818010875356
+          },
+          "aupr_in": {
+            "seeds": [
+              0.6939091972637654,
+              0.6642629427129814,
+              0.6665421059222716
+            ],
+            "mean": 0.6749047486330061,
+            "sample_sd": 0.016497740665103885
+          },
+          "fpr95_id": {
+            "seeds": [
+              0.9629,
+              0.9811,
+              0.9812
+            ],
+            "mean": 0.9750666666666666,
+            "sample_sd": 0.01053676104565977
+          },
+          "id_tpr_at_fpr95": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "benchmark_threshold": {
+            "seeds": [
+              842.5897207151273,
+              843.9238477917492,
+              855.486414688726
+            ],
+            "mean": 847.3333277318675,
+            "sample_sd": 7.09222066483523
+          },
+          "validation_threshold": {
+            "seeds": [
+              857.9840653030979,
+              861.9899114555702,
+              847.9314190115985
+            ],
+            "mean": 855.9684652567554,
+            "sample_sd": 7.242740165808401
+          },
+          "id_test_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9539,
+              0.9558,
+              0.9481
+            ],
+            "mean": 0.9526,
+            "sample_sd": 0.004011234224026274
+          },
+          "ood_acceptance_at_validation_threshold": {
+            "seeds": [
+              0.9684,
+              0.9834,
+              0.9799
+            ],
+            "mean": 0.9772333333333334,
+            "sample_sd": 0.007847504911329033
+          },
+          "calibration_id_acceptance": {
+            "seeds": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "mean": 0.9499999999999998,
+            "sample_sd": 1.3597399555105182e-16
+          },
+          "ood_prevalence": {
+            "seeds": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "sample_sd": 0.0
+          }
+        },
+        "operating_grid": {
+          "target80": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.8,
+                0.8,
+                0.8
+              ],
+              "mean": 0.8000000000000002,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.7941,
+                0.7908,
+                0.7991
+              ],
+              "mean": 0.7946666666666666,
+              "sample_sd": 0.004178915329763653
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.7155,
+                0.8235,
+                0.8105
+              ],
+              "mean": 0.7831666666666667,
+              "sample_sd": 0.05896043871388113
+            },
+            "thresholds": [
+              624.66642376609,
+              625.325152781462,
+              630.2079290811154
+            ],
+            "calibration_accepted": [
+              1200,
+              1200,
+              1200
+            ],
+            "id_test_accepted": [
+              7941,
+              7908,
+              7991
+            ],
+            "ood_accepted": [
+              7155,
+              8235,
+              8105
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target90": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.9,
+                0.9,
+                0.9
+              ],
+              "mean": 0.9,
+              "sample_sd": 0.0
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.897,
+                0.9032,
+                0.899
+              ],
+              "mean": 0.8997333333333334,
+              "sample_sd": 0.0031643851430148756
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.8904,
+                0.9462,
+                0.939
+              ],
+              "mean": 0.9251999999999999,
+              "sample_sd": 0.030351935687860192
+            },
+            "thresholds": [
+              731.069618477411,
+              743.8895136564141,
+              742.505207522522
+            ],
+            "calibration_accepted": [
+              1350,
+              1350,
+              1350
+            ],
+            "id_test_accepted": [
+              8970,
+              9032,
+              8990
+            ],
+            "ood_accepted": [
+              8904,
+              9462,
+              9390
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target95": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.95,
+                0.95,
+                0.95
+              ],
+              "mean": 0.9499999999999998,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9539,
+                0.9558,
+                0.9481
+              ],
+              "mean": 0.9526,
+              "sample_sd": 0.004011234224026274
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.9684,
+                0.9834,
+                0.9799
+              ],
+              "mean": 0.9772333333333334,
+              "sample_sd": 0.007847504911329033
+            },
+            "thresholds": [
+              857.9840653030979,
+              861.9899114555702,
+              847.9314190115985
+            ],
+            "calibration_accepted": [
+              1425,
+              1425,
+              1425
+            ],
+            "id_test_accepted": [
+              9539,
+              9558,
+              9481
+            ],
+            "ood_accepted": [
+              9684,
+              9834,
+              9799
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          },
+          "target99": {
+            "calibration_acceptance": {
+              "seeds": [
+                0.99,
+                0.99,
+                0.99
+              ],
+              "mean": 0.9899999999999999,
+              "sample_sd": 1.3597399555105182e-16
+            },
+            "id_test_acceptance": {
+              "seeds": [
+                0.9914,
+                0.9943,
+                0.992
+              ],
+              "mean": 0.9925666666666667,
+              "sample_sd": 0.0015307950004273371
+            },
+            "ood_acceptance": {
+              "seeds": [
+                0.9983,
+                0.9998,
+                0.9992
+              ],
+              "mean": 0.9991,
+              "sample_sd": 0.0007549834435271021
+            },
+            "thresholds": [
+              1113.8032678576665,
+              1183.6690869614993,
+              1141.2145420279421
+            ],
+            "calibration_accepted": [
+              1485,
+              1485,
+              1485
+            ],
+            "id_test_accepted": [
+              9914,
+              9943,
+              9920
+            ],
+            "ood_accepted": [
+              9983,
+              9998,
+              9992
+            ],
+            "calibration_ties_at_threshold": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "protocol_sha256": "cde761197a9d4c0b548ec419a7da0b36202f68b82ba5b23ebf48b3faf8c927b1",
+  "cache_sha256": "a2dcae8ea3467315127aec065b21062c000ac17ca215ca716afa6eab0f0ae48d",
+  "source_sha256": "6951f09c5d3bc20a745b36b0738b32cc1dc20145a06cf97b1d06c585fb8d9374",
+  "created_at": "2026-09-28T07:11:06.311607+00:00",
+  "boundary": "Sequentially selected additional OOD population; methods, models, ID fits and thresholds frozen before its data access; no method selection."
+}

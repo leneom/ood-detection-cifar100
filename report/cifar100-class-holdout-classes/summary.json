@@ -1,0 +1,250 @@
+{
+  "state": "descriptive_complete_pending_independent_audit",
+  "declaration_sha256": "ab944b7b8767e4169a2d8cb72a999805ddf5ca64ebbe46027b06fed9aeb5401b",
+  "baseline_completion_sha256": "5a1ee7857b5b71bd4d9ace07a238e06bd23b020a0532eb3103ef94ba1abb61fc",
+  "class_values_sha256": "6bc3ec55ec1256ae8f644689ca7609f98a5fd0e4d3ea745bea6fc7f51e0dc6db",
+  "producer_source_sha256": "2d3fa6c9039b00713a36269de3f14918bae1084d0e8250bb10dda75fe9a48b02",
+  "class_count": 20,
+  "ood_images_per_class": 100,
+  "shared_id_test_count": 8000,
+  "class_fine_ids": [
+    6,
+    8,
+    11,
+    15,
+    20,
+    22,
+    29,
+    36,
+    43,
+    51,
+    61,
+    62,
+    68,
+    71,
+    72,
+    73,
+    75,
+    79,
+    81,
+    96
+  ],
+  "variants": [
+    "T1",
+    "calibrated"
+  ],
+  "methods": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis"
+  ],
+  "targets": [
+    80,
+    90,
+    95,
+    99
+  ],
+  "distributions": {
+    "T1": {
+      "msp": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.6108347916666667,
+          "q25": 0.6935776041666667,
+          "median": 0.732450625,
+          "q75": 0.7936669791666666,
+          "max": 0.8538375
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7266666666666667,
+          "q25": 0.8216666666666667,
+          "median": 0.8783333333333334,
+          "q75": 0.9208333333333334,
+          "max": 0.9533333333333333
+        }
+      },
+      "energy": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.57790625,
+          "q25": 0.6863232291666668,
+          "median": 0.7378100000000001,
+          "q75": 0.7854026041666667,
+          "max": 0.877895
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7066666666666667,
+          "q25": 0.7999999999999999,
+          "median": 0.8716666666666667,
+          "q75": 0.9358333333333333,
+          "max": 0.9833333333333333
+        }
+      },
+      "maxlogit": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.5825091666666666,
+          "q25": 0.68864,
+          "median": 0.7364394791666666,
+          "q75": 0.7858456770833332,
+          "max": 0.8783854166666666
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7,
+          "q25": 0.7966666666666667,
+          "median": 0.8766666666666667,
+          "q75": 0.9258333333333333,
+          "max": 0.98
+        }
+      },
+      "entropy": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.6171020833333333,
+          "q25": 0.6914523958333333,
+          "median": 0.7415925000000001,
+          "q75": 0.8017384375,
+          "max": 0.8736762499999999
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.69,
+          "q25": 0.7983333333333333,
+          "median": 0.8833333333333333,
+          "q75": 0.93,
+          "max": 0.9666666666666667
+        }
+      },
+      "knn": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.5616504166666667,
+          "q25": 0.6517659895833333,
+          "median": 0.7467876041666668,
+          "q75": 0.8024913541666667,
+          "max": 0.8916316666666666
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7233333333333333,
+          "q25": 0.8466666666666667,
+          "median": 0.9133333333333333,
+          "q75": 0.9341666666666666,
+          "max": 0.98
+        }
+      },
+      "mahalanobis": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.3745258333333333,
+          "q25": 0.4521189583333334,
+          "median": 0.5257166666666666,
+          "q75": 0.5872772395833333,
+          "max": 0.6675583333333334
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.9066666666666667,
+          "q25": 0.9666666666666667,
+          "median": 0.9783333333333333,
+          "q75": 0.9841666666666666,
+          "max": 1.0
+        }
+      }
+    },
+    "calibrated": {
+      "msp": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.61463875,
+          "q25": 0.6914603125000001,
+          "median": 0.7409350000000001,
+          "q75": 0.7997162500000001,
+          "max": 0.8685083333333333
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7033333333333333,
+          "q25": 0.8091666666666667,
+          "median": 0.885,
+          "q75": 0.925,
+          "max": 0.96
+        }
+      },
+      "energy": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.5749362499999999,
+          "q25": 0.6839202083333333,
+          "median": 0.7388527083333334,
+          "q75": 0.7839401041666667,
+          "max": 0.8750049999999999
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7166666666666667,
+          "q25": 0.7983333333333333,
+          "median": 0.86,
+          "q75": 0.94,
+          "max": 0.9733333333333333
+        }
+      },
+      "maxlogit": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.5825091666666666,
+          "q25": 0.68864,
+          "median": 0.7364394791666666,
+          "q75": 0.7858456770833332,
+          "max": 0.8783854166666666
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7,
+          "q25": 0.7966666666666667,
+          "median": 0.8766666666666667,
+          "q75": 0.9258333333333333,
+          "max": 0.98
+        }
+      },
+      "entropy": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.6202054166666666,
+          "q25": 0.6920080208333333,
+          "median": 0.7407021874999999,
+          "q75": 0.8014222916666668,
+          "max": 0.8826225000000001
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.6933333333333332,
+          "q25": 0.8016666666666666,
+          "median": 0.88,
+          "q75": 0.9325,
+          "max": 0.9866666666666667
+        }
+      },
+      "knn": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.5616504166666667,
+          "q25": 0.6517659895833333,
+          "median": 0.7467876041666668,
+          "q75": 0.8024913541666667,
+          "max": 0.8916316666666666
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.7233333333333333,
+          "q25": 0.8466666666666667,
+          "median": 0.9133333333333333,
+          "q75": 0.9341666666666666,
+          "max": 0.98
+        }
+      },
+      "mahalanobis": {
+        "three_seed_class_mean_auroc": {
+          "min": 0.3745258333333333,
+          "q25": 0.4521189583333334,
+          "median": 0.5257166666666666,
+          "q75": 0.5872772395833333,
+          "max": 0.6675583333333334
+        },
+        "three_seed_class_mean_fixed95_ood_acceptance": {
+          "min": 0.9066666666666667,
+          "q25": 0.9666666666666667,
+          "median": 0.9783333333333333,
+          "q75": 0.9841666666666666,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "created_at": "2026-09-28T12:10:35.600377+00:00",
+  "boundary": "Post-hoc description of all 20 classes; no test-driven fitting/selection or independent confirmation."
+}

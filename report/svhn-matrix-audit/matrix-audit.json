@@ -1,0 +1,211 @@
+{
+  "status": "passed",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "statistics_checked": 73,
+  "maximum_statistics_error": 1.1102230246251565e-16,
+  "paired_method_minus_msp": {
+    "svhn": {
+      "energy": {
+        "auroc": {
+          "mean": 0.04795847610633067,
+          "sample_sd": 0.008181342700407396,
+          "n_seeds": 3,
+          "per_seed": [
+            0.05731678895205905,
+            0.04439773547940995,
+            0.04216090388752303
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.038055726285597204,
+          "sample_sd": 0.03795766858126556,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.07098955132145046,
+            -0.046634910878918245,
+            0.003457283343577089
+          ]
+        }
+      },
+      "maxlogit": {
+        "auroc": {
+          "mean": 0.045348096573448106,
+          "sample_sd": 0.006849066135721271,
+          "n_seeds": 3,
+          "per_seed": [
+            0.05322644053472647,
+            0.04200765596189315,
+            0.0408101932237247
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.042742265929112865,
+          "sample_sd": 0.022650551443997084,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.06000307314074982,
+            -0.05112937922556848,
+            -0.017094345421020285
+          ]
+        }
+      },
+      "entropy": {
+        "auroc": {
+          "mean": 0.0237503899047327,
+          "sample_sd": 0.0018009981458458517,
+          "n_seeds": 3,
+          "per_seed": [
+            0.024739151813153115,
+            0.024840419483712295,
+            0.021671598417332683
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.04768490063511573,
+          "sample_sd": 0.017719525321516945,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.057314074984634256,
+            -0.058504917025199776,
+            -0.02723570989551316
+          ]
+        }
+      },
+      "knn": {
+        "auroc": {
+          "mean": 0.054014171660520395,
+          "sample_sd": 0.007346912716697475,
+          "n_seeds": 3,
+          "per_seed": [
+            0.0537791890749848,
+            0.04678756914566684,
+            0.06147575676090955
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.13354077033394793,
+          "sample_sd": 0.017360582097014098,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.11743239090350333,
+            -0.15192839582052858,
+            -0.1312615242778119
+          ]
+        }
+      },
+      "mahalanobis": {
+        "auroc": {
+          "mean": -0.19250261729153859,
+          "sample_sd": 0.04447636494812174,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.1799118661647202,
+            -0.24191703480331905,
+            -0.15567895090657646
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.2161186232329441,
+          "sample_sd": 0.08320369849414501,
+          "n_seeds": 3,
+          "per_seed": [
+            0.19741087891825448,
+            0.30708358942839586,
+            0.14386140135218195
+          ]
+        }
+      }
+    }
+  },
+  "per_seed_raw_audits": [
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-extension-svhn",
+      "seed": 0,
+      "selected_epoch": 89,
+      "best_id_validation_accuracy": 0.7552,
+      "id_test_accuracy": 0.7610999941825867,
+      "independent_sklearn_checks": 18,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "f6c164834b98b8c3cca2a301a2288efbe3dc700b2680e09aee4f9694669d5f7e",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:21:54.284062+00:00"
+    },
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-extension-svhn",
+      "seed": 1,
+      "selected_epoch": 96,
+      "best_id_validation_accuracy": 0.7528,
+      "id_test_accuracy": 0.7555999755859375,
+      "independent_sklearn_checks": 18,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "1aa639febbd9a690041af15b13bce5a68c9d6c714a6e20d695e54b53ebe6f80f",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:21:56.213603+00:00"
+    },
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-extension-svhn",
+      "seed": 2,
+      "selected_epoch": 92,
+      "best_id_validation_accuracy": 0.749,
+      "id_test_accuracy": 0.7563999891281128,
+      "independent_sklearn_checks": 18,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "4b50a24c474aecb753ed27d3fdf98ac7c02a25543e4f5840bfee06f38ffc241e",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:21:58.178691+00:00"
+    }
+  ],
+  "summary_sha256": "006799d753a82a27344a5c8b3db630385004b93adae90b879c78c1638b8a25ab",
+  "tool_sha256": "ac29a197dca04f3e912f8c4d5988679a0d12315518251fc84d90050d5f18fcc8",
+  "python": "3.13.9",
+  "audited_at": "2026-09-27T15:21:58.215768+00:00"
+}

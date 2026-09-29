@@ -1,0 +1,23 @@
+{
+  "state": "diagnostics_pending_independent_audit",
+  "created_at": "2026-09-29T00:07:24.430930+00:00",
+  "declaration_sha256": "d81aec71dfafb9e81495e78b391f28cbf9200153894cb78326afe409cc8b0e91",
+  "rmd_completion_sha256": "47ebc809cac10606ea7b5497068da7871499aa24680fda85ef73ed1eb799e33b",
+  "builder_source_sha256": "8951c877bef02bab38ee98a97d30ca05d4f7a52cf5f22d437a6717698cb810cd",
+  "outputs_sha256": {
+    "components.csv": "75c5b7a491e7f2db43d04664284d2a1211923019360c7f8e33168dca6f49b506",
+    "executed_builder_source.py": "8951c877bef02bab38ee98a97d30ca05d4f7a52cf5f22d437a6717698cb810cd",
+    "REPORT.md": "f07ff11e8463af23f94f4d392d99cf35e1d13bf3f166295b324fa194c94da8ae",
+    "summary.json": "31e375b2b500695c0bc9568f913af90daba71495b8d26b39b60acfe1d42ad335",
+    "transitions-split2031-seed0.npz": "f7a93a5f52d268ac33221499fc0b65dbd5aed0b9d111a28e474d974d49ecd804",
+    "transitions-split2031-seed1.npz": "d9f9bc4aca6678f6a99930d4c4f120512ed8412dfd9563c04919e1a09997ab61",
+    "transitions-split2031-seed2.npz": "ac3f752d459701198d4840c0fecc1fbc59a4fe1f3d511136e03dbfb7727a66f6",
+    "transitions-split2032-seed0.npz": "029285c619abedaa02bc53868bd842fc322c05454121fbc7aa7468b345592366",
+    "transitions-split2032-seed1.npz": "835a7e2ddd545d857d032b2a91e8876f7881a0bb07922ab2bcc859183d5369e0",
+    "transitions-split2032-seed2.npz": "6cdbe7b21715bf9737addd1082119b9998cb731b62ead3a8dfcd25a6a8b42baa",
+    "transitions-split2033-seed0.npz": "a4823fb70084a0a4120a9ba42f2811b1505dc3ca02b98a35575df09dc82f4755",
+    "transitions-split2033-seed1.npz": "d0728554bca5cd391db6221c3ce98b796ca505a81f89ca69379a331362b0e890",
+    "transitions-split2033-seed2.npz": "79d2cf9ceaf99f9503ebdc6fe404a25b880ce5e94e27bcbc2c31e9df8702787d",
+    "transitions.csv": "91ac8b642917ae1e55a9fac185739338e8773f6aea72fa7da4985ba510f028f5"
+  }
+}

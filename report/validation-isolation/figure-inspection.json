@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-28T02:42:25.899040+00:00",
+  "figures": {
+    "paired-auroc.png": {
+      "sha256": "97fbcd3a7dae10822d354e55294ae8212121446c58a3e7de5f598b133cf3eff3",
+      "observation": "Two variant heatmaps have readable axes, values and shared colorbar; no clipping or inverted method order."
+    },
+    "fixed95-acceptance.png": {
+      "sha256": "06bafaa28cc7cab0a50c34bd4c732f5b5cd2de3fbdee04a5a7ba2b8bdfad7509",
+      "observation": "Both variant panels show old-to-new means and three faint paired seed lines; axes and labels are readable, no clipping."
+    }
+  },
+  "inspection_boundary": "Visual readability only; numeric coordinates were checked separately by the independent report audit."
+}

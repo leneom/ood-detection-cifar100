@@ -1,0 +1,1396 @@
+{
+  "checkpoint_sha256": "1aa639febbd9a690041af15b13bce5a68c9d6c714a6e20d695e54b53ebe6f80f",
+  "selected_epoch": 96,
+  "id_accuracy": 0.7556,
+  "threshold_source": "saved ID-validation-only thresholds",
+  "datasets": {
+    "cifar10": {
+      "msp": {
+        "correct_id_rejection": 0.01707252514557967,
+        "incorrect_id_rejection": 0.15834697217675942,
+        "accepted_id_accuracy": 0.7831083930830873,
+        "id_acceptance": 0.9484,
+        "ood_acceptance": 0.8135,
+        "accepted_ood_count": 8135,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 854,
+            "fraction_of_accepted_ood": 0.10497848801475107
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 584,
+            "fraction_of_accepted_ood": 0.07178856791641057
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 562,
+            "fraction_of_accepted_ood": 0.06908420405654579
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 300,
+            "fraction_of_accepted_ood": 0.03687768899815612
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 294,
+            "fraction_of_accepted_ood": 0.036140135218192995
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9411,
+          9782,
+          4832,
+          7270,
+          5685,
+          9913,
+          1260,
+          513,
+          9145,
+          4727,
+          7878,
+          7936,
+          5823,
+          1439,
+          6130,
+          1791,
+          4410,
+          4838,
+          5021,
+          9351
+        ],
+        "highest_anomaly_id_indices": [
+          8622,
+          7743,
+          5970,
+          6842,
+          7416,
+          1141,
+          4427,
+          4710,
+          4650,
+          4176,
+          7874,
+          7432,
+          2342,
+          5950,
+          4679,
+          2632,
+          5382,
+          9280,
+          2620,
+          5253
+        ]
+      },
+      "energy": {
+        "correct_id_rejection": 0.023292747485442033,
+        "incorrect_id_rejection": 0.16243862520458266,
+        "accepted_id_accuracy": 0.7828577490187758,
+        "id_acceptance": 0.9427,
+        "ood_acceptance": 0.8065,
+        "accepted_ood_count": 8065,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 831,
+            "fraction_of_accepted_ood": 0.10303781773093615
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 571,
+            "fraction_of_accepted_ood": 0.0707997520148791
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 524,
+            "fraction_of_accepted_ood": 0.06497210167389957
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 305,
+            "fraction_of_accepted_ood": 0.03781773093614383
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 299,
+            "fraction_of_accepted_ood": 0.03707377557346559
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9782,
+          9411,
+          1439,
+          4418,
+          2790,
+          600,
+          272,
+          7270,
+          3902,
+          9145,
+          2190,
+          4727,
+          5950,
+          2290,
+          9354,
+          7936,
+          7878,
+          7512,
+          9913,
+          2274
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          5364,
+          8622,
+          6292,
+          9280,
+          7416,
+          4710,
+          7432,
+          6009,
+          4490,
+          8923,
+          9309,
+          5934,
+          3177,
+          6842,
+          2288,
+          1141,
+          7743,
+          4176
+        ]
+      },
+      "maxlogit": {
+        "correct_id_rejection": 0.01892535733192165,
+        "incorrect_id_rejection": 0.1702127659574468,
+        "accepted_id_accuracy": 0.7851922465840483,
+        "id_acceptance": 0.9441,
+        "ood_acceptance": 0.8047,
+        "accepted_ood_count": 8047,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 838,
+            "fraction_of_accepted_ood": 0.10413818814465017
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 577,
+            "fraction_of_accepted_ood": 0.07170374052441904
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 535,
+            "fraction_of_accepted_ood": 0.06648440412576115
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 304,
+            "fraction_of_accepted_ood": 0.037778053933142784
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 294,
+            "fraction_of_accepted_ood": 0.03653535479060519
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9782,
+          9411,
+          1439,
+          4418,
+          2790,
+          600,
+          272,
+          7270,
+          3902,
+          9145,
+          2190,
+          4727,
+          5950,
+          2290,
+          9354,
+          7936,
+          7878,
+          7512,
+          9913,
+          2274
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          8622,
+          7743,
+          7416,
+          6842,
+          4710,
+          1141,
+          304,
+          9280,
+          7432,
+          4650,
+          4176,
+          9309,
+          5364,
+          6292,
+          4427,
+          5253,
+          2342,
+          3177,
+          7874
+        ]
+      },
+      "entropy": {
+        "correct_id_rejection": 0.01641079936474325,
+        "incorrect_id_rejection": 0.16489361702127658,
+        "accepted_id_accuracy": 0.7845455505119814,
+        "id_acceptance": 0.9473,
+        "ood_acceptance": 0.8118,
+        "accepted_ood_count": 8118,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 853,
+            "fraction_of_accepted_ood": 0.10507514166050752
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 583,
+            "fraction_of_accepted_ood": 0.07181571815718157
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 548,
+            "fraction_of_accepted_ood": 0.06750431140675044
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 300,
+            "fraction_of_accepted_ood": 0.03695491500369549
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 287,
+            "fraction_of_accepted_ood": 0.03535353535353535
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9411,
+          9782,
+          4832,
+          7270,
+          5685,
+          9913,
+          1260,
+          9145,
+          513,
+          4727,
+          7878,
+          1439,
+          7936,
+          5823,
+          6130,
+          4410,
+          1791,
+          5021,
+          4838,
+          2290
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          8622,
+          4710,
+          5364,
+          7416,
+          7432,
+          1141,
+          6842,
+          7743,
+          6292,
+          9280,
+          4176,
+          9309,
+          3177,
+          8923,
+          4650,
+          4427,
+          4490,
+          6009
+        ]
+      },
+      "knn": {
+        "correct_id_rejection": 0.015749073583906828,
+        "incorrect_id_rejection": 0.1534369885433715,
+        "accepted_id_accuracy": 0.7823479907426888,
+        "id_acceptance": 0.9506,
+        "ood_acceptance": 0.8198,
+        "accepted_ood_count": 8198,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 886,
+            "fraction_of_accepted_ood": 0.10807514027811661
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 590,
+            "fraction_of_accepted_ood": 0.07196877287143205
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 562,
+            "fraction_of_accepted_ood": 0.06855330568431325
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 316,
+            "fraction_of_accepted_ood": 0.03854598682605514
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 281,
+            "fraction_of_accepted_ood": 0.03427665284215663
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9351,
+          513,
+          5624,
+          1260,
+          2220,
+          604,
+          5217,
+          2784,
+          5685,
+          7483,
+          2290,
+          7448,
+          6638,
+          6130,
+          2224,
+          5964,
+          5380,
+          2764,
+          9629,
+          3516
+        ],
+        "highest_anomaly_id_indices": [
+          2329,
+          4176,
+          3578,
+          4832,
+          5106,
+          8965,
+          2845,
+          3892,
+          1040,
+          6187,
+          2812,
+          2498,
+          1112,
+          1280,
+          2425,
+          9246,
+          4622,
+          8235,
+          5253,
+          4350
+        ]
+      },
+      "mahalanobis": {
+        "correct_id_rejection": 0.044600317628374804,
+        "incorrect_id_rejection": 0.05319148936170213,
+        "accepted_id_accuracy": 0.7572642400083919,
+        "id_acceptance": 0.9533,
+        "ood_acceptance": 0.9626,
+        "accepted_ood_count": 9626,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 58,
+            "accepted_ood_count": 898,
+            "fraction_of_accepted_ood": 0.09328900893413672
+          },
+          {
+            "classifier_output_class_id": 19,
+            "accepted_ood_count": 616,
+            "fraction_of_accepted_ood": 0.0639933513401205
+          },
+          {
+            "classifier_output_class_id": 13,
+            "accepted_ood_count": 609,
+            "fraction_of_accepted_ood": 0.06326615416580096
+          },
+          {
+            "classifier_output_class_id": 38,
+            "accepted_ood_count": 341,
+            "fraction_of_accepted_ood": 0.03542489092042385
+          },
+          {
+            "classifier_output_class_id": 44,
+            "accepted_ood_count": 324,
+            "fraction_of_accepted_ood": 0.03365884063993351
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          5964,
+          3516,
+          955,
+          4930,
+          2224,
+          4789,
+          1930,
+          4318,
+          5217,
+          7584,
+          487,
+          6638,
+          940,
+          759,
+          1806,
+          9351,
+          3460,
+          6289,
+          7480,
+          7792
+        ],
+        "highest_anomaly_id_indices": [
+          2296,
+          1599,
+          6616,
+          6218,
+          5318,
+          8312,
+          3669,
+          4583,
+          3782,
+          9227,
+          3579,
+          5840,
+          7868,
+          1318,
+          430,
+          5219,
+          6549,
+          4341,
+          7356,
+          8152
+        ]
+      }
+    },
+    "mnist": {
+      "msp": {
+        "correct_id_rejection": 0.01707252514557967,
+        "incorrect_id_rejection": 0.15834697217675942,
+        "accepted_id_accuracy": 0.7831083930830873,
+        "id_acceptance": 0.9484,
+        "ood_acceptance": 0.8575,
+        "accepted_ood_count": 8575,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2762,
+            "fraction_of_accepted_ood": 0.32209912536443147
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1832,
+            "fraction_of_accepted_ood": 0.21364431486880467
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1301,
+            "fraction_of_accepted_ood": 0.1517201166180758
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1205,
+            "fraction_of_accepted_ood": 0.14052478134110788
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 551,
+            "fraction_of_accepted_ood": 0.06425655976676385
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          283,
+          970,
+          211,
+          3750,
+          1846,
+          9290,
+          309,
+          1460,
+          9268,
+          3577,
+          3127,
+          2445,
+          4340,
+          2697,
+          1115,
+          4370,
+          3623,
+          2919,
+          2689,
+          3078
+        ],
+        "highest_anomaly_id_indices": [
+          8622,
+          7743,
+          5970,
+          6842,
+          7416,
+          1141,
+          4427,
+          4710,
+          4650,
+          4176,
+          7874,
+          7432,
+          2342,
+          5950,
+          4679,
+          2632,
+          5382,
+          9280,
+          2620,
+          5253
+        ]
+      },
+      "energy": {
+        "correct_id_rejection": 0.023292747485442033,
+        "incorrect_id_rejection": 0.16243862520458266,
+        "accepted_id_accuracy": 0.7828577490187758,
+        "id_acceptance": 0.9427,
+        "ood_acceptance": 0.9172,
+        "accepted_ood_count": 9172,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2894,
+            "fraction_of_accepted_ood": 0.3155255124291321
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1829,
+            "fraction_of_accepted_ood": 0.19941125163541212
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1415,
+            "fraction_of_accepted_ood": 0.1542738770170083
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1308,
+            "fraction_of_accepted_ood": 0.14260793720017445
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 612,
+            "fraction_of_accepted_ood": 0.06672481465329264
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          970,
+          283,
+          9290,
+          9268,
+          211,
+          2689,
+          3750,
+          309,
+          3577,
+          6537,
+          1460,
+          1846,
+          2445,
+          3943,
+          9349,
+          6909,
+          1493,
+          3127,
+          4370,
+          2903
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          5364,
+          8622,
+          6292,
+          9280,
+          7416,
+          4710,
+          7432,
+          6009,
+          4490,
+          8923,
+          9309,
+          5934,
+          3177,
+          6842,
+          2288,
+          1141,
+          7743,
+          4176
+        ]
+      },
+      "maxlogit": {
+        "correct_id_rejection": 0.01892535733192165,
+        "incorrect_id_rejection": 0.1702127659574468,
+        "accepted_id_accuracy": 0.7851922465840483,
+        "id_acceptance": 0.9441,
+        "ood_acceptance": 0.9038,
+        "accepted_ood_count": 9038,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2862,
+            "fraction_of_accepted_ood": 0.31666297853507414
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1838,
+            "fraction_of_accepted_ood": 0.20336357601239213
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1393,
+            "fraction_of_accepted_ood": 0.15412701925204692
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1294,
+            "fraction_of_accepted_ood": 0.1431732684222173
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 588,
+            "fraction_of_accepted_ood": 0.0650586412923213
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          970,
+          283,
+          9290,
+          9268,
+          211,
+          2689,
+          3750,
+          309,
+          3577,
+          6537,
+          1460,
+          1846,
+          2445,
+          3943,
+          9349,
+          6909,
+          1493,
+          3127,
+          4370,
+          2903
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          8622,
+          7743,
+          7416,
+          6842,
+          4710,
+          1141,
+          304,
+          9280,
+          7432,
+          4650,
+          4176,
+          9309,
+          5364,
+          6292,
+          4427,
+          5253,
+          2342,
+          3177,
+          7874
+        ]
+      },
+      "entropy": {
+        "correct_id_rejection": 0.01641079936474325,
+        "incorrect_id_rejection": 0.16489361702127658,
+        "accepted_id_accuracy": 0.7845455505119814,
+        "id_acceptance": 0.9473,
+        "ood_acceptance": 0.8998,
+        "accepted_ood_count": 8998,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2855,
+            "fraction_of_accepted_ood": 0.3172927317181596
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1846,
+            "fraction_of_accepted_ood": 0.20515670148921983
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1388,
+            "fraction_of_accepted_ood": 0.1542565014447655
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1290,
+            "fraction_of_accepted_ood": 0.14336519226494776
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 584,
+            "fraction_of_accepted_ood": 0.06490331184707712
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          283,
+          970,
+          211,
+          3750,
+          9290,
+          309,
+          1846,
+          9268,
+          1460,
+          3577,
+          3127,
+          2445,
+          4340,
+          1115,
+          4370,
+          2697,
+          2689,
+          3623,
+          2919,
+          3078
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          8622,
+          4710,
+          5364,
+          7416,
+          7432,
+          1141,
+          6842,
+          7743,
+          6292,
+          9280,
+          4176,
+          9309,
+          3177,
+          8923,
+          4650,
+          4427,
+          4490,
+          6009
+        ]
+      },
+      "knn": {
+        "correct_id_rejection": 0.015749073583906828,
+        "incorrect_id_rejection": 0.1534369885433715,
+        "accepted_id_accuracy": 0.7823479907426888,
+        "id_acceptance": 0.9506,
+        "ood_acceptance": 0.8329,
+        "accepted_ood_count": 8329,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2877,
+            "fraction_of_accepted_ood": 0.3454196182014648
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1642,
+            "fraction_of_accepted_ood": 0.19714251410733583
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1296,
+            "fraction_of_accepted_ood": 0.15560091247448674
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1129,
+            "fraction_of_accepted_ood": 0.1355504862528515
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 501,
+            "fraction_of_accepted_ood": 0.06015127866490575
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          2903,
+          5726,
+          283,
+          9268,
+          1115,
+          2616,
+          1138,
+          9290,
+          4830,
+          3577,
+          9289,
+          3595,
+          2333,
+          721,
+          1970,
+          741,
+          1846,
+          4370,
+          3243,
+          53
+        ],
+        "highest_anomaly_id_indices": [
+          2329,
+          4176,
+          3578,
+          4832,
+          5106,
+          8965,
+          2845,
+          3892,
+          1040,
+          6187,
+          2812,
+          2498,
+          1112,
+          1280,
+          2425,
+          9246,
+          4622,
+          8235,
+          5253,
+          4350
+        ]
+      },
+      "mahalanobis": {
+        "correct_id_rejection": 0.044600317628374804,
+        "incorrect_id_rejection": 0.05319148936170213,
+        "accepted_id_accuracy": 0.7572642400083919,
+        "id_acceptance": 0.9533,
+        "ood_acceptance": 0.9468,
+        "accepted_ood_count": 9468,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 99,
+            "accepted_ood_count": 2838,
+            "fraction_of_accepted_ood": 0.2997465145754119
+          },
+          {
+            "classifier_output_class_id": 69,
+            "accepted_ood_count": 1827,
+            "fraction_of_accepted_ood": 0.19296577946768062
+          },
+          {
+            "classifier_output_class_id": 40,
+            "accepted_ood_count": 1393,
+            "fraction_of_accepted_ood": 0.1471271651880017
+          },
+          {
+            "classifier_output_class_id": 95,
+            "accepted_ood_count": 1321,
+            "fraction_of_accepted_ood": 0.1395226024503591
+          },
+          {
+            "classifier_output_class_id": 28,
+            "accepted_ood_count": 724,
+            "fraction_of_accepted_ood": 0.07646810308407266
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          6065,
+          6075,
+          3881,
+          5385,
+          6051,
+          4826,
+          2182,
+          4552,
+          7308,
+          4827,
+          561,
+          4418,
+          3731,
+          3620,
+          4920,
+          3227,
+          630,
+          5726,
+          4769,
+          6348
+        ],
+        "highest_anomaly_id_indices": [
+          2296,
+          1599,
+          6616,
+          6218,
+          5318,
+          8312,
+          3669,
+          4583,
+          3782,
+          9227,
+          3579,
+          5840,
+          7868,
+          1318,
+          430,
+          5219,
+          6549,
+          4341,
+          7356,
+          8152
+        ]
+      }
+    },
+    "noise": {
+      "msp": {
+        "correct_id_rejection": 0.01707252514557967,
+        "incorrect_id_rejection": 0.15834697217675942,
+        "accepted_id_accuracy": 0.7831083930830873,
+        "id_acceptance": 0.9484,
+        "ood_acceptance": 0.0652,
+        "accepted_ood_count": 652,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 78,
+            "accepted_ood_count": 490,
+            "fraction_of_accepted_ood": 0.7515337423312883
+          },
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 145,
+            "fraction_of_accepted_ood": 0.2223926380368098
+          },
+          {
+            "classifier_output_class_id": 14,
+            "accepted_ood_count": 11,
+            "fraction_of_accepted_ood": 0.01687116564417178
+          },
+          {
+            "classifier_output_class_id": 18,
+            "accepted_ood_count": 4,
+            "fraction_of_accepted_ood": 0.006134969325153374
+          },
+          {
+            "classifier_output_class_id": 61,
+            "accepted_ood_count": 2,
+            "fraction_of_accepted_ood": 0.003067484662576687
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9716,
+          9333,
+          2877,
+          838,
+          9709,
+          9236,
+          7011,
+          9996,
+          835,
+          7199,
+          6396,
+          5192,
+          5294,
+          61,
+          9288,
+          6868,
+          4045,
+          2232,
+          3505,
+          3083
+        ],
+        "highest_anomaly_id_indices": [
+          8622,
+          7743,
+          5970,
+          6842,
+          7416,
+          1141,
+          4427,
+          4710,
+          4650,
+          4176,
+          7874,
+          7432,
+          2342,
+          5950,
+          4679,
+          2632,
+          5382,
+          9280,
+          2620,
+          5253
+        ]
+      },
+      "energy": {
+        "correct_id_rejection": 0.023292747485442033,
+        "incorrect_id_rejection": 0.16243862520458266,
+        "accepted_id_accuracy": 0.7828577490187758,
+        "id_acceptance": 0.9427,
+        "ood_acceptance": 0.0044,
+        "accepted_ood_count": 44,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 78,
+            "accepted_ood_count": 39,
+            "fraction_of_accepted_ood": 0.8863636363636364
+          },
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 3,
+            "fraction_of_accepted_ood": 0.06818181818181818
+          },
+          {
+            "classifier_output_class_id": 14,
+            "accepted_ood_count": 1,
+            "fraction_of_accepted_ood": 0.022727272727272728
+          },
+          {
+            "classifier_output_class_id": 61,
+            "accepted_ood_count": 1,
+            "fraction_of_accepted_ood": 0.022727272727272728
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9716,
+          7011,
+          2877,
+          8185,
+          9236,
+          1177,
+          4106,
+          6786,
+          835,
+          5381,
+          7373,
+          233,
+          3835,
+          8349,
+          3425,
+          9920,
+          2571,
+          7189,
+          9369,
+          6591
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          5364,
+          8622,
+          6292,
+          9280,
+          7416,
+          4710,
+          7432,
+          6009,
+          4490,
+          8923,
+          9309,
+          5934,
+          3177,
+          6842,
+          2288,
+          1141,
+          7743,
+          4176
+        ]
+      },
+      "maxlogit": {
+        "correct_id_rejection": 0.01892535733192165,
+        "incorrect_id_rejection": 0.1702127659574468,
+        "accepted_id_accuracy": 0.7851922465840483,
+        "id_acceptance": 0.9441,
+        "ood_acceptance": 0.0084,
+        "accepted_ood_count": 84,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 78,
+            "accepted_ood_count": 73,
+            "fraction_of_accepted_ood": 0.8690476190476191
+          },
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 9,
+            "fraction_of_accepted_ood": 0.10714285714285714
+          },
+          {
+            "classifier_output_class_id": 14,
+            "accepted_ood_count": 1,
+            "fraction_of_accepted_ood": 0.011904761904761904
+          },
+          {
+            "classifier_output_class_id": 61,
+            "accepted_ood_count": 1,
+            "fraction_of_accepted_ood": 0.011904761904761904
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9716,
+          2877,
+          7011,
+          9236,
+          9333,
+          835,
+          838,
+          61,
+          5294,
+          7199,
+          9369,
+          4045,
+          2571,
+          1177,
+          9709,
+          770,
+          3083,
+          7373,
+          9996,
+          4922
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          8622,
+          7743,
+          7416,
+          6842,
+          4710,
+          1141,
+          304,
+          9280,
+          7432,
+          4650,
+          4176,
+          9309,
+          5364,
+          6292,
+          4427,
+          5253,
+          2342,
+          3177,
+          7874
+        ]
+      },
+      "entropy": {
+        "correct_id_rejection": 0.01641079936474325,
+        "incorrect_id_rejection": 0.16489361702127658,
+        "accepted_id_accuracy": 0.7845455505119814,
+        "id_acceptance": 0.9473,
+        "ood_acceptance": 0.0064,
+        "accepted_ood_count": 64,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 78,
+            "accepted_ood_count": 49,
+            "fraction_of_accepted_ood": 0.765625
+          },
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 14,
+            "fraction_of_accepted_ood": 0.21875
+          },
+          {
+            "classifier_output_class_id": 61,
+            "accepted_ood_count": 1,
+            "fraction_of_accepted_ood": 0.015625
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          9716,
+          9333,
+          2877,
+          838,
+          7011,
+          9236,
+          9709,
+          835,
+          9996,
+          5294,
+          7199,
+          9180,
+          61,
+          6396,
+          7373,
+          4922,
+          5192,
+          2532,
+          4045,
+          3083
+        ],
+        "highest_anomaly_id_indices": [
+          5970,
+          304,
+          8622,
+          4710,
+          5364,
+          7416,
+          7432,
+          1141,
+          6842,
+          7743,
+          6292,
+          9280,
+          4176,
+          9309,
+          3177,
+          8923,
+          4650,
+          4427,
+          4490,
+          6009
+        ]
+      },
+      "knn": {
+        "correct_id_rejection": 0.015749073583906828,
+        "incorrect_id_rejection": 0.1534369885433715,
+        "accepted_id_accuracy": 0.7823479907426888,
+        "id_acceptance": 0.9506,
+        "ood_acceptance": 0.0002,
+        "accepted_ood_count": 2,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 2,
+            "fraction_of_accepted_ood": 1.0
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          838,
+          9333,
+          1702,
+          3917,
+          2422,
+          2877,
+          9716,
+          6810,
+          6303,
+          1457,
+          6105,
+          8718,
+          215,
+          8827,
+          2210,
+          384,
+          1163,
+          1938,
+          8028,
+          2145
+        ],
+        "highest_anomaly_id_indices": [
+          2329,
+          4176,
+          3578,
+          4832,
+          5106,
+          8965,
+          2845,
+          3892,
+          1040,
+          6187,
+          2812,
+          2498,
+          1112,
+          1280,
+          2425,
+          9246,
+          4622,
+          8235,
+          5253,
+          4350
+        ]
+      },
+      "mahalanobis": {
+        "correct_id_rejection": 0.044600317628374804,
+        "incorrect_id_rejection": 0.05319148936170213,
+        "accepted_id_accuracy": 0.7572642400083919,
+        "id_acceptance": 0.9533,
+        "ood_acceptance": 0.9982,
+        "accepted_ood_count": 9982,
+        "accepted_ood_top_classifier_outputs": [
+          {
+            "classifier_output_class_id": 78,
+            "accepted_ood_count": 6651,
+            "fraction_of_accepted_ood": 0.6662993388098577
+          },
+          {
+            "classifier_output_class_id": 39,
+            "accepted_ood_count": 2218,
+            "fraction_of_accepted_ood": 0.22219995992787017
+          },
+          {
+            "classifier_output_class_id": 62,
+            "accepted_ood_count": 343,
+            "fraction_of_accepted_ood": 0.034361851332398316
+          },
+          {
+            "classifier_output_class_id": 14,
+            "accepted_ood_count": 298,
+            "fraction_of_accepted_ood": 0.029853736726106993
+          },
+          {
+            "classifier_output_class_id": 18,
+            "accepted_ood_count": 287,
+            "fraction_of_accepted_ood": 0.028751753155680224
+          }
+        ],
+        "lowest_anomaly_ood_indices": [
+          7593,
+          963,
+          8027,
+          5246,
+          760,
+          2251,
+          2639,
+          2290,
+          871,
+          9182,
+          1046,
+          4595,
+          5625,
+          7266,
+          3037,
+          9308,
+          2194,
+          6756,
+          3542,
+          2585
+        ],
+        "highest_anomaly_id_indices": [
+          2296,
+          1599,
+          6616,
+          6218,
+          5318,
+          8312,
+          3669,
+          4583,
+          3782,
+          9227,
+          3579,
+          5840,
+          7868,
+          1318,
+          430,
+          5219,
+          6549,
+          4341,
+          7356,
+          8152
+        ]
+      }
+    }
+  }
+}

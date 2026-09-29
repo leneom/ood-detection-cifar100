@@ -1,0 +1,242 @@
+{
+  "state": "descriptive_complete_pending_independent_audit",
+  "class_count": 200,
+  "images_per_class": 50,
+  "id_test_count_per_class_comparison": 10000,
+  "variants": [
+    "T1",
+    "calibrated"
+  ],
+  "methods": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis"
+  ],
+  "targets": [
+    80,
+    90,
+    95,
+    99
+  ],
+  "protocol_sha256": "0f7ffe8c117efac8d742bd4c9b2652d8e4987e4f792dad45deb68f490712c04e",
+  "declaration_sha256": "3460dc8bb21409a35c6952c0bb6684fcb0efc43cea04489272ce2d9012ebd600",
+  "aggregate_completion_sha256": "8048f388f0df1c294e1496767c51c7ead2db90facfc4b03b10c295b0d70d6221",
+  "source_hashes": {
+    "runs/tinyimagenet-confirmation/extract-seed0/raw.npz": "abaf5c2ac3357941849400b4da75adea604ce19d739db17c9f5242e15fe019cf",
+    "runs/tinyimagenet-confirmation/score-seed0/scores.npz": "2ec63f6da53f549756142338e73e0740fabfc3d1e94d97c04c8f44b06ec81afb",
+    "runs/tinyimagenet-confirmation/score-seed0/acceptance_masks.npz": "1888fdcff31eb8408b107a848e4e936c1a199782ad05829b483d6a0ff110641c",
+    "runs/validation-isolation/score-seed0/id_test_scores.npz": "99153d961e28b0829506b5ab39a65e82bccf460f71e918e47d40d0bd5502238e",
+    "runs/tinyimagenet-confirmation/extract-seed1/raw.npz": "9b4c0c47f03ee3afef3bca7890799a9943a11dd22859e307e6909f9d6d671eb2",
+    "runs/tinyimagenet-confirmation/score-seed1/scores.npz": "f9d5f24aea5911a91c3395ea1e8d6d28adbdb95bdc9dd74ced8d6a5c4e39e8ce",
+    "runs/tinyimagenet-confirmation/score-seed1/acceptance_masks.npz": "d1342625bd5bbab7583c01ac741942a11069c6db7f52b40e543618026e570053",
+    "runs/validation-isolation/score-seed1/id_test_scores.npz": "b1c81bb0358153d5ec52d5528890d5e204e96f75810e2b2a720554673592d586",
+    "runs/tinyimagenet-confirmation/extract-seed2/raw.npz": "c865e560ad0a69fb9b88c718fa55c1bad4e4513856773260abc9b7d6d1bbf373",
+    "runs/tinyimagenet-confirmation/score-seed2/scores.npz": "883dcbf50d6f0247bcc07e3ad4f068af443ee1e68cc930b814273eca4a597164",
+    "runs/tinyimagenet-confirmation/score-seed2/acceptance_masks.npz": "bd3e4fd86ce10c2a9a7028f1521aba5ecf2c5ac8d09d3f0e0ea2f95ee99fc202",
+    "runs/validation-isolation/score-seed2/id_test_scores.npz": "31f342c14744f6eb56e3686416e68a6730b31c230ce23cec7b22c7e1cef7efd7"
+  },
+  "class_values_sha256": "a1da313e0960a9f131c22d44dce90dcad4747563f2fdffed452c15976470db4d",
+  "producer_source_sha256": "0023b319dc560b3cae0480efdb70ec83e33ae014bfff3e79f8bea8819b0fe1f5",
+  "created_at": "2026-09-28T03:37:13.208352+00:00",
+  "distributions": {
+    "T1": {
+      "msp": {
+        "class_mean_auroc": {
+          "min": 0.5518086666666666,
+          "q25": 0.7511376666666667,
+          "median": 0.7920351666666665,
+          "q75": 0.8233826666666666,
+          "max": 0.870974
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.58,
+          "q25": 0.74,
+          "median": 0.7866666666666667,
+          "q75": 0.84,
+          "max": 0.9533333333333333
+        }
+      },
+      "energy": {
+        "class_mean_auroc": {
+          "min": 0.540474,
+          "q25": 0.7574741666666667,
+          "median": 0.802281,
+          "q75": 0.842763,
+          "max": 0.9073760000000001
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.5266666666666666,
+          "q25": 0.7383333333333333,
+          "median": 0.8,
+          "q75": 0.8533333333333333,
+          "max": 0.9666666666666667
+        }
+      },
+      "maxlogit": {
+        "class_mean_auroc": {
+          "min": 0.5459333333333333,
+          "q25": 0.7591751666666667,
+          "median": 0.8060216666666666,
+          "q75": 0.8441085833333333,
+          "max": 0.9034053333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.5466666666666666,
+          "q25": 0.7333333333333333,
+          "median": 0.7933333333333333,
+          "q75": 0.8466666666666667,
+          "max": 0.96
+        }
+      },
+      "entropy": {
+        "class_mean_auroc": {
+          "min": 0.560934,
+          "q25": 0.759734,
+          "median": 0.8046490000000001,
+          "q75": 0.8396444999999999,
+          "max": 0.8898033333333334
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.54,
+          "q25": 0.72,
+          "median": 0.78,
+          "q75": 0.84,
+          "max": 0.9466666666666668
+        }
+      },
+      "knn": {
+        "class_mean_auroc": {
+          "min": 0.5033143333333334,
+          "q25": 0.77004775,
+          "median": 0.8189136666666667,
+          "q75": 0.8616098333333333,
+          "max": 0.9128233333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.56,
+          "q25": 0.725,
+          "median": 0.7966666666666666,
+          "q75": 0.8533333333333333,
+          "max": 0.9666666666666667
+        }
+      },
+      "mahalanobis": {
+        "class_mean_auroc": {
+          "min": 0.3734393333333334,
+          "q25": 0.5513786666666667,
+          "median": 0.5854166666666667,
+          "q75": 0.6274933333333333,
+          "max": 0.7699013333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.76,
+          "q25": 0.9333333333333332,
+          "median": 0.96,
+          "q75": 0.9733333333333333,
+          "max": 1.0
+        }
+      }
+    },
+    "calibrated": {
+      "msp": {
+        "class_mean_auroc": {
+          "min": 0.5603213333333333,
+          "q25": 0.7566155,
+          "median": 0.8011513333333333,
+          "q75": 0.833592,
+          "max": 0.8832706666666666
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.56,
+          "q25": 0.72,
+          "median": 0.78,
+          "q75": 0.835,
+          "max": 0.96
+        }
+      },
+      "energy": {
+        "class_mean_auroc": {
+          "min": 0.5369,
+          "q25": 0.7558075,
+          "median": 0.7993126666666666,
+          "q75": 0.8414246666666667,
+          "max": 0.9074026666666666
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.5333333333333333,
+          "q25": 0.7466666666666667,
+          "median": 0.8,
+          "q75": 0.8533333333333333,
+          "max": 0.9666666666666667
+        }
+      },
+      "maxlogit": {
+        "class_mean_auroc": {
+          "min": 0.5459333333333333,
+          "q25": 0.7591751666666667,
+          "median": 0.8060216666666666,
+          "q75": 0.8441085833333333,
+          "max": 0.9034053333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.5466666666666666,
+          "q25": 0.7333333333333333,
+          "median": 0.7933333333333333,
+          "q75": 0.8466666666666667,
+          "max": 0.96
+        }
+      },
+      "entropy": {
+        "class_mean_auroc": {
+          "min": 0.5726220000000001,
+          "q25": 0.7621188333333334,
+          "median": 0.808534,
+          "q75": 0.8454943333333332,
+          "max": 0.9026373333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.5266666666666666,
+          "q25": 0.7266666666666667,
+          "median": 0.7866666666666667,
+          "q75": 0.8466666666666667,
+          "max": 0.9533333333333333
+        }
+      },
+      "knn": {
+        "class_mean_auroc": {
+          "min": 0.5033143333333334,
+          "q25": 0.77004775,
+          "median": 0.8189136666666667,
+          "q75": 0.8616098333333333,
+          "max": 0.9128233333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.56,
+          "q25": 0.725,
+          "median": 0.7966666666666666,
+          "q75": 0.8533333333333333,
+          "max": 0.9666666666666667
+        }
+      },
+      "mahalanobis": {
+        "class_mean_auroc": {
+          "min": 0.3734393333333334,
+          "q25": 0.5513786666666667,
+          "median": 0.5854166666666667,
+          "q75": 0.6274933333333333,
+          "max": 0.7699013333333333
+        },
+        "class_mean_fixed95_ood_acceptance": {
+          "min": 0.76,
+          "q25": 0.9333333333333332,
+          "median": 0.96,
+          "q75": 0.9733333333333333,
+          "max": 1.0
+        }
+      }
+    }
+  }
+}

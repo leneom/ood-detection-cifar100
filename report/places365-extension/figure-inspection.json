@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-29T03:14:03.665324+00:00",
+  "images": {
+    "auroc.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "51bc9fe676dc4b50c35923582b87b494ec6a038975319b36e9b29a1a5323cd7f"
+    },
+    "fixed95-acceptance.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "6561771f6aca2e127e5c37627d973be02171ea9983906858e51f1eaab35ecb75"
+    }
+  },
+  "observations": "Opened both final PNGs and visually checked method labels, x-axis ticks, seed error bars, legend position and title; no clipping or obscured data labels after the legend fix.",
+  "scope": "Visual display quality only; all statistics independently recomputed in display-audit.json."
+}

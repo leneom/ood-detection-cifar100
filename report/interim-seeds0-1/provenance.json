@@ -1,0 +1,27 @@
+{
+  "state": "interim",
+  "expected_seeds": [
+    0,
+    1,
+    2
+  ],
+  "completed_seeds": [
+    0,
+    1
+  ],
+  "checkpoints": [
+    {
+      "seed": 0,
+      "selected_epoch": 89,
+      "checkpoint_sha256": "f6c164834b98b8c3cca2a301a2288efbe3dc700b2680e09aee4f9694669d5f7e",
+      "results_sha256": "b5e131bb8fe86878ccde9a39f8f94460fb180a9a03a9aa83f4b30ebae5481d69"
+    },
+    {
+      "seed": 1,
+      "selected_epoch": 96,
+      "checkpoint_sha256": "1aa639febbd9a690041af15b13bce5a68c9d6c714a6e20d695e54b53ebe6f80f",
+      "results_sha256": "f146c52d89be30c412e6eed75fa418900446fed2f7ac1a391ef452d07ba37a88"
+    }
+  ],
+  "created_at": "2026-09-27T13:21:05.329514+00:00"
+}

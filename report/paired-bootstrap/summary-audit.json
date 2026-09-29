@@ -1,0 +1,14 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T21:55:56.000710+00:00",
+  "statistic_records": 31680,
+  "statistic_fields": 253440,
+  "display_fields": 3030,
+  "plot_fields": 630,
+  "method_pairs": 105,
+  "endpoints": 66,
+  "summary_sha256": "fcef1dd80c0d43cfce75538e6decbed7861772f03ef3c3dbbe4272e93351255b",
+  "build_sha256": "cda0ef989fca1cd5446d1af0c4ab5cc4911cc41df4f8e0458168b39ac9530dc5",
+  "independent_source_sha256": "11dbe8a5e6a9d063acbf94361f55138bde05500d838e4c003e188ac1e64d5b97",
+  "boundary": "Independent Python statistics/sample-SD/manual linear quantiles, every method/pair/seed/endpoint; plot coordinates audited, visual inspection remains required"
+}

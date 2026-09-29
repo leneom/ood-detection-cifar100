@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\zxzx\Documents\ChatGPT\continue learning\ood_detection\tools\audit_ash_diagnostics_report.py", line 128, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\zxzx\Documents\ChatGPT\continue learning\ood_detection\tools\audit_ash_diagnostics_report.py", line 61, in main
+    check_tree(summary['natural_macro_transitions'][a][ref][str(t)],nodes,'within-seed natural macro')
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zxzx\Documents\ChatGPT\continue learning\ood_detection\tools\audit_ash_diagnostics_report.py", line 34, in check_tree
+    check_tree(saved[key],[n[key] for n in nodes],label+'/'+key)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zxzx\Documents\ChatGPT\continue learning\ood_detection\tools\audit_ash_diagnostics_report.py", line 37, in check_tree
+    require(saved['per_seed']==nodes and saved['defined_seed_count']==sum(n is not None for n in nodes),'paired seed values changed')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zxzx\Documents\ChatGPT\continue learning\ood_detection\tools\geometry_io.py", line 54, in require
+    raise ValueError(message)
+ValueError: paired seed values changed

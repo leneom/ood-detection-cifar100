@@ -1,0 +1,25 @@
+{
+  "state": "built_pending_independent_display_audit",
+  "built_at": "2026-09-27T22:17:32.570760+00:00",
+  "inputs_sha256": "07f8f16428a605a6f7a20fcc4e6e42bb24446f96e7e1a9c74724e3e5b7a7e628",
+  "outputs": {
+    "REPORT.md": "d9476afedfadc4d25ffb91e21d84cabda57bbe763c901e89c986f98945f6a9ff",
+    "plot-data.json": "ae3ed41081f83ef39d1cbed3eb5d44953e26a18cfc5a77813d42120fb4007c77",
+    "four-natural-ratios.png": "d12bbdf5f02623dca04b61cc150fd544083a3ab6d7fc21376a981f3fc8e50e83",
+    "natural-auroc-correlation.png": "2fdd3293df718336ac99785d9ec46112ac3f6bb1431d645d964aaa9ac2a1ad6c",
+    "three-model-ratios.png": "1aeaa5a5aafd4c29c3f7920c840c607354209bb8a1b201ee80a64d16da9bf05a",
+    "four-natural-ratios.svg": "846be330171c26b261de976ce6bdf684449282daaba660fd0681ddbb295fb571",
+    "natural-auroc-correlation.svg": "3f958d1ea9788386537150c54a85e1c30c250c3b9eb0071377d3dbccca738583",
+    "three-model-ratios.svg": "8a754c9f1f0e189d06314b01632c58d668de15a79797547b690c92f567a8f4e9"
+  },
+  "displayed_primary_endpoints": [
+    "ranking/natural_macro/auroc",
+    "operating/0.95/natural_ood_acceptance_macro",
+    "operating/0.95/id_coverage",
+    "operating/0.95/retained_error_risk"
+  ],
+  "displayed_methods": 15,
+  "displayed_pairs": 105,
+  "displayed_natural_seed_method_rows": 45,
+  "boundary": "Figures/tables are a fixed subset for reading; all 66 endpoints, 45-variable matrices, 105 pairs and 360 macro decompositions remain in raw outputs"
+}

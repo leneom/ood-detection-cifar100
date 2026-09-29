@@ -1,0 +1,188 @@
+{
+  "state": "passed",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "population_pixel_hash_checks": 12,
+  "per_seed": [
+    {
+      "seed": 0,
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-extension-textures",
+      "results_sha256": "8adc75b82b8f6046785c8bba0e3cce6ef743e28c4d1d3d50a93d1db9daf8af8a",
+      "populations": {
+        "id_train": {
+          "sha256": "f9ce3ee23e981b3733f727bac506f46865d077d21c9234c24df3896c06cdd44b",
+          "shape": [
+            45000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_validation": {
+          "sha256": "7d2208915f54ff16b606ad42e8c763c4c5829921a5accfb20b636e94924c51e2",
+          "shape": [
+            5000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_test": {
+          "sha256": "4cb8e5d9309da489bf6b19cc10cd96c3ae6f8daf225380b605aaee4c0d6aee19",
+          "shape": [
+            10000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "textures": {
+          "sha256": "5780aad72a808e25d7c7e99d6afb7f744258cd6179dc40dff7a13e4d1bdf01c5",
+          "shape": [
+            1880,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-extension-textures",
+      "results_sha256": "04822572241184b1bfbd41ff4af8616d15b2d32fe82ff69b874691dfe751df22",
+      "populations": {
+        "id_train": {
+          "sha256": "f9ce3ee23e981b3733f727bac506f46865d077d21c9234c24df3896c06cdd44b",
+          "shape": [
+            45000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_validation": {
+          "sha256": "7d2208915f54ff16b606ad42e8c763c4c5829921a5accfb20b636e94924c51e2",
+          "shape": [
+            5000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_test": {
+          "sha256": "4cb8e5d9309da489bf6b19cc10cd96c3ae6f8daf225380b605aaee4c0d6aee19",
+          "shape": [
+            10000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "textures": {
+          "sha256": "5780aad72a808e25d7c7e99d6afb7f744258cd6179dc40dff7a13e4d1bdf01c5",
+          "shape": [
+            1880,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-extension-textures",
+      "results_sha256": "67e0d96e4d034e0e7293d4b2c83650fa4e24f8d66a44c0a435f996fea20dfb4d",
+      "populations": {
+        "id_train": {
+          "sha256": "f9ce3ee23e981b3733f727bac506f46865d077d21c9234c24df3896c06cdd44b",
+          "shape": [
+            45000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_validation": {
+          "sha256": "7d2208915f54ff16b606ad42e8c763c4c5829921a5accfb20b636e94924c51e2",
+          "shape": [
+            5000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "id_test": {
+          "sha256": "4cb8e5d9309da489bf6b19cc10cd96c3ae6f8daf225380b605aaee4c0d6aee19",
+          "shape": [
+            10000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        },
+        "textures": {
+          "sha256": "5780aad72a808e25d7c7e99d6afb7f744258cd6179dc40dff7a13e4d1bdf01c5",
+          "shape": [
+            1880,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8",
+          "layout": "NHWC"
+        }
+      }
+    }
+  ],
+  "sources": {
+    "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\data": {
+      "train": {
+        "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\data\\cifar-100-python\\train",
+        "md5": "16019d7e3df5f24257cddd939b257f8d",
+        "sha256": "735e79b04f092ca3d2e6d07f368c0a7d70d48c48d28865950cc24454cf45129b"
+      },
+      "test": {
+        "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\data\\cifar-100-python\\test",
+        "md5": "f0ef6b0ae62326f3e7ffdfab6717acfc",
+        "sha256": "4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864"
+      },
+      "textures": {
+        "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\data\\textures-test1.npz",
+        "cache_sha256": "19196bf5acb38d9048eef1b9395e9720748e9ec53893c0bb9d5b2f3686be0ef6",
+        "conversion_audit_sha256": "c4779a4a2d4cadc6022c358b89698a94e14cc8f3e8ed409a1ee24eb8680c51c6"
+      }
+    }
+  },
+  "tool_sha256": "9b8081358540ce700d5710ee288925d65b7cd9f98c4d3ff4597469a3266c08a9",
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "audited_at": "2026-09-27T15:30:38.937301+00:00",
+  "boundary": "verifies captured executed raw inputs; does not retroactively add hashes to earlier phases"
+}

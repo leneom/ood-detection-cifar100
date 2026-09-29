@@ -1,0 +1,37 @@
+{
+  "state": "passed",
+  "completed_at": "2026-09-27T21:56:37.217454+00:00",
+  "replicates": 1000,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "methods": 15,
+  "pairs": 105,
+  "endpoints": 66,
+  "statistic_records": 31680,
+  "original_input_hash_checks": 717,
+  "artifacts": {
+    "runs/paired-bootstrap/analysis-inputs.json": "2dfd599edab2255fdcbce1454a7a168db70ca1398120358fc594b9bf1238f849",
+    "runs/paired-bootstrap/raw-audit.json": "4bbef3c892be8528032322e82ad77380ed60ac6d90ef01c0656bca9607de4892",
+    "runs/paired-bootstrap/preflight.json": "e7a16b6c652eef8d85178a901d37d8116d4e82eda1af6266af591ec8c394c259",
+    "runs/paired-bootstrap/preflight-inputs.json": "1abae0be8b60c890071ad397d6c73a71b2dbcde131943c8c0a035a9f821abb83",
+    "runs/paired-bootstrap/row-alignment.json": "7b163a9e69638475399e2f8213ac5dce0fe9c64a52c17ea4e17f8a0796240b35",
+    "runs/paired-bootstrap/regression.log": "fca23ff695e9081d52c4fc9279c650ef89607a8d46ba225e5a4d4f4fb48bc98f",
+    "runs/paired-bootstrap/test-environment.json": "2565dce93072426c2d351238c9cda42d5e2bf3471dcec7eab37928e64304dd8f",
+    "report/paired-bootstrap/build.json": "cda0ef989fca1cd5446d1af0c4ab5cc4911cc41df4f8e0458168b39ac9530dc5",
+    "report/paired-bootstrap/inputs.json": "d8972fe3e8add5a782cebdb86f3aebd417620663f84036ffe8a8e1b77d301f57",
+    "report/paired-bootstrap/summary-audit.json": "751de0298ca3b3b94b22ddc1d412e17007a1d7e4c1bbc2adfe3e67e59c82f428",
+    "report/paired-bootstrap/visual-qa.json": "0ac00524a0c4e86e57d849d1be8efe53ead1321197c187996868ab3d1ec30fd8",
+    "report/paired-bootstrap/summary.json": "fcef1dd80c0d43cfce75538e6decbed7861772f03ef3c3dbbe4272e93351255b",
+    "report/paired-bootstrap/REPORT.md": "401878ffb17826d44afe05b40714d1986b95cc3490fbdec91fd35354847601d6",
+    "report/paired-bootstrap/plot-data.json": "f23a2082a60d89d30836e78854b88ad27a82fdf0b989cbeec0ea9f98d323b69c",
+    "report/paired-bootstrap/fixed95-operation.png": "807c3b05bb57d3d7c383011e626a6a315aa03b05762a1434332b3742ce7a5c5e",
+    "report/paired-bootstrap/natural-auroc.png": "d64b70252bf2a53ebbc566fd494a93bd3245ef95573bf94fb4d45bfdf678e374",
+    "report/paired-bootstrap/fixed95-operation.svg": "05403ebae877b6e337bac5fd7ed4c651c7ae4142f2dee2b3723e250638d61c52",
+    "report/paired-bootstrap/natural-auroc.svg": "b78b675a6ae7920a5101b1ad2c434e2af79297bae669cfc3e4a076ebaa77142e"
+  },
+  "completion_source_sha256": "0f972a22145143ad5b68d05ea3373051aef6e713043ed186f7047e5f6c2f9333",
+  "boundary": "Conditional paired image percentile intervals only; seed SD remains separate, noise excluded from natural macro, no tuning/significance/coverage guarantee or external publication"
+}

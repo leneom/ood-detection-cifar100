@@ -1,0 +1,20 @@
+{
+  "state": "passed_across_two_environments",
+  "recorded_at": "2026-09-27T17:17:24.678672+00:00",
+  "unique_tests": 56,
+  "full_suite_training_python": {
+    "python": "C:/Users/zxzx/anaconda3/envs/ece488_clip/python.exe",
+    "run_this_turn": true,
+    "tests": 56,
+    "passed": 54,
+    "skipped": 2,
+    "reason": "SciPy optimizer unavailable; these same unchanged two tests previously passed in base CPU calibration suite",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "torch_cuda_available": false
+  },
+  "geometry_CPU_tests": {
+    "run_this_turn": true,
+    "passed": 6
+  },
+  "historical_note": "An empty Windows CUDA_VISIBLE_DEVICES value was found ineffective in this turn. Head audit failed the availability gate before checkpoint work, then passed with -1. Earlier frozen CPU reports remain unchanged; do not reuse their empty-value masking claim as verification."
+}

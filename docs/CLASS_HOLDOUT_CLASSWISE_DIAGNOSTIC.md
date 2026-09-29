@@ -1,0 +1,11 @@
+# Fixed post-hoc classwise acceptance diagnostic
+
+This is a descriptive analysis of the already viewed, completed nine-model CIFAR-100 class-holdout study. It is not a new untouched test, a method-selection exercise, or an estimate of all possible class partitions. This plan is recorded before inspecting any fine-class acceptance result.
+
+Use only the three frozen class partitions 2031/2032/2033, all three model seeds 0/1/2, both T=1 and ID-only calibrated variants, and all six predeclared scores in their existing order. The only operating point is the **95% acceptance target fitted on the 1,200-row ID threshold-validation role** for each model/score. Higher anomaly scores are OOD, so acceptance is score <= the saved validation threshold, including ties. No score, temperature, threshold, partition, checkpoint or class subset may change.
+
+Independently reconstruct every original CIFAR-100 test row's fine label from the official local test file and check each saved ID/OOD test population and raw extraction against it. For each model × variant × method × fine class, save the role (80 ID or 20 OOD classes in its partition), original class name, count (100), accepted count and acceptance rate. For ID classes also save classifier-correct count, accepted-correct count and accepted-error count from the frozen predictions. Store every row; do not select interesting classes.
+
+For each partition × variant × method × role, summarize the 80 or 20 classwise means over three model seeds with min, 25th percentile, median, 75th percentile and max, using NumPy's linear percentile convention. Also save full 100-class × three-seed values so a reader can inspect every class. The primary benchmark remains the original full-population report; classwise quantiles are exploratory descriptive diagnostics and are **not** uncertainty intervals.
+
+A separate auditor must reconstruct classwise counts from the saved raw score vectors and frozen threshold in each source manifest, independently compare every saved acceptance mask, verify all per-class rows and summary quantiles, and check that weighted class counts recover the audited model-level ID/OOD acceptance. Bind the exact source artifacts and local fine-class metadata by SHA-256 in a write-once declaration before computing any classwise result. Preserve all raw benchmark artifacts unchanged.

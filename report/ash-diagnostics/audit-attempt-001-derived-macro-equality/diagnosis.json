@@ -1,0 +1,9 @@
+{
+  "state": "retained_failed_summary_audit",
+  "archived_at": "2026-09-27T21:06:17.382630+00:00",
+  "failure": "paired seed values changed",
+  "cause": "Exact copied-value equality from the previous generic tree auditor was incorrectly applied to independently recomputed floating macro means.",
+  "checked_seed_macro_values": 1296,
+  "maximum_difference": 1.1102230246251565e-16,
+  "repair": "Keep exact identity for copied raw seed values. Use already-declared atol=1e-8/rtol=1e-10 for independently derived macro means. No tolerance/producer/raw result changes."
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "posthoc reconstruction; original evaluation did not archive input pixel hashes",
+  "generator_seed": 110,
+  "count": 10000,
+  "shape": [
+    10000,
+    32,
+    32,
+    3
+  ],
+  "dtype": "torch.uint8",
+  "pixel_sha256": "da50e2c7c08a2231a9880dbbabf902b417248167d73bc807b05b04f5720cddae",
+  "numpy": "2.2.6",
+  "evaluation_sources_identical": true,
+  "detector_fit_protocol_identical": true,
+  "training_config_identical_except_seed": true,
+  "cuda_initialized": false
+}

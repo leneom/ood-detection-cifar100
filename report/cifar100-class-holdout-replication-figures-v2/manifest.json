@@ -1,0 +1,16 @@
+{
+  "state": "rendered_pending_visual_audit",
+  "figure_spec_sha256": "a11f94971baae700894f1613ac8fe6a025891535cc169ca75edcb2562cf82919",
+  "report_summary_sha256": "78fc00733cbb09c587fb7d2a8c4c45eaef1931cabaab492763f85b4ed4c4badc",
+  "report_audit_sha256": "d49e855bbc15808b699447477cd9f795a664fc6c07497aed1b1de533db9936a1",
+  "report_completion_sha256": "1dbee16581fabce00a94d6acdd82e6245e15c92c2597e4269fd2aee3480ff3b6",
+  "source_sha256": "5badd3839540d11f433086fd2cd8e114a3f298cdd277c86871a5053867155b94",
+  "outputs_sha256": {
+    "all-methods.png": "eb997b7ec2af3eeece86fbc6847ab056572dbef45b2d8d22fa9b2e0536408d46",
+    "all-methods.pdf": "a99d12ca1e3265c5d8497c777f75829c0c26aadd8f1bb1ca3c15677b4a0a7981",
+    "figure-data.json": "ff323c867978df793b01fff7bbaef252d045481ab560c4284656a5a3599f99f7",
+    "executed_plot_source.py": "5badd3839540d11f433086fd2cd8e114a3f298cdd277c86871a5053867155b94"
+  },
+  "created_at": "2026-09-28T22:55:15.660606+00:00",
+  "boundary": "Presentation of the independently audited nine-model grid; complete numeric CSV/JSON remains authoritative."
+}

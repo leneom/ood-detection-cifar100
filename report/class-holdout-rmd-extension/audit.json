@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-28T23:48:30.857761+00:00",
+  "model_rows": 72,
+  "methods": 8,
+  "metric_fields_checked": 432,
+  "partition_statistics_checked": 144,
+  "display_rows_checked": 8,
+  "manifest_sha256": "cde851820d30b09e36a524d46c59d2bc15220ae24685b925f0a8f427361c756c",
+  "summary_sha256": "15f0607d0c8d9a8eb481be09e95385911f85330522220a2e6259d7b010a9b159",
+  "csv_sha256": "49b2c7fe971f0401be3f845a45b42cd4d6967d6faa7388f90763c145de0d92e5",
+  "display_sha256": "f39056cc50a7dd7aead658fda63d4738175957c883fe27cd709e7aed8eae1a16",
+  "source_sha256": "94b59ad7c9544362e808f38632084b647820b9e3b843fb7ae93a1c5fc5b324b5",
+  "boundary": "All frozen controls and new methods reported; post-hoc descriptive, no method selection."
+}

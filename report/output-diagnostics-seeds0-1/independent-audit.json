@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "independent_population_checks": 40,
+  "populations": 10,
+  "diagnostics_sha256": "bac97827c5fac53d12151bb60f6f8e32c65ee8d01bb2d0dbdef32e4a637bda88",
+  "checks": [
+    "all source array hashes",
+    "population count",
+    "independent max-softmax median and >=99% fraction",
+    "independent feature norm median"
+  ],
+  "audited_at": "2026-09-27T13:49:53.150210+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T21:55:12.471161+00:00",
+  "inspected_pngs": [
+    "natural-auroc.png",
+    "fixed95-operation.png"
+  ],
+  "figure_hashes": {
+    "natural-auroc.png": "d64b70252bf2a53ebbc566fd494a93bd3245ef95573bf94fb4d45bfdf678e374",
+    "natural-auroc.svg": "b78b675a6ae7920a5101b1ad2c434e2af79297bae669cfc3e4a076ebaa77142e",
+    "fixed95-operation.png": "807c3b05bb57d3d7c383011e626a6a315aa03b05762a1434332b3742ce7a5c5e",
+    "fixed95-operation.svg": "05403ebae877b6e337bac5fd7ed4c651c7ae4142f2dee2b3723e250638d61c52"
+  },
+  "inspection": "Both final PNGs displayed and inspected: all fifteen methods in protocol order; four natural panels or three fixed95 operational panels; readable full labels, axes and unobstructed legend; conditional fixed-three intervals and all three original seed points distinct; noise absent from natural figures. SVG exports from the same frozen figure construction are hash-bound.",
+  "retained_attempt": "report-attempt-001-shared-axis-order",
+  "numeric_records_identical_after_plot_only_fix": true
+}

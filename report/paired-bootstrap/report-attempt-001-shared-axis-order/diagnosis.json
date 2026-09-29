@@ -1,0 +1,6 @@
+{
+  "state": "retained_visual_failure",
+  "problem": "Repeated invert_yaxis toggled the shared axis four times, reversing the stated method protocol order in the natural AUROC figure.",
+  "scope": "Figure y-axis ordering only; all numeric records passed independent audit.",
+  "fix": "Set explicit descending y limits, idempotent for shared axes. Rebuild and independently audit all report artifacts; retain all raw metrics/settings/tolerances."
+}

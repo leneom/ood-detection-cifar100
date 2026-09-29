@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checked": {
+    "statistical_numbers": 970,
+    "metric_csv_rows": 48,
+    "operating_csv_rows": 144,
+    "display_table_rows": 12
+  },
+  "summary_sha256": "67cdb606ecd35881c086d26eddc02c82a9f0b60092b063fccc8c12635655e798",
+  "metrics_csv_sha256": "3d65c21958f495189fd10a2c1ec086f9ed92a469f6c4b90f7ec504fad8c3d2c6",
+  "operating_csv_sha256": "a65efb27a1f7170f74b56209cd45f0258cd2dfbdef10d25f1b30de872f06a26f",
+  "summary_markdown_sha256": "ca5b7656cd7cd1934382f1c67053ce577e9b40976a61a5744f06ffa1b5a0a712",
+  "summary_source_sha256": "67e6d78be107853366d357556ed089e76fba34819ebdfa1b5edd863e1c32fc46",
+  "audit_source_sha256": "1a47f504b52fb65c1a8ee7d98d4957296a9972c3052ba4701513d67b09d20ad1",
+  "audited_at": "2026-09-28T11:50:20.854754+00:00",
+  "boundary": "Independent 3-seed aggregation and displayed all-method tables; no OOD-test-based method choice."
+}

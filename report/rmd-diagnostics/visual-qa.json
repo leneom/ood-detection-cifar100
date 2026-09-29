@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T18:36:14.882450+00:00",
+  "figures": {
+    "joint-components.png": "0a18c21b890c361c041f2a33f54a981ac0485d1af6bc7cb8bc0c6aba87f87340",
+    "joint-components.svg": "09e24f6493f95faa4a7f1fdceb88209786654a3d2ac065d00ae570a0424a9551",
+    "natural-transitions.png": "a9d2ecd5fa2f38fec82a9f6b956d621ad3b669bc1e88a57823b8636d8bd0aa8e",
+    "natural-transitions.svg": "2fa5ad0e0a949392b2bb04c775102010e4c5c9263c4aaa7fc3bfd8c18dcce530"
+  },
+  "inspection": "Both rendered PNG previews inspected: three seed scatter panels retain all seven population labels and frozen M=B+threshold lines; axis bounds contain all 21,000 plotted samples. Four natural transition panels show all eleven references, three seed points and descriptive SD bars. Numeric controls are explicitly marked; labels, legend and sign caption fit without clipping. SVG exports bound by hashes.",
+  "display_route": "Readonly local Pillow JPEG previews via tool image output; known failing Windows image helper avoided. Original figures unchanged."
+}

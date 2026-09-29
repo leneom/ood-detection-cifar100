@@ -1,0 +1,146 @@
+{
+  "support_scatter": {
+    "0": {
+      "ash_p_energy": {
+        "xlim": [
+          0.5851604707844259,
+          0.9872532568159867
+        ],
+        "ylim": [
+          -1.2748240532311685,
+          0.18987041439236582
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_b_energy": {
+        "xlim": [
+          0.5851604707844259,
+          0.9872532568159867
+        ],
+        "ylim": [
+          -2.6295081324400145,
+          21.692856152321394
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_s_energy": {
+        "xlim": [
+          0.5851604707844259,
+          0.9872532568159867
+        ],
+        "ylim": [
+          -64.64289093448349,
+          -5.159958198964931
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      }
+    },
+    "1": {
+      "ash_p_energy": {
+        "xlim": [
+          0.5928814248572786,
+          0.9944781097247023
+        ],
+        "ylim": [
+          -1.531061878140052,
+          0.24623930666877797
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_b_energy": {
+        "xlim": [
+          0.5928814248572786,
+          0.9944781097247023
+        ],
+        "ylim": [
+          -2.612625487508669,
+          23.376071665975317
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_s_energy": {
+        "xlim": [
+          0.5928814248572786,
+          0.9944781097247023
+        ],
+        "ylim": [
+          -65.17915528444239,
+          -4.749260824626759
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      }
+    },
+    "2": {
+      "ash_p_energy": {
+        "xlim": [
+          0.6149553587846758,
+          0.9947541230006998
+        ],
+        "ylim": [
+          -1.5649983733809816,
+          0.24655623177133384
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_b_energy": {
+        "xlim": [
+          0.6149553587846758,
+          0.9947541230006998
+        ],
+        "ylim": [
+          -2.591078866328875,
+          19.70514875863976
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      },
+      "ash_s_energy": {
+        "xlim": [
+          0.6149553587846758,
+          0.9947541230006998
+        ],
+        "ylim": [
+          -69.94294977508082,
+          -5.164497174328923
+        ],
+        "sample_n_per_population": 1000,
+        "bounds_from_full_populations": true
+      }
+    }
+  },
+  "natural_transitions": {
+    "target": 0.95,
+    "population_order": [
+      "cifar10",
+      "mnist",
+      "svhn",
+      "textures"
+    ],
+    "references": [
+      "msp",
+      "energy",
+      "maxlogit",
+      "entropy",
+      "knn",
+      "mahalanobis",
+      "vim",
+      "residual",
+      "react_energy",
+      "affine_energy",
+      "rmd",
+      "mahalanobis_cpu"
+    ],
+    "additions": [
+      "ash_p_energy",
+      "ash_b_energy",
+      "ash_s_energy"
+    ]
+  }
+}

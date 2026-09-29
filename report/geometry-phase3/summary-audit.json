@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T17:14:02.437349+00:00",
+  "statistic_records_checked": 1834,
+  "displayed_table_fields_checked": 250,
+  "raw_audit_sha256": "f685c0776705aa0808e6aae4df07862e0d6273de710e469ae84b1eeb3d56e954",
+  "artifacts": {
+    "summary.json": "83a8b57d74ebb66e36038b3f36f8b128ecd024f949d96d72d693798b16f5f775",
+    "REPORT.md": "dcf00b0cc707a7a74d4b5693cbb54d3f7267ac3562cdda0097666c932bc1a8a8",
+    "natural-auroc.png": "58b33206547b0a404fad36585999d3c9769462b60439a9274d28074bf90131fa",
+    "natural-auroc.svg": "ed3e3f13e211985eb8d616fcbf23824ba5283cdd5d1c48ade0702403cca5aafe",
+    "operating-grid.png": "8d7d1b7db0348b278acdc7798a20e5b1d3d0e5e32f57e2d06733d55fa9761352",
+    "operating-grid.svg": "333c967638898270ad8346a3b0bfcc113780ea2b7ebecc7f27a6b6ed1b65f773"
+  },
+  "independent_source_sha256": "c6e27cbc25c30f88461fdb24ea0bd34f2c1b05026e330b9806c7c771dae1c371",
+  "boundary": "Python statistics independently checks within-seed macros, same-seed differences and sample SD; noise excluded"
+}

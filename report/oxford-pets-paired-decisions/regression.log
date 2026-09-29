@@ -1,0 +1,105 @@
+test_rejects_duplicate_seeds (test_aggregation.AggregationTests.test_rejects_duplicate_seeds) ... ok
+test_rejects_unfinished_training (test_aggregation.AggregationTests.test_rejects_unfinished_training) ... ok
+test_sample_sd_and_single_seed_boundary (test_aggregation.AggregationTests.test_sample_sd_and_single_seed_boundary) ... ok
+test_equal_values_choose_original_coordinate_order (test_ash.ASHMathTests.test_equal_values_choose_original_coordinate_order) ... ok
+test_exponential_is_not_linear_scaling (test_ash.ASHMathTests.test_exponential_is_not_linear_scaling) ... ok
+test_invalid_rows_and_settings_fail (test_ash.ASHMathTests.test_invalid_rows_and_settings_fail) ... ok
+test_nearest_even_rounding_and_pruning (test_ash.ASHMathTests.test_nearest_even_rounding_and_pruning) ... ok
+test_score_sign_and_original_bias (test_ash.ASHMathTests.test_score_sign_and_original_bias) ... ok
+test_acceptance_change_and_risk_have_distinct_denominators (test_ash_diagnostics.ASHDiagnosticMathTests.test_acceptance_change_and_risk_have_distinct_denominators) ... ok
+test_alignment_and_boolean_types_rejected (test_ash_diagnostics.ASHDiagnosticMathTests.test_alignment_and_boolean_types_rejected) ... ok
+test_bias_aware_scaled_logits_can_change_argmax (test_ash_diagnostics.ASHDiagnosticMathTests.test_bias_aware_scaled_logits_can_change_argmax) ... ok
+test_gains_losses_preserve_original_correctness_denominator (test_ash_diagnostics.ASHDiagnosticMathTests.test_gains_losses_preserve_original_correctness_denominator) ... ok
+test_no_acceptance_or_zero_variance_is_undefined (test_ash_diagnostics.ASHDiagnosticMathTests.test_no_acceptance_or_zero_variance_is_undefined) ... ok
+test_existing_reports_preserved (test_audit_queue.AuditQueueTests.test_existing_reports_preserved) ... ok
+test_expected_seeds_required_once (test_audit_queue.AuditQueueTests.test_expected_seeds_required_once) ... ok
+test_live_producer_blocks_even_with_complete_status (test_audit_queue.AuditQueueTests.test_live_producer_blocks_even_with_complete_status) ... ok
+test_stopped_incomplete_paused_failed_or_stop_are_rejected (test_audit_queue.AuditQueueTests.test_stopped_incomplete_paused_failed_or_stop_are_rejected) ... ok
+test_all_ties_preserve_weighted_prevalence (test_bootstrap.WeightedBootstrapMathTests.test_all_ties_preserve_weighted_prevalence) ... ok
+test_invalid_weights_rejected (test_bootstrap.WeightedBootstrapMathTests.test_invalid_weights_rejected) ... ok
+test_weighted_half_credit_ties_and_grouped_average_precision (test_bootstrap.WeightedBootstrapMathTests.test_weighted_half_credit_ties_and_grouped_average_precision) ... ok
+test_weighted_operating_denominators_and_undefined_risk (test_bootstrap.WeightedBootstrapMathTests.test_weighted_operating_denominators_and_undefined_risk) ... ok
+test_zero_mass_extremes_do_not_change_threshold (test_bootstrap.WeightedBootstrapMathTests.test_zero_mass_extremes_do_not_change_threshold) ... ok
+test_train_split_is_rejected_before_loading (test_cache.SVHNCacheTests.test_train_split_is_rejected_before_loading) ... ok
+test_verified_cache_and_corruption_rejection (test_cache.SVHNCacheTests.test_verified_cache_and_corruption_rejection) ... ok
+test_failed_or_worse_optimizer_retains_T1 (test_calibration.CalibrationTests.test_failed_or_worse_optimizer_retains_T1) ... ok
+test_fit_reduces_nll_for_overconfident_mistakes (test_calibration.CalibrationTests.test_fit_reduces_nll_for_overconfident_mistakes) ... ok
+test_invalid_temperature_and_labels_are_rejected (test_calibration.CalibrationTests.test_invalid_temperature_and_labels_are_rejected) ... ok
+test_split_is_balanced_disjoint_reproducible_and_covers_validation (test_calibration.CalibrationTests.test_split_is_balanced_disjoint_reproducible_and_covers_validation) ... ok
+test_split_rejects_wrong_population (test_calibration.CalibrationTests.test_split_rejects_wrong_population) ... ok
+test_temperature_preserves_argmax_and_maxlogit_not_probability_confidence (test_calibration.CalibrationTests.test_temperature_preserves_argmax_and_maxlogit_not_probability_confidence) ... ok
+test_uniform_probabilities_have_known_metrics (test_calibration.CalibrationTests.test_uniform_probabilities_have_known_metrics) ... ok
+test_four_shared_components_macro_sd_ratio_two (test_dependence.DependenceTests.test_four_shared_components_macro_sd_ratio_two) ... ok
+test_identical_three_components_sd_ratio_sqrt_three (test_dependence.DependenceTests.test_identical_three_components_sd_ratio_sqrt_three) ... ok
+test_invalid_draw_shape_rejected (test_dependence.DependenceTests.test_invalid_draw_shape_rejected) ... ok
+test_large_exact_constant_has_zero_variance_and_undefined_correlation (test_dependence.DependenceTests.test_large_exact_constant_has_zero_variance_and_undefined_correlation) ... ok
+test_negative_covariance_is_retained (test_dependence.DependenceTests.test_negative_covariance_is_retained) ... ok
+test_nonfinite_column_never_uses_complete_cases (test_dependence.DependenceTests.test_nonfinite_column_never_uses_complete_cases) ... ok
+test_completed_seed_set_must_match (test_extension.ExtensionTests.test_completed_seed_set_must_match) ... ok
+test_extension_rejects_changed_validation_scores (test_extension.ExtensionTests.test_extension_rejects_changed_validation_scores) ... ok
+test_incomplete_failed_and_paused_matrices_are_rejected (test_extension.ExtensionTests.test_incomplete_failed_and_paused_matrices_are_rejected) ... ok
+test_live_matrix_cannot_release_extension (test_extension.ExtensionTests.test_live_matrix_cannot_release_extension) ... ok
+test_feature_hook_preserves_predictions_and_is_removed (test_features.FeatureTests.test_feature_hook_preserves_predictions_and_is_removed) ... ok
+test_invalid_knn_inputs (test_features.FeatureTests.test_invalid_knn_inputs) ... ok
+test_knn_matches_brute_force (test_features.FeatureTests.test_knn_matches_brute_force) ... ok
+test_mahalanobis_matches_direct_quadratic_form (test_features.FeatureTests.test_mahalanobis_matches_direct_quadratic_form) ... ok
+test_global_clip_quantile_and_upper_only_cap (test_geometry.GeometryTests.test_global_clip_quantile_and_upper_only_cap) ... ok
+test_invalid_or_zero_residual_fits_fail_without_sign_changes (test_geometry.GeometryTests.test_invalid_or_zero_residual_fits_fail_without_sign_changes) ... ok
+test_origin_and_second_moment_do_not_center_on_empirical_mean (test_geometry.GeometryTests.test_origin_and_second_moment_do_not_center_on_empirical_mean) ... ok
+test_orthonormal_subspaces_and_residual_projection_identity (test_geometry.GeometryTests.test_orthonormal_subspaces_and_residual_projection_identity) ... ok
+test_unclipped_rows_have_identical_react_and_affine_energy (test_geometry.GeometryTests.test_unclipped_rows_have_identical_react_and_affine_energy) ... ok
+test_vim_is_scaled_residual_plus_affine_energy (test_geometry.GeometryTests.test_vim_is_scaled_residual_plus_affine_energy) ... ok
+test_all_transition_states_keep_correctness_denominators (test_geometry_diagnostics.GeometryDiagnosticsTests.test_all_transition_states_keep_correctness_denominators) ... ok
+test_anticorrelation_cancels_variance_and_signed_mean_shifts (test_geometry_diagnostics.GeometryDiagnosticsTests.test_anticorrelation_cancels_variance_and_signed_mean_shifts) ... ok
+test_zero_correct_denominator_and_nonboolean_input (test_geometry_diagnostics.GeometryDiagnosticsTests.test_zero_correct_denominator_and_nonboolean_input) ... ok
+test_zero_variance_correlation_is_undefined_and_wrong_identity_rejected (test_geometry_diagnostics.GeometryDiagnosticsTests.test_zero_variance_correlation_is_undefined_and_wrong_identity_rejected) ... ok
+test_hashes_exact_pixel_order_without_mutation_and_rejects_float_input (test_input_provenance.InputProvenanceTests.test_hashes_exact_pixel_order_without_mutation_and_rejects_float_input) ... ok
+test_paired_difference_preserves_classifier_correlation (test_matrix_audit.MatrixAuditTests.test_paired_difference_preserves_classifier_correlation) ... ok
+test_population_sd_is_rejected (test_matrix_audit.MatrixAuditTests.test_population_sd_is_rejected) ... ok
+test_requires_all_predeclared_seeds (test_matrix_audit.MatrixAuditTests.test_requires_all_predeclared_seeds) ... ok
+test_synthetic_diagnostics_cannot_enter_natural_macro (test_matrix_audit.MatrixAuditTests.test_synthetic_diagnostics_cannot_enter_natural_macro) ... ok
+test_fpr95_and_calibration_are_distinct (test_metrics.MetricsTests.test_fpr95_and_calibration_are_distinct) ... ok
+test_invalid_scores_fail (test_metrics.MetricsTests.test_invalid_scores_fail) ... ok
+test_matches_pairwise_definition (test_metrics.MetricsTests.test_matches_pairwise_definition) ... ok
+test_perfect_separation (test_metrics.MetricsTests.test_perfect_separation) ... ok
+test_ties_are_not_optimistically_broken (test_metrics.MetricsTests.test_ties_are_not_optimistically_broken) ... ok
+test_batch_augmentation_shape_and_finiteness (test_protocol.ProtocolTests.test_batch_augmentation_shape_and_finiteness) ... ok
+test_energy_shift_preserves_softmax_but_changes_energy (test_protocol.ProtocolTests.test_energy_shift_preserves_softmax_but_changes_energy) ... ok
+{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 0}
+{"epoch": 1, "lr": 0.1, "train_loss": 1.25933735370636, "train_accuracy": 0.5125, "val_accuracy": 0.75, "seconds": 0.11970959999598563}
+{"epoch": 2, "lr": 0.010000000000000002, "train_loss": 0.8176923751831054, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.0986990999954287}
+{"epoch": 3, "lr": 0.0010000000000000002, "train_loss": 0.7005968809127807, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.14321330000529997}
+{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 0}
+{"epoch": 1, "lr": 0.1, "train_loss": 1.25933735370636, "train_accuracy": 0.5125, "val_accuracy": 0.75, "seconds": 0.0975462999776937}
+{"device": "cpu", "train": 160, "validation": 32, "resume_epoch": 1}
+{"epoch": 2, "lr": 0.010000000000000002, "train_loss": 0.8176923751831054, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.12124449998373166}
+{"epoch": 3, "lr": 0.0010000000000000002, "train_loss": 0.7005968809127807, "train_accuracy": 0.75, "val_accuracy": 0.75, "seconds": 0.10342540001147427}
+test_resume_matches_uninterrupted_training (test_protocol.ProtocolTests.test_resume_matches_uninterrupted_training) ... ok
+test_score_orientation_and_stability (test_protocol.ProtocolTests.test_score_orientation_and_stability) ... ok
+test_split_is_stratified_disjoint_and_repeatable (test_protocol.ProtocolTests.test_split_is_stratified_disjoint_and_repeatable) ... ok
+test_direct_distances_and_signed_negative_RMD_are_preserved (test_rmd.RMDTests.test_direct_distances_and_signed_negative_RMD_are_preserved) ... ok
+test_distance_is_invariant_to_common_feature_translation (test_rmd.RMDTests.test_distance_is_invariant_to_common_feature_translation) ... ok
+test_invalid_labels_and_changed_shrinkage_are_rejected (test_rmd.RMDTests.test_invalid_labels_and_changed_shrinkage_are_rejected) ... ok
+test_population_covariance_and_own_trace_regularization (test_rmd.RMDTests.test_population_covariance_and_own_trace_regularization) ... ok
+test_tiny_negative_distance_correction_has_fixed_gate (test_rmd.RMDTests.test_tiny_negative_distance_correction_has_fixed_gate) ... ok
+test_all_four_states_and_correctness_denominators (test_rmd_diagnostics.RMDDiagnosticMathTests.test_all_four_states_and_correctness_denominators) ... ok
+test_invalid_components_or_nonboolean_masks_fail (test_rmd_diagnostics.RMDDiagnosticMathTests.test_invalid_components_or_nonboolean_masks_fail) ... ok
+test_mean_change_subtracts_background (test_rmd_diagnostics.RMDDiagnosticMathTests.test_mean_change_subtracts_background) ... ok
+test_signed_difference_and_population_variance (test_rmd_diagnostics.RMDDiagnosticMathTests.test_signed_difference_and_population_variance) ... ok
+test_zero_variance_has_null_correlation (test_rmd_diagnostics.RMDDiagnosticMathTests.test_zero_variance_has_null_correlation) ... ok
+test_calibration_threshold_keeps_ties_and_does_not_guarantee_test_coverage (test_selective_risk.SelectiveRiskTests.test_calibration_threshold_keeps_ties_and_does_not_guarantee_test_coverage) ... ok
+test_empty_denominators_remain_null (test_selective_risk.SelectiveRiskTests.test_empty_denominators_remain_null) ... ok
+test_error_risk_and_class_conditional_rejection_have_distinct_denominators (test_selective_risk.SelectiveRiskTests.test_error_risk_and_class_conditional_rejection_have_distinct_denominators) ... ok
+test_fixed_target_grid_has_nested_acceptance (test_selective_risk.SelectiveRiskTests.test_fixed_target_grid_has_nested_acceptance) ... ok
+test_foreign_ood_counts_do_not_define_classification_correctness (test_selective_risk.SelectiveRiskTests.test_foreign_ood_counts_do_not_define_classification_correctness) ... ok
+test_invalid_targets_scores_and_correctness_are_rejected (test_selective_risk.SelectiveRiskTests.test_invalid_targets_scores_and_correctness_are_rejected) ... ok
+test_changed_pixel_bytes_rejected_even_if_container_hash_updated (test_textures_cache.TexturesCacheTests.test_changed_pixel_bytes_rejected_even_if_container_hash_updated) ... ok
+test_container_or_manifest_corruption_is_rejected (test_textures_cache.TexturesCacheTests.test_container_or_manifest_corruption_is_rejected) ... ok
+test_filename_label_disagreement_rejected (test_textures_cache.TexturesCacheTests.test_filename_label_disagreement_rejected) ... ok
+test_valid_full_cache_preserves_pixels_order_and_audit (test_textures_cache.TexturesCacheTests.test_valid_full_cache_preserves_pixels_order_and_audit) ... ok
+test_wrong_partition_transform_and_incomplete_audit_are_rejected (test_textures_cache.TexturesCacheTests.test_wrong_partition_transform_and_incomplete_audit_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 91 tests in 9.221s
+
+OK

@@ -1,0 +1,59 @@
+{
+  "joint_scatter": {
+    "0": {
+      "xlim": [
+        -32.72625097542228,
+        -3.742385177113281
+      ],
+      "ylim": [
+        6.057109178998858,
+        43.895380276380294
+      ],
+      "existing_threshold": 8.365333791756493,
+      "sample_n_per_population": 1000
+    },
+    "1": {
+      "xlim": [
+        -33.63747730052265,
+        -3.8025026939361988
+      ],
+      "ylim": [
+        4.258908398192284,
+        46.339276910939944
+      ],
+      "existing_threshold": 8.160593226423018,
+      "sample_n_per_population": 1000
+    },
+    "2": {
+      "xlim": [
+        -29.17923823726016,
+        -4.01592267280873
+      ],
+      "ylim": [
+        5.487854630321252,
+        41.68968275419048
+      ],
+      "existing_threshold": 8.032205920615093,
+      "sample_n_per_population": 1000
+    }
+  },
+  "natural_transitions": {
+    "target": 0.95,
+    "population_order": [
+      "cifar10",
+      "mnist",
+      "svhn",
+      "textures"
+    ],
+    "references": [
+      "affine_energy",
+      "energy",
+      "msp"
+    ],
+    "additions": [
+      "vim",
+      "residual",
+      "react_energy"
+    ]
+  }
+}

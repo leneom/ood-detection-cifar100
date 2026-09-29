@@ -1,0 +1,13 @@
+{
+  "state": "visual_review_passed",
+  "reviewed_at": "2026-09-28T22:57:10.110997+00:00",
+  "png_sha256": "eb997b7ec2af3eeece86fbc6847ab056572dbef45b2d8d22fa9b2e0536408d46",
+  "numeric_audit_sha256": "0dcac33065c8428438896fbbe9741fca0c2771d28622cc03b4095bffe8ad6b6e",
+  "observations": [
+    "The global title is fully visible and does not overlap the legend.",
+    "The legend is inside the unused upper region of the first AUROC panel and does not cover observations.",
+    "All six fixed panels, method labels, three partition colors, individual points, means and error bars are visible.",
+    "The full 0-100 percent axes and descriptive boundary footer are visible."
+  ],
+  "boundary": "Manual visual inspection of the rendered image; numeric and file evidence remains in audit.json."
+}

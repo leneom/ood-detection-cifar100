@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "statistics_checked": 1544,
+  "maximum_statistic_error": 2.220446049250313e-16,
+  "summary_sha256": "2746c2ebcde8f5a90880ecbcff788b655812c3d207e13ff4b516b853851197c7",
+  "raw_audit_sha256": "df67414957394b36c5f3244fb62ea26323e82bd578143c3b81724d272ad10e96",
+  "report_artifact_sha256": {
+    "id-calibration.png": "fa72a7400a1d1aab16bbfacb8080cdc94cdf887de52948e184646ba0fccc51f9",
+    "id-calibration.svg": "4c404b46e005e54c53a691542565c4594ac9102945c90e25b6bfdcd54a696f69",
+    "ood-calibration.png": "2304b8f581807216233cbe8a383059ee8f286bc6a76cf693770b503de4694849",
+    "ood-calibration.svg": "8c8fd6ae350f106a3f8255040a7573edf947fe379552bb4cc13d983f523adc73",
+    "REPORT.md": "0245414c77c120456c63317fc61d766687ed1a48f58e060e3c9325ae940b9cbe"
+  },
+  "audit_source_sha256": "bdedcb3eef6c7a71b6cb300ca5a0f01ed5c3696e23a81306d8f72b7bf59f2b80",
+  "audited_at": "2026-09-27T16:02:39.755282+00:00",
+  "boundary": "independent mean/sample SD and paired deltas; four fixed natural datasets within each seed; synthetic noise excluded"
+}

@@ -1,0 +1,15 @@
+# Frozen prevalence-standardized PR analysis v0.1 — 2026-09-28
+
+## Purpose and boundary
+
+The completed frozen 80-class models have two OOD test populations sharing the same 8,000 official CIFAR-100 ID-test scores: 2,000 same-source held-out CIFAR-100 fine-class images (observed OOD prevalence 20%) and 10,000 full official CIFAR-10 test images (observed OOD prevalence 55.56%). Raw average precision (AUPR-out/in) depends on this mixture proportion. Standardize **both** score distributions to the fixed 20% OOD / 80% ID prior, using all images in each population, and describe the resulting precision-recall values. This analysis is declared before computing these new standardized AUPR values, but after both OOD populations and their raw outcomes were viewed. It is exploratory post-hoc analysis, not external confirmation or a basis for detector selection.
+
+## Fixed mathematical operation
+
+For each of the same three frozen checkpoints, both fixed temperature variants and all six previously reported methods, read the original full per-image scores with larger meaning more OOD. For each population with `n_ID=8000` and `n_OOD` equal to 2,000 or 10,000, assign every ID row weight `0.8/8000` and every OOD row weight `0.2/n_OOD`. The weights sum to one and set the hypothetical OOD prior to exactly 0.2 without dropping or resampling any image. Group identical score thresholds and compute non-interpolated weighted average precision: `AP_out = sum_k (recall_k - recall_{k-1}) precision_k`, where OOD is positive. For `AP_in`, reverse positive labels and negate scores while preserving the same weights; the positive ID prior is 0.8. Save all 3×2×6×2×2 raw standardized values (seed, variant, method, AP orientation, OOD population), the weight/prior metadata and source hashes.
+
+The held-out-class population already has a natural 20% OOD prevalence; its standardized AP should exactly recover its original reported AUPR-out/in within numerical precision. Independently recompute every value using scikit-learn `average_precision_score(..., sample_weight=...)`, including the original unweighted CIFAR-10 AP at its natural 55.56% prior. Report all twelve method/variant cells with per-seed values, mean and sample SD. Display the standardized AP-out/in for both OOD populations side by side and keep the original natural CIFAR-10 AP separately; do not report a selected winner, p-value, confidence interval, or new cross-population macro.
+
+## Interpretation
+
+The 20% prior is a display convention equal to the existing held-out-class test mix, **not** an estimated deployment prior. Prior reweighting holds the observed within-ID/within-OOD score distributions fixed and only changes the precision-recall mixture arithmetic. It does not equate the underlying semantic/source shifts, remove earlier test exposure, measure class-split uncertainty, fix label overlap, or create a new validation set. AUROC and ID-validation thresholds are unchanged; no classifier, score, fit, temperature or threshold may be modified. Both full raw score populations remain local and immutable.

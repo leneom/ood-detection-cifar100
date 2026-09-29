@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "checked": {
+    "class_auroc": 7200,
+    "operating_counts": 28800,
+    "aggregate_identities": 180,
+    "quantiles": 120,
+    "report_rows": 12,
+    "figures": 4
+  },
+  "class_values_sha256": "a1da313e0960a9f131c22d44dce90dcad4747563f2fdffed452c15976470db4d",
+  "summary_sha256": "9e731437fec95e7f02e70df1ad123c8ae9cec334d44caf0bf819bd55f4f62370",
+  "report_sha256": "fa8d41c1cbb08ae7f0fff07902c5a018414d45751f3dbb5017e69fc395e4b578",
+  "figure_sha256": {
+    "class-auroc.png": "309eaf5e42a129b368d7ea9ac9ef2f707e9658c4459600a93723bc5684285532",
+    "class-fixed95-acceptance.png": "f49b21bc307fba3af1283de815b157d98cf69c646d59bf17c155d5708083e0c8",
+    "class-auroc.svg": "b8c99434df8ac65db87548efa9cd2c5224e7fcdea20b250e579d74e3d4bc33de",
+    "class-fixed95-acceptance.svg": "256ca5e7f7ddced724973840d5b8cdf6133fd15f3fc1a0ebcace043e77d73063"
+  },
+  "audit_source_sha256": "762f7e6fc8162aede3f248d6ab12d852301076dcdd878e82cfa4924dee88821c",
+  "audited_at": "2026-09-28T03:38:14.044331+00:00",
+  "boundary": "All 200 classes audited; descriptive post-test only; no tuning or new held-out confirmation."
+}

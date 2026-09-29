@@ -1,0 +1,106 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T17:09:29.782803+00:00",
+  "checks": {
+    "score_arrays": 180,
+    "intermediate_arrays": 105,
+    "raw_metrics": 3117,
+    "ranking_metrics": 450,
+    "contingency_fields": 5640,
+    "masks": 840,
+    "control_arrays": 360,
+    "control_metric_fields": 1440,
+    "nested_masks": 630
+  },
+  "original_input_hash_checks": 295,
+  "output_name": "evaluation",
+  "output_artifacts": {
+    "runs/geometry-phase3/seed0/evaluation/cifar10_intermediates.npz": "3690af41693e6540e0bd2ef817d9304db891b58d8a82c76525697faf2c8ec5ea",
+    "runs/geometry-phase3/seed0/evaluation/cifar10_scores.npz": "078d0e9518dca9bc6c4feb91f154b7f0809563752570494f561c8407eabbeee4",
+    "runs/geometry-phase3/seed0/evaluation/decisions.npz": "929c05cc57c1926405b855e59592a1f7b16ad7648243c48cfd3e8ad17b813e7d",
+    "runs/geometry-phase3/seed0/evaluation/id_intermediates.npz": "0ec2af6819c330497c2fe8c1236341b8e3df0887f9fa64bc119eb872756c9808",
+    "runs/geometry-phase3/seed0/evaluation/mnist_intermediates.npz": "eaea8dc0c41be1005408da2c1318371412f3f0c57c76abf65762fbf58bc93e67",
+    "runs/geometry-phase3/seed0/evaluation/mnist_scores.npz": "a0c4cc39855f733a6c4e3b60a50db2649e74833a6e11ee8ae700dd21602189d6",
+    "runs/geometry-phase3/seed0/evaluation/noise_intermediates.npz": "8231ed5907fe19e8d17e9d3970d238abbcbb09ed0cfb30492114c58095ad260b",
+    "runs/geometry-phase3/seed0/evaluation/noise_scores.npz": "44fe916c9924ee32d04e86e3b5071b4f357944ad98cd6c91e99bd68263c5a9f1",
+    "runs/geometry-phase3/seed0/evaluation/svhn_intermediates.npz": "1c16b0ce5436a03193f77f0002676a51757344f53cf46335add37d69a8905d19",
+    "runs/geometry-phase3/seed0/evaluation/svhn_scores.npz": "ff634bdf220479ca5a3684823402811ea41310c47f9ad80ac20ed1dd1601ee7b",
+    "runs/geometry-phase3/seed0/evaluation/textures_intermediates.npz": "f23f242baa823f23824f914abf71ccb33eb7c11badb9fb339f2ea916aa546fce",
+    "runs/geometry-phase3/seed0/evaluation/textures_scores.npz": "643bffbf12c7bc60a6157b324371fb2e06aa22ce10f06139309834ea969254cd",
+    "runs/geometry-phase3/seed0/evaluation/validation_intermediates.npz": "2b98692f909847209f28b63f9b3cbe9047f1ac5db3f2a445112a9298117f95d4",
+    "runs/geometry-phase3/seed0/evaluation/results.json": "dc3ba3765096fda5cb21f96412876019eb1ca0599e5f1d5d6f391db5d79eb325",
+    "runs/geometry-phase3/seed1/evaluation/cifar10_intermediates.npz": "8de3d4b05402209e83f460341b586cb5d779c5fd0469d56f316cc74f8a531ba3",
+    "runs/geometry-phase3/seed1/evaluation/cifar10_scores.npz": "873882c12347d68288898280d5ad9812acec5445d81412aa439ec18847ac89ed",
+    "runs/geometry-phase3/seed1/evaluation/decisions.npz": "bc5f8583d067293eba393b47a15f2536319278c4f6cefb26280993a96d9d9c70",
+    "runs/geometry-phase3/seed1/evaluation/id_intermediates.npz": "05ca05906fa9301a7601248a91a4a09abf7a986113f6d2d2a26f4e5bf18b9e6b",
+    "runs/geometry-phase3/seed1/evaluation/mnist_intermediates.npz": "62a6684973c3372b7f8395f0facee21a882ccc77c59a6890acfaab0afb02eda6",
+    "runs/geometry-phase3/seed1/evaluation/mnist_scores.npz": "09ffad1723cb6f62644b4e30267bfdcc1808f6ed9a6d1f7f99a66ce74030ee08",
+    "runs/geometry-phase3/seed1/evaluation/noise_intermediates.npz": "a6688802e71b8e34574591f336ad25c33fc7345e40898e3a7ed6ae31ebbe928d",
+    "runs/geometry-phase3/seed1/evaluation/noise_scores.npz": "b48a37655b469b8f9e5b2e447b14e731db6f1555b00db23413fa66c523cdb771",
+    "runs/geometry-phase3/seed1/evaluation/svhn_intermediates.npz": "1aa4a7c1eded37bfd73f939033fb4f662c5d6b76cc9bb2768bda9252b1f0292b",
+    "runs/geometry-phase3/seed1/evaluation/svhn_scores.npz": "589023f6cae3fafc59359c7364ef3bef8b7ae9921d49051514423017713fa602",
+    "runs/geometry-phase3/seed1/evaluation/textures_intermediates.npz": "c704dbfcce84474475f46bfc266d86e491c9edd25837bfd24f0e0f86a0a1b2e2",
+    "runs/geometry-phase3/seed1/evaluation/textures_scores.npz": "7587abc22d2dca1d2636cf39d7ba0f584af56f9b12682d72e166e8ec0ce7167f",
+    "runs/geometry-phase3/seed1/evaluation/validation_intermediates.npz": "3987fad9dd9c8d8c0cdc6f79162ab3561cf9737f9491194a0e880b3e43884620",
+    "runs/geometry-phase3/seed1/evaluation/results.json": "dd1faa05f9d5626e09c1fb757ace1d2a3d0a1253ef01153867c2035bef293566",
+    "runs/geometry-phase3/seed2/evaluation/cifar10_intermediates.npz": "0b15f96ba3afd4b91084cc81f6af01308855cec11542bceb8e4d7441674e1c34",
+    "runs/geometry-phase3/seed2/evaluation/cifar10_scores.npz": "d45397e8ddf0f1121070cbdd6a3402aca0be3c79594757ed73f98d0407b8aef8",
+    "runs/geometry-phase3/seed2/evaluation/decisions.npz": "701ade257898a57a24b4d3dd76c66604a90e1db622f65b6b28710283a0454218",
+    "runs/geometry-phase3/seed2/evaluation/id_intermediates.npz": "198f01eb78a38a63a0034bd8b3528f0955e36b64af2d5807e4176999f386c543",
+    "runs/geometry-phase3/seed2/evaluation/mnist_intermediates.npz": "7d58ef1667512923425aa510d31104d0cab1efd3ae4903f6b4a6e80b6e26b60a",
+    "runs/geometry-phase3/seed2/evaluation/mnist_scores.npz": "5669529842c8af69b2e7b684bf2bd043213a3fbf4f9ad37cad14ca38ac39be7f",
+    "runs/geometry-phase3/seed2/evaluation/noise_intermediates.npz": "ea7a376bc0092143f756e9047f9ca54f6070aa6a8cf49f7e25ce7d8c591d7f4d",
+    "runs/geometry-phase3/seed2/evaluation/noise_scores.npz": "c5f3689ef26ce76d124f325576f8b48d402282ada4ea0e97d8c54b01b584a4dd",
+    "runs/geometry-phase3/seed2/evaluation/svhn_intermediates.npz": "8f94ad0f9375733f44bb32a3fafced051fac4124bb144b9a8515fe54e159ccfb",
+    "runs/geometry-phase3/seed2/evaluation/svhn_scores.npz": "adae2ce4b8ec9c62b98d8e09be91139d442a0f3b0203472bfa3c6d80b0114ce4",
+    "runs/geometry-phase3/seed2/evaluation/textures_intermediates.npz": "0eb5c29ea19faa259b0a3b3b48432151dc80ae5fde4d67e90491b7cb70338714",
+    "runs/geometry-phase3/seed2/evaluation/textures_scores.npz": "4a7e2ac8e043dc84e140f72c70c7e0786dac3c099251dbbaacbe4c4020a90c3c",
+    "runs/geometry-phase3/seed2/evaluation/validation_intermediates.npz": "34caab2f6e7708be65cb1f717776a8a3ed2987e632c85c8dc600636d8872eb6a",
+    "runs/geometry-phase3/seed2/evaluation/results.json": "70570c2807b284361e926c04b87491be3bc997040987e12dc1d95365fc05af19"
+  },
+  "evaluation_inputs_sha256": "4fbef7ecd000cdc05c493ea29e53653062f777f1e07792cc4d00997d099426c2",
+  "fit_audit_sha256": "65ee3b5254324167513ba146fd4b8475aa177d816238b8d13e316d979ef8f0ab",
+  "independent_source_sha256": "b0d3a45165a0eacc25503b0259833c478ea26afeb770a7ec1e0307a500501b2f",
+  "per_seed_diagnostics": [
+    {
+      "seed": 0,
+      "ID_original_accuracy": 0.7611,
+      "ID_intermediates": {
+        "n": 10000,
+        "max_affine_logit_error": 4.663650685188259e-06,
+        "affine_argmax_changes": 0,
+        "react_argmax_changes": 86,
+        "clipped_coordinate_fraction": 0.0079638671875,
+        "original_accuracy": 0.7611,
+        "react_intermediate_accuracy": 0.7607
+      }
+    },
+    {
+      "seed": 1,
+      "ID_original_accuracy": 0.7556,
+      "ID_intermediates": {
+        "n": 10000,
+        "max_affine_logit_error": 4.772294435184676e-06,
+        "affine_argmax_changes": 0,
+        "react_argmax_changes": 87,
+        "clipped_coordinate_fraction": 0.007820703125,
+        "original_accuracy": 0.7556,
+        "react_intermediate_accuracy": 0.7546
+      }
+    },
+    {
+      "seed": 2,
+      "ID_original_accuracy": 0.7564,
+      "ID_intermediates": {
+        "n": 10000,
+        "max_affine_logit_error": 3.957872344528823e-06,
+        "affine_argmax_changes": 0,
+        "react_argmax_changes": 89,
+        "clipped_coordinate_fraction": 0.0078494140625,
+        "original_accuracy": 0.7564,
+        "react_intermediate_accuracy": 0.7557
+      }
+    }
+  ],
+  "boundary": "all named detectors and numeric control; original classifier correctness; noise excluded from natural macros"
+}

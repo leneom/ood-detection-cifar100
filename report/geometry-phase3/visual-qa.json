@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T17:17:24.674486+00:00",
+  "figures": {
+    "natural-auroc.png": "58b33206547b0a404fad36585999d3c9769462b60439a9274d28074bf90131fa",
+    "operating-grid.png": "8d7d1b7db0348b278acdc7798a20e5b1d3d0e5e32f57e2d06733d55fa9761352"
+  },
+  "inspection": "Both local figures inspected as rendered JPEG previews. Dataset and per-seed panels, score/method labels, legends, axes, seed points/sample-SD semantics and fixed-grid order are visible without overlap or cropping. No plotted data edited."
+}

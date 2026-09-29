@@ -1,0 +1,291 @@
+{
+  "state": "report_pending_independent_audit",
+  "created_at": "2026-09-27T22:23:12.523061+00:00",
+  "phase_count": 11,
+  "phases": [
+    {
+      "phase": "baseline-complete",
+      "title": "Three-seed six-method natural OOD baseline",
+      "paths": {
+        "report": "report/baseline-complete/REPORT.md",
+        "completion_audit": "report/baseline-complete/completion-audit.json",
+        "run_status": "runs/matrix/status.json"
+      },
+      "sha256": {
+        "report": "3f174f0ae496c0a02d3a3e2be5d0ec349be7ea1c7a8b326fddb9adabb65a3405",
+        "completion_audit": "ea518cbd31fa1c24be86db8c3250ce4e328c7ff14b348290e4702521183969cc",
+        "run_status": "527750521bb79f67f83efa8376ca2cbe91c8ed06cfa520c16837082b34126cad"
+      },
+      "audit_state": "passed",
+      "run_state": "complete"
+    },
+    {
+      "phase": "calibration-phase2",
+      "title": "ID-only temperature calibration",
+      "paths": {
+        "report": "report/calibration-phase2/REPORT.md",
+        "completion_audit": "report/calibration-phase2/completion-audit.json",
+        "run_status": "runs/calibration-phase2/status.json"
+      },
+      "sha256": {
+        "report": "0245414c77c120456c63317fc61d766687ed1a48f58e060e3c9325ae940b9cbe",
+        "completion_audit": "c1d5d8731a78f317af42b43f69425cd8e25b8bd2ffb43f4842077391b3a2a934",
+        "run_status": "f6dd6d4a5029b57eef645fd495924c8cf1ccef71fef702fc27fa6efd088b16cd"
+      },
+      "audit_state": "complete_and_verified",
+      "run_state": "complete"
+    },
+    {
+      "phase": "selective-risk-phase2",
+      "title": "Four fixed validation operating targets",
+      "paths": {
+        "report": "report/selective-risk-phase2/REPORT.md",
+        "completion_audit": "report/selective-risk-phase2/completion-audit.json",
+        "run_status": "runs/selective-risk-phase2/status.json"
+      },
+      "sha256": {
+        "report": "87e903a30887dab935a0680dac75bcb14cfdfbcf8b349b13d3869c6b0a99a8a4",
+        "completion_audit": "b59252176aedae31bb2e2664a8e26b34630aa1f829d9dc02d448004c05b03d16",
+        "run_status": "ef8474c7a46dd6a5fe4de07bc7c088b0e3e3348af577ce10d954589890ba0165"
+      },
+      "audit_state": "complete_and_verified",
+      "run_state": "complete"
+    },
+    {
+      "phase": "geometry-phase3",
+      "title": "Training-ID ViM, Residual and ReAct",
+      "paths": {
+        "report": "report/geometry-phase3/REPORT.md",
+        "completion_audit": "report/geometry-phase3/completion-audit.json",
+        "run_status": "runs/geometry-phase3/status.json"
+      },
+      "sha256": {
+        "report": "dcf00b0cc707a7a74d4b5693cbb54d3f7267ac3562cdda0097666c932bc1a8a8",
+        "completion_audit": "ba2d1d2654d4b6cb2c279c013c8836abfd7ac946dc38a66d2be819447c6cd689",
+        "run_status": "92a40d1822eadec04b75581d9e1c97f9c1a0b73f62934a809ac7462b0052e399"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "geometry-diagnostics",
+      "title": "Feature-geometry saved-output diagnostics",
+      "paths": {
+        "report": "report/geometry-diagnostics/REPORT.md",
+        "completion_audit": "report/geometry-diagnostics/completion-audit.json",
+        "run_status": "runs/geometry-diagnostics/status.json"
+      },
+      "sha256": {
+        "report": "ba19ab5e23e24a8f1e841e3a1cb70fba436e01dc8bef59056fd10092d3bdf711",
+        "completion_audit": "823520d7d9bce5c4050d480268592bf081454bea83c02c2cb1903416a1e43e9a",
+        "run_status": "4b91c7854edb24ea8c450b65012d303b85a1827cb35e10619c381397415233a9"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "rmd-phase4",
+      "title": "Training-ID RMD and matched CPU MD",
+      "paths": {
+        "report": "report/rmd-phase4/REPORT.md",
+        "completion_audit": "report/rmd-phase4/completion-audit.json",
+        "run_status": "runs/rmd-phase4/status.json"
+      },
+      "sha256": {
+        "report": "43bd86889ebedb5493bd2c3e3c606d40cdfe896209ddb21e730988736dafccfa",
+        "completion_audit": "b0ed2da8afe9343a7ebb7371ede932d55619a8128c60321bf649a508b72d4983",
+        "run_status": "74fcb1ed74f847dc4f31ccf16a34d55681c7f179606a77ba0e1ad414da845ff0"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "rmd-diagnostics",
+      "title": "RMD component/transition diagnostics",
+      "paths": {
+        "report": "report/rmd-diagnostics/REPORT.md",
+        "completion_audit": "report/rmd-diagnostics/completion-audit.json",
+        "run_status": "runs/rmd-diagnostics/status.json"
+      },
+      "sha256": {
+        "report": "76a880479917b17ea34bd26194430b95fd7547f2c7adbc0f2f4dac1ef2dc7405",
+        "completion_audit": "b28956888ca89341c11bcabf342aa1efee8c585e317280d30278322c8f0eb178",
+        "run_status": "d1a46b8b22543225195d8c2f060ac46330e72bea4b3686e7aa211ad20f8db835"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "ash-phase5",
+      "title": "Fixed ASH-P/B/S extensions",
+      "paths": {
+        "report": "report/ash-phase5/REPORT.md",
+        "completion_audit": "report/ash-phase5/completion-audit.json",
+        "run_status": "runs/ash-phase5/status.json"
+      },
+      "sha256": {
+        "report": "e37b562c5fa5b46ec841617c62cd7c76ba5d1ca83f085e4a1f1ca33d0323c97d",
+        "completion_audit": "7bcbd47f4b947b47bf1d927326c5074c8fdeb0f5a4729391df49ea0c64631783",
+        "run_status": "609c42fbf06eed4346d828a0e2128c70caa26d2ed168c027c6b672f448ba83a7"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "ash-diagnostics",
+      "title": "ASH support/scale/decision diagnostics",
+      "paths": {
+        "report": "report/ash-diagnostics/REPORT.md",
+        "completion_audit": "report/ash-diagnostics/completion-audit.json",
+        "run_status": "runs/ash-diagnostics/status.json"
+      },
+      "sha256": {
+        "report": "2d2e89b9b611146c90fb8ab0a460a50a8c899b702b19592dc9862041c0b83654",
+        "completion_audit": "910be7f19edb8bcba625979696b213820fc47901296561ea11c1492d03994d58",
+        "run_status": "51a768ee279a080ec50802674652ea90948d66c2048efbdd26c306db4ccf77cf"
+      },
+      "audit_state": "complete",
+      "run_state": "complete"
+    },
+    {
+      "phase": "paired-bootstrap",
+      "title": "Full paired image-bootstrap intervals",
+      "paths": {
+        "report": "report/paired-bootstrap/REPORT.md",
+        "completion_audit": "report/paired-bootstrap/completion-audit.json",
+        "run_status": "runs/paired-bootstrap/status.json"
+      },
+      "sha256": {
+        "report": "401878ffb17826d44afe05b40714d1986b95cc3490fbdec91fd35354847601d6",
+        "completion_audit": "b17aa36f160a15611bff8120efc90693c309328a57bc27f26be2bf2d0f44b77e",
+        "run_status": "14bef6d50d1c955428ff76870263f8a584726d819d7681416aa078663e73c50c"
+      },
+      "audit_state": "passed",
+      "run_state": "complete"
+    },
+    {
+      "phase": "bootstrap-dependence",
+      "title": "Saved-bootstrap dependence decomposition",
+      "paths": {
+        "report": "report/bootstrap-dependence/REPORT.md",
+        "completion_audit": "report/bootstrap-dependence/completion-audit.json",
+        "run_status": "runs/bootstrap-dependence/status.json"
+      },
+      "sha256": {
+        "report": "d9476afedfadc4d25ffb91e21d84cabda57bbe763c901e89c986f98945f6a9ff",
+        "completion_audit": "29123b4e0c4943aad7743bc3310654110545842d07260b9c7208ec264a5f37fd",
+        "run_status": "756cdd163121281f7932526b186185ae8a601af444583169507819a46a1cdd2a"
+      },
+      "audit_state": "passed",
+      "run_state": "complete"
+    }
+  ],
+  "metrics": {
+    "id_test_accuracy_mean": 0.757699986298879,
+    "id_test_accuracy_seed_sd": 0.002971539268438457,
+    "id_test_accuracy_by_seed": [
+      0.7610999941825867,
+      0.7555999755859375,
+      0.7563999891281128
+    ],
+    "energy_macro_auroc": {
+      "original_point": 0.8097342272844607,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.8096404166867412,
+      "bootstrap_sample_sd": 0.0024180120610124804,
+      "percentile_lower": 0.8048625038694691,
+      "percentile_upper": 0.8141005924380309,
+      "original_three_seed_sample_sd": 0.007906902885928999
+    },
+    "knn_macro_auroc": {
+      "original_point": 0.8242060244201137,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.8241114045576267,
+      "bootstrap_sample_sd": 0.002317939924353287,
+      "percentile_lower": 0.8194906389111233,
+      "percentile_upper": 0.8285163825769186,
+      "original_three_seed_sample_sd": 0.01106181878989583
+    },
+    "rmd_macro_auroc": {
+      "original_point": 0.8161199163041832,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.815984268351377,
+      "bootstrap_sample_sd": 0.0023127463367919286,
+      "percentile_lower": 0.8112411171651892,
+      "percentile_upper": 0.8204101413853762,
+      "original_three_seed_sample_sd": 0.0156550042769628
+    },
+    "matched_cpu_md_macro_auroc": {
+      "original_point": 0.6318604951962833,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.6318239339067954,
+      "bootstrap_sample_sd": 0.002749223911385585,
+      "percentile_lower": 0.6263642971161077,
+      "percentile_upper": 0.6374734232551351,
+      "original_three_seed_sample_sd": 0.02198687646855237
+    },
+    "ash_s_macro_auroc": {
+      "original_point": 0.8315541505811668,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.8314529739220365,
+      "bootstrap_sample_sd": 0.002252637542437002,
+      "percentile_lower": 0.8268764564885231,
+      "percentile_upper": 0.8356259824458416,
+      "original_three_seed_sample_sd": 0.007205560229252055
+    },
+    "ash_s_minus_energy_macro_auroc": {
+      "original_point": 0.021819923296706307,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": 0.021812557235295404,
+      "bootstrap_sample_sd": 0.0006610343349048027,
+      "percentile_lower": 0.020545291360819756,
+      "percentile_upper": 0.023103282752675883,
+      "original_three_seed_sample_sd": 0.00782056659600218
+    },
+    "ash_s_minus_energy_cifar10_auroc": {
+      "original_point": -7.444333333328501e-05,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": -7.17323966666666e-05,
+      "bootstrap_sample_sd": 0.0007456125644660532,
+      "percentile_lower": -0.0016505105833333116,
+      "percentile_upper": 0.001340185666666693,
+      "original_three_seed_sample_sd": 0.0014215311554213498
+    },
+    "ash_s_minus_energy_natural_acceptance_95": {
+      "original_point": -0.06286800391879932,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": -0.06284136202284586,
+      "bootstrap_sample_sd": 0.001383148429175148,
+      "percentile_lower": -0.06556573294134438,
+      "percentile_upper": -0.060195122658637246,
+      "original_three_seed_sample_sd": 0.04109062683860509
+    },
+    "ash_s_minus_energy_id_coverage_95": {
+      "original_point": -0.0015666666666666422,
+      "defined_replicates": 1000,
+      "replicates": 1000,
+      "bootstrap_mean": -0.0016050333333333339,
+      "bootstrap_sample_sd": 0.0009842866210482588,
+      "percentile_lower": -0.0034341666666666947,
+      "percentile_upper": 0.0002666666666666743,
+      "original_three_seed_sample_sd": 0.007015934245225901
+    },
+    "three_model_sd_ratio_range_natural_macro_auroc": [
+      1.4224100535587763,
+      1.5823380373426326
+    ],
+    "four_natural_sd_ratio_range_natural_macro_auroc": [
+      1.381948637631517,
+      1.6566310770384225
+    ]
+  },
+  "boundary": "Local reproducibility/evidence index of previously frozen phases; not new experiments, benchmark certification or publication claim"
+}

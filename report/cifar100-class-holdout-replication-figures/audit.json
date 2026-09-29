@@ -1,0 +1,18 @@
+{
+  "state": "numeric_and_file_audit_passed_pending_visual_review",
+  "figure_rows": 108,
+  "seed_values": 324,
+  "summary_means_checked": 108,
+  "summary_sample_sds_checked": 108,
+  "png_size_pixels": [
+    3000,
+    2200
+  ],
+  "png_nonwhite_pixels": 308915,
+  "figure_spec_sha256": "a11f94971baae700894f1613ac8fe6a025891535cc169ca75edcb2562cf82919",
+  "report_completion_sha256": "1dbee16581fabce00a94d6acdd82e6245e15c92c2597e4269fd2aee3480ff3b6",
+  "manifest_sha256": "0aebe132987b9f951b5782f57da03daad734781aaf04d2956722d1a1dd7c2013",
+  "audit_source_sha256": "78c94275108b0cb9ab7ddafbe08567681082ff055a775b3955f0bfbbbf794491",
+  "audited_at": "2026-09-28T22:53:38.501059+00:00",
+  "boundary": "Independent numeric and rendered-file audit only; visual inspection is still required before presentation completion."
+}

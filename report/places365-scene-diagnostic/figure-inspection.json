@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-29T03:22:36.909898+00:00",
+  "images": {
+    "fixed95-scene-distribution.png": {
+      "size": [
+        2160,
+        1026
+      ],
+      "sha256": "ab3332007e79d7eca3e62b75ef8b310afe22a5b206bc645aae5a248830895c83"
+    }
+  },
+  "observations": "Opened the final two-panel figure and checked the frozen MSP, Energy, MaxLogit, Entropy, KNN-50, Mahalanobis top-to-bottom order, both temperature panels, whiskers, titles and axes; no clipping.",
+  "scope": "Visual QA only; every count and display value is independently checked in audit.json."
+}

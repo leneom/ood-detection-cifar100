@@ -1,0 +1,51 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T15:57:34.505245+00:00",
+  "original_artifact_hash_checks": 227,
+  "independent_AUROC_AP_checks": 540,
+  "threshold_count_prevalence_checks": 2340,
+  "probability_endpoint_checks": 108,
+  "raw_score_formula_control_checks": 540,
+  "precision_and_original_threshold_checks": 2610,
+  "independent_temperature_checks": [
+    {
+      "seed": 0,
+      "fitted_T": 1.3731525962128588,
+      "independent_beta_root_T": 1.3731526059123589,
+      "T_absolute_error": 9.699500091997493e-09,
+      "beta_derivative_at_fitted_T": 1.663390035560042e-08,
+      "independent_fit_NLL": 0.9420262831791594
+    },
+    {
+      "seed": 1,
+      "fitted_T": 1.357944116987082,
+      "independent_beta_root_T": 1.3579441267636636,
+      "T_absolute_error": 9.776581544329588e-09,
+      "beta_derivative_at_fitted_T": 1.6908499264900457e-08,
+      "independent_fit_NLL": 0.9619267289744603
+    },
+    {
+      "seed": 2,
+      "fitted_T": 1.3650396995182559,
+      "independent_beta_root_T": 1.3650396987881872,
+      "T_absolute_error": 7.300686721833927e-10,
+      "beta_derivative_at_fitted_T": -1.239537590436157e-09,
+      "independent_fit_NLL": 0.9596896011915685
+    }
+  ],
+  "results_sha256": {
+    "seed0": "3f72d299534f6e10dad75cc48eff9ba4eccf1070bb7875ae634edb5a4acdc541",
+    "seed1": "d2fffcba16000e78fcde68e67a4b61bf1017a571518c1438b00e2242e8374cf1",
+    "seed2": "b07eb0fa2efd11ac35c4e3116ee8b4929ba9282b00cd14c955bc898db91f32e6"
+  },
+  "inputs_sha256": "0790b3b34332f67e95e1ff5d66a40de153cb12aa5751e76f921a2131b0bf730b",
+  "split_sha256": "4a4a9505a346287976315cdb55b2d36ee5a30f58a00424892a5157ae8cda766d",
+  "audit_source_sha256": "8453c46e110ad0039a6ffdb585913ea24811d552f32055d9857e406d6a7ba006",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "sklearn": "1.7.2"
+  },
+  "boundary": "ID-only convex beta root vs log(T) minimizer; all four natural OOD and separate noise diagnostic; no test-selected parameters"
+}

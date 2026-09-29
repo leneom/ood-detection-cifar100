@@ -1,0 +1,62 @@
+{
+  "state": "complete",
+  "completed_at": "2026-09-27T19:15:11.846074+00:00",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "named_methods": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis",
+    "vim",
+    "residual",
+    "react_energy",
+    "rmd",
+    "ash_p_energy",
+    "ash_b_energy",
+    "ash_s_energy"
+  ],
+  "numeric_controls": [
+    "affine_energy",
+    "mahalanobis_cpu"
+  ],
+  "natural_ood": [
+    "cifar10",
+    "mnist",
+    "svhn",
+    "textures"
+  ],
+  "noise": "diagnostic only, excluded from natural macro",
+  "raw_checks": {
+    "score_arrays": 135,
+    "intermediate_arrays": 315,
+    "raw_metrics": 4758,
+    "ranking_metrics": 675,
+    "contingency_fields": 8460,
+    "masks": 1260,
+    "control_arrays": 720,
+    "control_metric_fields": 3600,
+    "nested_masks": 945
+  },
+  "summary_records_checked": 3655,
+  "frozen_input_hash_checks": 552,
+  "audits": {
+    "audit.json": "31bee6d11d5cc5d609abb59a6297a49ee8753133f1abe542627c9a3d7fffb844",
+    "summary-audit.json": "50d1d5aca23286dc84c5c2cf28f821168e847ceadc639f612f143934525d928c",
+    "visual-qa.json": "2dfebffae346e4a3fad16250c1d274fe1978472250afc5c372e53d1fb75918ed"
+  },
+  "training_preflight_audit_sha256": "61055700a710a1520770b96c48a187904a87ebe1aaa9ff909793fe4d7bd836e5",
+  "source_sha256": "362c9b5d7a99e7ffa322f2b70bd0fc38d2cda4b0bea39c41342ed93168cef57e",
+  "regression_log_sha256": "cef0984d1c39bb7182796e252afe7a4cfa125a19f85c7874f598e80d6c1e96c2",
+  "regression_tests": {
+    "run": 75,
+    "passed": 73,
+    "scipy_optimizer_skips_previously_verified": 2
+  },
+  "boundary": "local exploratory extension; all parameters fixed before new OOD scoring"
+}

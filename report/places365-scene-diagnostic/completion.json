@@ -1,0 +1,49 @@
+{
+  "state": "complete",
+  "completed_at": "2026-09-29T03:23:23.869341+00:00",
+  "scenes": 365,
+  "images_per_scene": 100,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "independent_scene_counts": 52560,
+  "csv_rows": 17520,
+  "regression": {
+    "total": 91,
+    "exit_code": 0
+  },
+  "inputs_sha256": {
+    "docs/PLACES365_SCENE_DIAGNOSTIC.md": "c0503abf30021f9846791835a7090d3d0aef31b065b0acf9efc544d660eb1839",
+    "runs/places365-extension/scene-diagnostic-declaration.json": "304e355df343628e84e2042326ca574f03122db0386d34149432da701d71e518",
+    "tools/build_places365_scene_diagnostic.py": "9d6ab23141eddeb28cdac92af7a966008a9863320690c9920b93dd9efdb7efca",
+    "tools/audit_places365_scene_diagnostic.py": "489fefe8a4d7e53311d4bff3aa5da44cd3fda834753f28503f500fcfdb02fee0",
+    "tools/verify_places365_scene_completion.py": "7fde00e637490da3a06f44143b012a7a74daa431402cc9028f988db5c73747ef",
+    "report/places365-scene-diagnostic/scene_values.npz": "13717933d78f1c348dfd7ef163b52d68f42c5ce3e30b828472ac9733ff7451b8",
+    "report/places365-scene-diagnostic/scene_counts.csv": "48fb68f4646d75efe998ddaaf49ca4e6c7e5b001215d9985f40cd9bc78d2617c",
+    "report/places365-scene-diagnostic/summary.json": "d1fc711b1a83df6b50fc08950a121dc6e1ce20b370f1231e9fd7d842564813d8",
+    "report/places365-scene-diagnostic/REPORT.md": "49e525aa0a695b1d3f415ecc4ddbd48d8db9d3ea6cff2c5dd8a7e69b0b5a6aae",
+    "report/places365-scene-diagnostic/fixed95-scene-distribution.png": "ab3332007e79d7eca3e62b75ef8b310afe22a5b206bc645aae5a248830895c83",
+    "report/places365-scene-diagnostic/fixed95-scene-distribution.svg": "1672b6a698d15f267329fa0167877c43d2f41b8a07970524d5f0d71441d91adc",
+    "report/places365-scene-diagnostic/audit.json": "e2ce4172c9c68f62bec6ab8caa58c6a2ad35faac1b40436cbbef1f996aae5e4a",
+    "report/places365-scene-diagnostic/figure-inspection.json": "30480f34153d5bad34a9756dc385c5eb9c7a7865e983bb4f48c9de398d0bf663",
+    "report/places365-scene-diagnostic/regression.log": "bb66228e8d0624b2cdd4407d9a06dbfabefc8e35e788f6279c22b27dfea7bd4c",
+    "report/places365-extension/completion.json": "1ff4a6a8ef7e31f0c2f8e981ef625bd4eea1b574690bf2d5e5ee181042ce1b36",
+    "data/places365-validation.npz": "21af2b622b33b7c1bc601942c8e9bb885cc5f182e04a7b66fd986bf6a85b910d",
+    "data/places365-categories_places365.txt": "2affba635eb657e7ca95f4e6cc69bd9fac29ef4c32aeb83cafdfcd06ec6a1ea6",
+    "runs/places365-extension/score-seed0/manifest.json": "5c7650052786627ab109659ddd9b18d2dae7fb36516ac05d01b7822b19abebb3",
+    "runs/places365-extension/score-seed0/scores.npz": "ceb892f6f8c5af83bd504e7f033a900c9c4c1715500c5b7ff3459322b3526334",
+    "runs/places365-extension/score-seed0/acceptance_masks.npz": "8e348dbb540fdbbdedaeee5012d1cd75128d1a772b73022dfc13505420078c45",
+    "runs/places365-extension/score-audit-seed0/audit.json": "ff951ad5c119d45f5d382f94c5e3a76826afb9574cde20ac6b3e70f6de357095",
+    "runs/places365-extension/score-seed1/manifest.json": "52fe954af686da620faba818858882508dfa1fbb7680a4589f54dc0de721f92d",
+    "runs/places365-extension/score-seed1/scores.npz": "e868bf5d8864cc3cd6b1231c69feb468420094855ae07a009219d3f59154586f",
+    "runs/places365-extension/score-seed1/acceptance_masks.npz": "3ab07d8e81ea7d6aae650d0ae8fc625a14bea1ae6eb898e913a36ccb90ba113a",
+    "runs/places365-extension/score-audit-seed1/audit.json": "251c31209219e4527d69a74a148987dfc7718380409fa9a954814dd4d8a82f36",
+    "runs/places365-extension/score-seed2/manifest.json": "d4f01eda5fd876a6673c0273853c4693b3dc9565ffe8e4bfabbe7c1a92898b84",
+    "runs/places365-extension/score-seed2/scores.npz": "93589f84b7e46fc19adbb02af67f698482f645d9494bcc049d2fe524f44e3170",
+    "runs/places365-extension/score-seed2/acceptance_masks.npz": "c87df1483bc256d7750deb07ccd3c88ca1d5e489f3a338e71f52cfc6342d029b",
+    "runs/places365-extension/score-audit-seed2/audit.json": "c9c0c918cad152790f7a9a4c5ffcb7022eb11197866cdc324f73683e0368c1f4"
+  },
+  "boundary": "Post-result scene heterogeneity only; no OOD-based method selection or causal claim."
+}

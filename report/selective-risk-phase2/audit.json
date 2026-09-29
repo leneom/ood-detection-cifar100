@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T16:21:54.214341+00:00",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "operating_points": 144,
+  "original_artifact_hash_checks": 257,
+  "independent_count_and_metric_checks": 6768,
+  "per_sample_decision_masks_checked": 1008,
+  "95pct_phase2_parity_checks": 540,
+  "unchanged_control_operating_points_checked": 36,
+  "nested_acceptance_checks": 756,
+  "results_sha256": {
+    "seed0": "8f730c4b6b159a6bcdac155f38b00344b1812d963908f631992d1e9cf7838226",
+    "seed1": "6dcadeb99fe393b57a063c598a7ea75aa78a9e61817bd2f9416b57ab962f416f",
+    "seed2": "98cdf695ac0cecd4d964a8ea848f2b4345e5f6462add4a4ea879bd287f803ed0"
+  },
+  "inputs_sha256": "93983313cc9c478a2ac61887142a381366c059dce44f2584d9258bc4b9dab0cf",
+  "audit_source_sha256": "4a11788ebfbe5c46a1cb2aeca6f0b17b1ab2b4574e5c02339a8a85b2ae38d883",
+  "boundary": "Python sorted order statistic and Counter ID errors; all four predeclared targets; OOD labels never used; noise excluded from natural macro"
+}

@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T18:19:37.399571+00:00",
+  "figures": {
+    "natural-auroc.png": "7e423fb6239ef0314d4a8306f5ebccec11673497d8c6208af38fc9689027ce13",
+    "natural-auroc.svg": "fecf04719c2deadf13ebbb6e2e8e60799cb11672c42207a644bdfa66d2054a61",
+    "operating-grid.png": "f7a5e013f2060d136091ff6613012243ed9d85f88f0e75ec64dfcae61e642a83",
+    "operating-grid.svg": "1681de6c3e5832d64fc78e3c07c5f887544fce6c95f6256dac50c2c9c464c0b7"
+  },
+  "inspection": "Rendered PNGs inspected at reduced resolution; all four natural panels, twelve method labels, three seed markers and SD bars are legible. Six fixed-grid panels, axes, original-correctness caption and twelve-column legend fit without clipping. Numerical-control curves overlap as expected. SVG hashes bind the corresponding exports.",
+  "display_route": "Local view_image helper failed with sandbox setup error; readonly CPU Pillow JPEG previews viewed via tool image output. No original figure edits."
+}

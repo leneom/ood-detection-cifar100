@@ -1,0 +1,7 @@
+{
+  "state": "retained_report_display_attempt",
+  "recorded_at": "2026-09-27T22:17:09.136374+00:00",
+  "problem": "Four-decimal fixed-format rendering made all small covariance contributions appear as 0.0000.",
+  "scope": "Only report table formatting; full 66 endpoint covariance, 7,920 pair/model and 360 natural decomposition raw outputs already passed independent scalar audit.",
+  "fix": "Display variance contributions in scientific notation; retain ratios at four decimals, rebuild and independently audit full report; no raw/numeric/tolerance/sampling change."
+}

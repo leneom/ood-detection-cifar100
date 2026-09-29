@@ -1,0 +1,10 @@
+{
+  "state": "reconstructed_after_failed_archive_copy",
+  "meaning": "First-render figures were overwritten when PowerShell New-Item rejected -LiteralPath; these files were re-rendered from the unchanged numeric arrays and original source. Original audit hash record was preserved.",
+  "matches_original_audit_hash": {
+    "class-auroc.png": true,
+    "class-fixed95-acceptance.png": true,
+    "class-auroc.svg": false,
+    "class-fixed95-acceptance.svg": false
+  }
+}

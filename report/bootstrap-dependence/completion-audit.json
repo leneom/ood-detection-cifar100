@@ -1,0 +1,32 @@
+{
+  "state": "passed",
+  "completed_at": "2026-09-27T22:20:11.479311+00:00",
+  "inputs": 786,
+  "replicates": 1000,
+  "endpoint_covariance_matrices": 66,
+  "variables_per_endpoint": 45,
+  "method_or_pair_decompositions": 7920,
+  "natural_decompositions": 360,
+  "artifact_hashes": {
+    "runs/bootstrap-dependence/predeclaration.json": "7c298881f9e82e049139175760d19e4ac865a169571f8e5877c9275280a5409d",
+    "runs/bootstrap-dependence/analysis-inputs.json": "5134e1f4cdf4f7944048d9ae4d5302f6d0e2cd51ce6e44dbc67783fce4f03dd9",
+    "runs/bootstrap-dependence/analysis/raw-manifest.json": "5c39459a23ded9df5ccf77834543dedc77dd28fbc4813ae1ae6fe44ea7b28a23",
+    "runs/bootstrap-dependence/raw-audit.json": "a8ef59bea2c029d7561fe7315bc8723bd31b43243e8f2c4add5b2c2af9fe2c74",
+    "runs/bootstrap-dependence/regression.log": "0dbad894a1bc0cd9d8441c74fa69264901bcdf34708ab7a2ccb794dd57d32507",
+    "runs/bootstrap-dependence/test-environment.json": "548af7d6a947d4b1265513fbb813efc1523ba80db7bd54d6ee696ff1980c9db0",
+    "report/bootstrap-dependence/inputs.json": "07f8f16428a605a6f7a20fcc4e6e42bb24446f96e7e1a9c74724e3e5b7a7e628",
+    "report/bootstrap-dependence/build.json": "9992c5f29e8b341ac2228bbc704d7f13eeaa2345d74d7b95c581c4b5b80f1f7e",
+    "report/bootstrap-dependence/summary-audit.json": "42c7aed5ee8aaafe7b8c1369178ab8fc4be46bcbcf17537c7b6c6b068ce7cc53",
+    "report/bootstrap-dependence/visual-qa.json": "954f92279b3918a30035b1d1aada3276c7022169e31ff7c3dd44076934322241",
+    "report/bootstrap-dependence/REPORT.md": "d9476afedfadc4d25ffb91e21d84cabda57bbe763c901e89c986f98945f6a9ff",
+    "report/bootstrap-dependence/plot-data.json": "ae3ed41081f83ef39d1cbed3eb5d44953e26a18cfc5a77813d42120fb4007c77",
+    "report/bootstrap-dependence/four-natural-ratios.png": "d12bbdf5f02623dca04b61cc150fd544083a3ab6d7fc21376a981f3fc8e50e83",
+    "report/bootstrap-dependence/natural-auroc-correlation.png": "2fdd3293df718336ac99785d9ec46112ac3f6bb1431d645d964aaa9ac2a1ad6c",
+    "report/bootstrap-dependence/three-model-ratios.png": "1aeaa5a5aafd4c29c3f7920c840c607354209bb8a1b201ee80a64d16da9bf05a",
+    "report/bootstrap-dependence/four-natural-ratios.svg": "846be330171c26b261de976ce6bdf684449282daaba660fd0681ddbb295fb571",
+    "report/bootstrap-dependence/natural-auroc-correlation.svg": "3f958d1ea9788386537150c54a85e1c30c250c3b9eb0071377d3dbccca738583",
+    "report/bootstrap-dependence/three-model-ratios.svg": "8a754c9f1f0e189d06314b01632c58d668de15a79797547b690c92f567a8f4e9"
+  },
+  "completion_source_sha256": "2ea311892e69dba1e05b081e6c574711c3117dc6efb9913b60c49a2be6266289",
+  "boundary": "Descriptive covariance of fixed paired image resamples; zero-variance correlations undefined; no training-seed uncertainty, causal claim, selection or external publication"
+}

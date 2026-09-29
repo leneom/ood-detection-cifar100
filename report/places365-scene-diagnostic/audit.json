@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "checked": {
+    "scene_counts": 52560,
+    "csv_rows": 17520,
+    "summary_cells": 48,
+    "display_rows": 12,
+    "figures": 2
+  },
+  "declaration_sha256": "304e355df343628e84e2042326ca574f03122db0386d34149432da701d71e518",
+  "summary_sha256": "d1fc711b1a83df6b50fc08950a121dc6e1ce20b370f1231e9fd7d842564813d8",
+  "cube_sha256": "13717933d78f1c348dfd7ef163b52d68f42c5ce3e30b828472ac9733ff7451b8",
+  "csv_sha256": "48fb68f4646d75efe998ddaaf49ca4e6c7e5b001215d9985f40cd9bc78d2617c",
+  "report_sha256": "49e525aa0a695b1d3f415ecc4ddbd48d8db9d3ea6cff2c5dd8a7e69b0b5a6aae",
+  "figure_sha256": {
+    "fixed95-scene-distribution.png": "ab3332007e79d7eca3e62b75ef8b310afe22a5b206bc645aae5a248830895c83",
+    "fixed95-scene-distribution.svg": "1672b6a698d15f267329fa0167877c43d2f41b8a07970524d5f0d71441d91adc"
+  },
+  "source_sha256": "489fefe8a4d7e53311d4bff3aa5da44cd3fda834753f28503f500fcfdb02fee0",
+  "audited_at": "2026-09-29T03:21:47.640052+00:00",
+  "boundary": "Independent raw-score threshold reconstruction of post-result descriptive scene diagnostic."
+}

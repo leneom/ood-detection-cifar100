@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "checked": {
+    "class_auroc": 720,
+    "class_acceptance": 2880,
+    "id_acceptance": 144,
+    "aggregate_identities": 180,
+    "csv_auroc_rows": 240,
+    "csv_acceptance_rows": 960,
+    "distribution_quantiles": 120,
+    "display_rows": 12
+  },
+  "declaration_sha256": "ab944b7b8767e4169a2d8cb72a999805ddf5ca64ebbe46027b06fed9aeb5401b",
+  "class_values_sha256": "6bc3ec55ec1256ae8f644689ca7609f98a5fd0e4d3ea745bea6fc7f51e0dc6db",
+  "summary_sha256": "aa439c9077600ea08de3b02aaf0eb658a3eda8e2cd3d382ab6e41e56d5982739",
+  "class_auroc_csv_sha256": "98c5e210e50bfc19eee9f8deea79d4951103418b4413b09f968962f4f0c26664",
+  "class_acceptance_csv_sha256": "0c75a1ae5a1f373ef85bfddae8a6963652e4835cbb1f55ded3839c08370c1527",
+  "report_sha256": "1dc17d6d1cd61bf25d6cab68dcbec00495f7da6fd20495804009e321a7891b0d",
+  "audit_source_sha256": "218f245ac8ad7bfb25f4c2004a72804aad880b45667c70323021eaeda4f222ce",
+  "audited_at": "2026-09-28T12:10:48.695559+00:00",
+  "boundary": "All 20 held-out classes independently recomputed from frozen raw scores; descriptive same-test analysis only."
+}

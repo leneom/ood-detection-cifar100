@@ -1,0 +1,49 @@
+{
+  "state": "complete",
+  "completed_at": "2026-09-27T17:17:27.732445+00:00",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "named_methods": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis",
+    "vim",
+    "residual",
+    "react_energy"
+  ],
+  "numeric_control": "affine_energy",
+  "natural_ood": [
+    "cifar10",
+    "mnist",
+    "svhn",
+    "textures"
+  ],
+  "noise": "diagnostic only, excluded from natural macro",
+  "raw_checks": {
+    "score_arrays": 180,
+    "intermediate_arrays": 105,
+    "raw_metrics": 3117,
+    "ranking_metrics": 450,
+    "contingency_fields": 5640,
+    "masks": 840,
+    "control_arrays": 360,
+    "control_metric_fields": 1440,
+    "nested_masks": 630
+  },
+  "summary_records_checked": 1834,
+  "frozen_input_hash_checks": 295,
+  "audits": {
+    "audit.json": "f685c0776705aa0808e6aae4df07862e0d6273de710e469ae84b1eeb3d56e954",
+    "summary-audit.json": "cc9d749558d34a11f814d06f9cb72655d975d2465beebc8c3aac0a6cfab186e6",
+    "visual-qa.json": "fe677f6d545f8acfb3ce5c68f9d39e5965cabedc0f506712f96009a5b5e9c10a"
+  },
+  "training_fit_audit_sha256": "65ee3b5254324167513ba146fd4b8475aa177d816238b8d13e316d979ef8f0ab",
+  "source_sha256": "985cd44c90bb83fc7e84d2d32508888959b3407593b8d5798f03d50bcbd87483",
+  "boundary": "local exploratory extension; all parameters fixed before new OOD scoring"
+}

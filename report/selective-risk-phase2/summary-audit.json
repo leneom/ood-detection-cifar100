@@ -1,0 +1,20 @@
+{
+  "state": "passed",
+  "statistics_checked": 1728,
+  "maximum_statistics_error": 2.220446049250313e-16,
+  "CSV_rows_checked": 720,
+  "CSV_fields_checked": 20160,
+  "summary_sha256": "d56e95f1d6608bfc6b2f3331e081095613dea75e3127c0fca939af55b7cfd12a",
+  "raw_audit_sha256": "e871ecf95597f7383d6b97c33c827f87c3bc7e61d50ee8a8fec046b0859a6da1",
+  "report_artifact_sha256": {
+    "id-risk-coverage.png": "26f8d2f45b51ed3abfdc20e6bd85dc5a6a6d8766ab6662c41448c4bab5b148dd",
+    "id-risk-coverage.svg": "239ca0535861dedb2170c9e324a7d23b513218fd411b618c0c515fd9bb5242d6",
+    "natural-ood-coverage.png": "0d0c2c23b4cce595430a65892dc350de73bea020b4036f5c0bb204b39bf1ae25",
+    "natural-ood-coverage.svg": "98638f1f52133c6729f18ecd0decc5579575b194601aac061b2c8ee1aeefa198",
+    "per-seed-counts.csv": "57d9a19bbcc617fc12a4476b9b77c691538c0063454d7a0ae0de13b9b5df2c65",
+    "REPORT.md": "87e903a30887dab935a0680dac75bcb14cfdfbcf8b349b13d3869c6b0a99a8a4"
+  },
+  "audit_source_sha256": "ae02815e9b7e3d442ff314cdb3b757dd1fa990db76ca4a1ac10318448439b28e",
+  "audited_at": "2026-09-27T16:27:07.779555+00:00",
+  "boundary": "Python statistics verifies paired seed values/sample SD; equal-weight natural macro within seed; all targets and populations retained"
+}

@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T19:15:06.122015+00:00",
+  "figures": {
+    "natural-auroc.png": "df6218162e4f7b48ee3dd722f2a51982b7d3299f7c9fa1b00795e23b18c03c34",
+    "natural-auroc.svg": "88a66299d10696679de6902b134a1d71e8c9a33573f4a04e53ab974dc998a36f",
+    "operating-grid.png": "ec326e3bbe2092f42f62c1caf3f3d47fad1b6e24a1bf6a366fdd15c63d50c09c",
+    "operating-grid.svg": "3f1ac5bcf23aa2c40cb7389d054558b38c2e8723451ad998e72bb9a66522d96a"
+  },
+  "inspection": "Both rendered PNG previews inspected. Four natural population panels show all fifteen methods and all three seeds with descriptive mean/sample SD; numerical controls marked. Six fixed operating-grid panels retain actual ID-test coverage, original-classifier risk, separate seed variation and natural macro OOD acceptance, with all fifteen legend entries. Labels/legends/captions fit without clipping. SVG export hashes bound; SVG itself was not separately rendered.",
+  "display_route": "Readonly Pillow JPEG previews through tool image output; original scientific exports unchanged."
+}

@@ -1,0 +1,31 @@
+{
+  "state": "passed",
+  "class_seeds": [
+    2031,
+    2032,
+    2033
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "nine_score_manifests": 9,
+  "metric_csv_rows": 48,
+  "operating_csv_rows": 144,
+  "checked_numeric_fields": 3298,
+  "displayed_method_rows": 12,
+  "report_spec_sha256": "204b147508d603254f1126112bb2aefd50a82b6a96a72e8577a70e398db3b878",
+  "report_declaration_sha256": "29f9363cd57be2d7d994b6837245c29642e5d4a139346bc92c958050d0db4f2f",
+  "report_source_sha256": "b15030532d96965e50b47d189f449955c526ed9068edbede2f8a8da28c3157de",
+  "audit_source_sha256": "a148e569952ffc14aa22407d2659254270326e5b84660bf23a530224a275c6e7",
+  "outputs_sha256": {
+    "report/cifar100-class-holdout-replication/summary.json": "78fc00733cbb09c587fb7d2a8c4c45eaef1931cabaab492763f85b4ed4c4badc",
+    "report/cifar100-class-holdout-replication/metrics.csv": "befd4f46c1448c0408b18cdd3a5306c73f09253a406d2104e846c29a3d8d7989",
+    "report/cifar100-class-holdout-replication/operating.csv": "7b4966a494bb6af163fcb7f920d1d5b8f5b0c41d95334704a91c135c622603a1",
+    "report/cifar100-class-holdout-replication/SUMMARY.md": "0f3138eee5ff29cdf128a449ce999e43bbb85d6bd77a6629f2f8930af3b6db33",
+    "report/cifar100-class-holdout-replication/executed_report_source.py": "b15030532d96965e50b47d189f449955c526ed9068edbede2f8a8da28c3157de"
+  },
+  "audited_at": "2026-09-28T22:52:55.449378+00:00",
+  "boundary": "Independent nine-point, partition/seed statistics, CSV and display audit. Descriptive fixed-partition sensitivity only."
+}

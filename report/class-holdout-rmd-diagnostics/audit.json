@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-29T00:08:41.336984+00:00",
+  "transition_rows": 504,
+  "component_rows": 54,
+  "summary_comparisons": 28,
+  "all_row_transition_vectors": 18,
+  "declaration_sha256": "d81aec71dfafb9e81495e78b391f28cbf9200153894cb78326afe409cc8b0e91",
+  "manifest_sha256": "18f56eaffc56ad144548404f6c2f1c7c135d4d038b5f9b82f4a79a0e45a321ae",
+  "source_sha256": "1ef6ecd49deacec0997c027521ce5758c928897ede86dd18257bbae8c5c1272b",
+  "boundary": "Post-result descriptive diagnostic; no score, threshold or model changed."
+}

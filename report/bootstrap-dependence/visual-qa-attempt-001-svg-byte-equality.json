@@ -1,0 +1,8 @@
+{
+  "state": "retained_overstrong_qa_rule",
+  "recorded_at": "2026-09-27T22:20:04.990713+00:00",
+  "observation": "All final PNG bytes and all numeric plot coordinates are identical to the visually inspected first report; SVG bytes differ due to timestamps and generated glyph/clip identifiers.",
+  "failure": "An attempted QA required byte equality for SVG across independent renders, although SVG metadata/IDs are non-deterministic.",
+  "correction": "Visual QA requires the same inspected PNG bytes plus audited plot coordinates; hashes of the final SVG files are bound without claiming cross-render byte identity.",
+  "figure_output_changed_from_first_report": false
+}

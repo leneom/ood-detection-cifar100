@@ -1,0 +1,20 @@
+{
+  "state": "passed",
+  "checked": {
+    "metric_seed_values": 144,
+    "metric_statistics": 240,
+    "operating_seed_values": 432,
+    "operating_counts": 432,
+    "operating_statistics": 432,
+    "csv_rows": 192,
+    "display_rows": 12
+  },
+  "source_sha256": {
+    "summary": "8fad8532a5b92b561a8ba16e4f6df31ac9e99f3f76c76a4dc4011df885ee5142",
+    "metric_csv": "cc940080091b9a0f008713dbedfcec1292cd10169c19063c40c98f6cad28e5ff",
+    "operating_csv": "fb08b720d8818388f2e7b74f0df9763c71de001298880cbd2e5a3c9b4342333d",
+    "report": "f92bb7e12dffc00029c98ede99c20a5fb370aa4de0793d4e4a4f00c3a55bbf75",
+    "audit_source": "882903c8746ecd6c2307fc8b5007e040d1a92c65bce92cddfe25b0de9f959e26"
+  },
+  "boundary": "All seed values/counts/summary statistics and all-method display audited; exploratory population with unequal AUPR prevalence."
+}

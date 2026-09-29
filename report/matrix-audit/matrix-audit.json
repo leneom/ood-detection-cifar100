@@ -1,0 +1,435 @@
+{
+  "status": "passed",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "statistics_checked": 145,
+  "maximum_statistics_error": 1.1102230246251565e-16,
+  "paired_method_minus_msp": {
+    "cifar10": {
+      "energy": {
+        "auroc": {
+          "mean": 0.008885533333333381,
+          "sample_sd": 0.0007543704539272485,
+          "n_seeds": 3,
+          "per_seed": [
+            0.008839634999999957,
+            0.00815516000000005,
+            0.009661805000000134
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.0036999999999999624,
+          "sample_sd": 0.007893668348746417,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.00040000000000006697,
+            0.012800000000000034,
+            -0.0013000000000000789
+          ]
+        }
+      },
+      "maxlogit": {
+        "auroc": {
+          "mean": 0.010926384999999983,
+          "sample_sd": 0.0007846747767546783,
+          "n_seeds": 3,
+          "per_seed": [
+            0.010793734999999915,
+            0.010216490000000022,
+            0.01176893000000001
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.0025333333333333505,
+          "sample_sd": 0.007902742140126663,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.0040000000000000036,
+            0.006000000000000005,
+            -0.009600000000000053
+          ]
+        }
+      },
+      "entropy": {
+        "auroc": {
+          "mean": 0.00944665499999997,
+          "sample_sd": 0.0005757479242037866,
+          "n_seeds": 3,
+          "per_seed": [
+            0.009756454999999997,
+            0.009801169999999915,
+            0.00878234
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.007966666666666677,
+          "sample_sd": 0.008615296473908119,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.014000000000000012,
+            0.0019000000000000128,
+            -0.011800000000000033
+          ]
+        }
+      },
+      "knn": {
+        "auroc": {
+          "mean": -0.010329784999999961,
+          "sample_sd": 0.005614638214611381,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.009110750000000056,
+            -0.005424809999999947,
+            -0.016453794999999882
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.006599999999999939,
+          "sample_sd": 0.009021640649017202,
+          "n_seeds": 3,
+          "per_seed": [
+            0.0027999999999999137,
+            9.999999999998899e-05,
+            0.016899999999999915
+          ]
+        }
+      },
+      "mahalanobis": {
+        "auroc": {
+          "mean": -0.22837642000000002,
+          "sample_sd": 0.00980243940220483,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.22625229000000013,
+            -0.21981020000000007,
+            -0.23906676999999987
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.15233333333333332,
+          "sample_sd": 0.01154873730471572,
+          "n_seeds": 3,
+          "per_seed": [
+            0.16479999999999995,
+            0.14200000000000002,
+            0.1502
+          ]
+        }
+      }
+    },
+    "mnist": {
+      "energy": {
+        "auroc": {
+          "mean": 0.04178312499999992,
+          "sample_sd": 0.03586240994930946,
+          "n_seeds": 3,
+          "per_seed": [
+            0.05998583000000002,
+            0.0004698399999998326,
+            0.06489370499999991
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.0040999999999999925,
+          "sample_sd": 0.06663092375166352,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.046499999999999986,
+            0.07269999999999999,
+            -0.03849999999999998
+          ]
+        }
+      },
+      "maxlogit": {
+        "auroc": {
+          "mean": 0.04028330666666665,
+          "sample_sd": 0.029598996241977708,
+          "n_seeds": 3,
+          "per_seed": [
+            0.05526943499999992,
+            0.006188314999999944,
+            0.05939217000000008
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.0045333333333333154,
+          "sample_sd": 0.05355234199671688,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.04059999999999997,
+            0.05699999999999994,
+            -0.029999999999999916
+          ]
+        }
+      },
+      "entropy": {
+        "auroc": {
+          "mean": 0.01696651666666671,
+          "sample_sd": 0.006938358181591526,
+          "n_seeds": 3,
+          "per_seed": [
+            0.019843365000000057,
+            0.00905247500000006,
+            0.02200371000000001
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.0049000000000000155,
+          "sample_sd": 0.0368016303986657,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.02169999999999994,
+            0.04689999999999994,
+            -0.010499999999999954
+          ]
+        }
+      },
+      "knn": {
+        "auroc": {
+          "mean": 0.03956776333333323,
+          "sample_sd": 0.004286428355243263,
+          "n_seeds": 3,
+          "per_seed": [
+            0.03508473999999984,
+            0.039992589999999995,
+            0.04362595999999985
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.003033333333333369,
+          "sample_sd": 0.04026094054208536,
+          "n_seeds": 3,
+          "per_seed": [
+            0.04730000000000001,
+            -0.031399999999999983,
+            -0.006799999999999917
+          ]
+        }
+      },
+      "mahalanobis": {
+        "auroc": {
+          "mean": -0.16605640833333338,
+          "sample_sd": 0.08576626223008692,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.24795044500000007,
+            -0.07688204500000007,
+            -0.17333673500000002
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.1163,
+          "sample_sd": 0.03590041782486665,
+          "n_seeds": 3,
+          "per_seed": [
+            0.1521,
+            0.08029999999999993,
+            0.11650000000000005
+          ]
+        }
+      }
+    },
+    "noise": {
+      "energy": {
+        "auroc": {
+          "mean": 0.038219871666666703,
+          "sample_sd": 0.057596711099297225,
+          "n_seeds": 3,
+          "per_seed": [
+            0.10457826000000003,
+            0.001193035000000009,
+            0.00888832000000006
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.05973333333333334,
+          "sample_sd": 0.059650174629529235,
+          "n_seeds": 3,
+          "per_seed": [
+            0.0,
+            -0.05990000000000001,
+            -0.1193
+          ]
+        }
+      },
+      "maxlogit": {
+        "auroc": {
+          "mean": 0.035759460000000076,
+          "sample_sd": 0.04996224148568419,
+          "n_seeds": 3,
+          "per_seed": [
+            0.09338306500000004,
+            0.004525740000000056,
+            0.00936957500000013
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.055733333333333336,
+          "sample_sd": 0.05550147145196543,
+          "n_seeds": 3,
+          "per_seed": [
+            0.0,
+            -0.05620000000000001,
+            -0.111
+          ]
+        }
+      },
+      "entropy": {
+        "auroc": {
+          "mean": 0.012060866666666689,
+          "sample_sd": 0.007270787824370016,
+          "n_seeds": 3,
+          "per_seed": [
+            0.020362264999999935,
+            0.006824145000000059,
+            0.00899619000000007
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.05623333333333334,
+          "sample_sd": 0.05387896930466778,
+          "n_seeds": 3,
+          "per_seed": [
+            0.0,
+            -0.06130000000000001,
+            -0.1074
+          ]
+        }
+      },
+      "knn": {
+        "auroc": {
+          "mean": 0.13021822333333333,
+          "sample_sd": 0.21188494276513142,
+          "n_seeds": 3,
+          "per_seed": [
+            0.37487658,
+            0.009283804999999923,
+            0.006494285000000044
+          ]
+        },
+        "fpr95_id": {
+          "mean": -0.2768333333333333,
+          "sample_sd": 0.3238828852121293,
+          "n_seeds": 3,
+          "per_seed": [
+            -0.65,
+            -0.0688,
+            -0.1117
+          ]
+        }
+      },
+      "mahalanobis": {
+        "auroc": {
+          "mean": 0.01822521333333338,
+          "sample_sd": 0.3469388483026643,
+          "n_seeds": 3,
+          "per_seed": [
+            0.41832218499999996,
+            -0.19938386499999994,
+            -0.16426267999999988
+          ]
+        },
+        "fpr95_id": {
+          "mean": 0.26846666666666663,
+          "sample_sd": 1.098824942078279,
+          "n_seeds": 3,
+          "per_seed": [
+            -1.0,
+            0.9283999999999999,
+            0.877
+          ]
+        }
+      }
+    }
+  },
+  "per_seed_raw_audits": [
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-final",
+      "seed": 0,
+      "selected_epoch": 89,
+      "best_id_validation_accuracy": 0.7552,
+      "id_test_accuracy": 0.7610999941825867,
+      "independent_sklearn_checks": 54,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "f6c164834b98b8c3cca2a301a2288efbe3dc700b2680e09aee4f9694669d5f7e",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:18:03.499120+00:00"
+    },
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-final",
+      "seed": 1,
+      "selected_epoch": 96,
+      "best_id_validation_accuracy": 0.7528,
+      "id_test_accuracy": 0.7555999755859375,
+      "independent_sklearn_checks": 54,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "1aa639febbd9a690041af15b13bce5a68c9d6c714a6e20d695e54b53ebe6f80f",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:18:06.066438+00:00"
+    },
+    {
+      "status": "passed",
+      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-final",
+      "seed": 2,
+      "selected_epoch": 92,
+      "best_id_validation_accuracy": 0.749,
+      "id_test_accuracy": 0.7563999891281128,
+      "independent_sklearn_checks": 54,
+      "maximum_metric_error": 2.220446049250313e-16,
+      "checkpoint_sha256": "4b50a24c474aecb753ed27d3fdf98ac7c02a25543e4f5840bfee06f38ffc241e",
+      "checks": [
+        "full schedule and ID-only selection",
+        "checkpoint/source/split hashes",
+        "feature fitting population",
+        "raw logits and scores",
+        "independent AUROC/AP",
+        "empirical thresholds and acceptance",
+        "all saved arrays finite"
+      ],
+      "environment": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "sklearn": "1.7.2"
+      },
+      "audited_at": "2026-09-27T15:18:08.909445+00:00"
+    }
+  ],
+  "summary_sha256": "77572b8e74b39f05360a70dfaac4485479f32292d3fb370e2538e46bdb5d1c7e",
+  "tool_sha256": "ac29a197dca04f3e912f8c4d5988679a0d12315518251fc84d90050d5f18fcc8",
+  "python": "3.13.9",
+  "audited_at": "2026-09-27T15:18:08.952355+00:00"
+}

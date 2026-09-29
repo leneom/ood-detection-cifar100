@@ -1,0 +1,58 @@
+{
+  "state": "complete",
+  "completed_at": "2026-09-28T02:42:25.902208+00:00",
+  "three_full_training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "checkpoint_selection": "2000 disjoint ID validation rows only",
+  "temperature_fit": "1500 disjoint ID validation rows only",
+  "threshold_fit": "1500 disjoint ID validation rows only",
+  "natural_ood": [
+    "cifar10",
+    "mnist",
+    "svhn",
+    "textures"
+  ],
+  "separate_diagnostic": "noise",
+  "primary_methods": [
+    "msp",
+    "energy",
+    "maxlogit",
+    "entropy",
+    "knn",
+    "mahalanobis"
+  ],
+  "report_cells": 72,
+  "independent_summary_fields": 1296,
+  "independent_plot_coordinates": 120,
+  "regression": {
+    "command": "CUDA_VISIBLE_DEVICES=-1 ece488_clip/python.exe -X utf8 -m unittest discover -s tests -q",
+    "total": 91,
+    "passed": 89,
+    "skipped": 2,
+    "exit_code": 0,
+    "note": "Two unchanged SciPy optimizer skips were previously verified in the base CPU environment."
+  },
+  "inputs_sha256": {
+    "training_status": "6e7a24e1c16f5f50996d6ce8beaf63b69dc26815a29cf1a4aa8f560d6b0cacd2",
+    "evaluation_status": "88e6b9a9c98b19698c358297319a36818a6c0ebbebcce20f4554afb661af3a54",
+    "evaluation_launch": "79196f0346eb6cf499e7186894ad70aa8d70bf7bd2c8c05a35bf79980c71e752",
+    "summary": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
+    "summary_audit": "9d3c2cbab477170165beb13c022aaae0e2382213bf8f85cc01881bf23edda115",
+    "render_status": "657a37a31d98177b332ca6e8493dd22d76a4486d324dcb60a14fb5702dbcd44b",
+    "visual_audit": "777edc66670d519fe5c3a04ddc3dc6a0906d28e7512e727663e81317ea6858a0",
+    "figure_inspection": "56a3ac4f3451d186ebc8cd7efd12ff0dc2b6880fc3b954e832fc03529203b018",
+    "train-audit_seed0": "e200855357dbb7d9f1c91ba741dd8e41fe8587597da869da88d8c778d2b0f422",
+    "feature-audit_seed0": "017764980a2e5bb77110ddead744a9a6f9c92b45009132bb3b2cae9e11bd8318",
+    "audit_seed0": "9ca9700de15304b6d4d424ddd7c543a9a20206bdd8c2cbd2efa2dab4c3fcc282",
+    "train-audit_seed1": "11cc5ab75452c0db829c0d802781b161afd531db919bea6f27ef158b8c519023",
+    "feature-audit_seed1": "261b9b95ded12ea3c143965ce6a20c2ed208b44b70c9cf596e59fc0e99426193",
+    "audit_seed1": "c3532d22e86de512a2462602d406bcbf008ea1094b99a3d91dcf4cecccb2ab3d",
+    "train-audit_seed2": "290f8741103ae6045e6dac7e546f839b48c2dcade576b5915e7e97c5803df6a7",
+    "feature-audit_seed2": "117e47c5cfd9313689047d9ffbf87d6027d725a6dffcb16474b49563cdcf5f72",
+    "audit_seed2": "7156382b4fd7b44a7f659f771c1b84130a8e25f903f531684a70de5f66cd8995"
+  },
+  "boundary": "Previously inspected OOD test populations; exploratory paired replication, not fresh OOD confirmation, method selection, causality, or deployment validation."
+}

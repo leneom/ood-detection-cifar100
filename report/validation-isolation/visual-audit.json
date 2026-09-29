@@ -1,0 +1,18 @@
+{
+  "state": "passed_pending_human_figure_inspection",
+  "render_status_sha256": "657a37a31d98177b332ca6e8493dd22d76a4486d324dcb60a14fb5702dbcd44b",
+  "summary_sha256": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
+  "audit_source_sha256": "f092b48b77052ffd8184a6b9ba9647bb7bad96130871b9b81d974b8520c45aec",
+  "plot_coordinates_checked": 120,
+  "displayed_macro_rows_checked": 12,
+  "png_sizes": {
+    "paired-auroc": [
+      2214,
+      792
+    ],
+    "fixed95-acceptance": [
+      2214,
+      774
+    ]
+  }
+}

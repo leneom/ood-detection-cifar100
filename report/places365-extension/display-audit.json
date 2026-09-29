@@ -1,0 +1,21 @@
+{
+  "state": "passed",
+  "checked": {
+    "seed_values": 828,
+    "table_rows": 24,
+    "metric_groups": 132,
+    "operating_groups": 144,
+    "integer_vectors": 240,
+    "figures": 4
+  },
+  "summary_sha256": "0e611918a46409fe6ca02c93ceda89a19668a7c1974e27ce76043d097b8099ca",
+  "report_sha256": "df7e7328e7b57949c42d1e8aa885692316a4903b8f742a37e6f45703a8fa841f",
+  "figure_sha256": {
+    "auroc.png": "51bc9fe676dc4b50c35923582b87b494ec6a038975319b36e9b29a1a5323cd7f",
+    "fixed95-acceptance.png": "6561771f6aca2e127e5c37627d973be02171ea9983906858e51f1eaab35ecb75",
+    "auroc.svg": "917e8f81efd1b35703ff618b588ba8cd6d1ea3a5406dc805a07b7cf7f281a1a9",
+    "fixed95-acceptance.svg": "63deaa6bc34ba6234468bc24cedae8209f7ace7cd2f334b413f31e63e2064fc7"
+  },
+  "audit_source_sha256": "bb6f874a38bcb9052d46ebf762a9e0ad716e61c7e0ea0435d2c8ce79c1985615",
+  "created_at": "2026-09-29T03:12:29.558173+00:00"
+}

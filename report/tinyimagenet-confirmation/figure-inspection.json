@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-28T03:14:47.854541+00:00",
+  "images": {
+    "auroc.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "18bf1136a511cd5919fd72d49c12ec7026d39c9da4caf1a779bc9feef706fca7"
+    },
+    "fixed95-acceptance.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "c5699bba9de6881bc5e93472be7bb05144ee81d5ce34ee1d0e3d9a6eeaa2e2f6"
+    }
+  },
+  "observations": "Both actual figures were opened and inspected: method labels, axis ticks, error bars, legend and titles are readable; no text clipping or reversed method order.",
+  "scope": "Display quality only. Statistical values independently checked in display-audit.json."
+}

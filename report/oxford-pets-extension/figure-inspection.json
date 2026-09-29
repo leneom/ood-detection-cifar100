@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-29T03:48:40.828606+00:00",
+  "images": {
+    "auroc.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "3a899ce6d90481c2b9af058a8da14f222b873af7da08f2a8402895f3fa3b03ba"
+    },
+    "fixed95-acceptance.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "909bb6e7a743f6699dee9be95b637babfdeba0d9780ef8230def1219db35170e"
+    }
+  },
+  "observations": "Opened both final PNGs; checked method order, error bars, axes, titles and legend; no clipping or overlapping data labels.",
+  "scope": "Visual display quality only. All reported statistics independently recomputed in display-audit.json."
+}

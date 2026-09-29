@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T21:08:46.269064+00:00",
+  "figures": {
+    "support-scale.png": "59b39155cfbf30496c1765f30327558389583c7c8e777d4152cd058f20e0b95b",
+    "support-scale.svg": "515ad5d136de68c454137a3c48a8656e76a88703dbbec267b27d6b69ffd18bd2",
+    "natural-transitions.png": "b18434d041eee991a404d3c14831849394518fc8fba2ac7268a42ef6e0d79f99",
+    "natural-transitions.svg": "ff4644c84147025fe08b16eba108cd0e5f33ff1066e4ea031acb4e836d4a0837"
+  },
+  "inspection": "Both rendered PNG previews inspected. Nine support/scale panels retain all seven populations, three variants and seeds with full-population bounds. Twelve natural-transition panels show all twelve references for all four natural datasets and three variants, with separate seed points and descriptive SD bars. Axes, legend, numerical-control markers, own-threshold/sign captions fit without clipping; no favorable subset. SVG export hashes bound; SVG was not separately rendered.",
+  "display_route": "Readonly Pillow JPEG previews via tool image output; original figures unchanged."
+}

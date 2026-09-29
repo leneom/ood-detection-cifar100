@@ -1,0 +1,42 @@
+{
+  "prepared_at": "2026-09-27T21:50:24.137645+00:00",
+  "raw_audit_sha256": "4bbef3c892be8528032322e82ad77380ed60ac6d90ef01c0656bca9607de4892",
+  "input_manifest_sha256": "2dfd599edab2255fdcbce1454a7a168db70ca1398120358fc594b9bf1238f849",
+  "source_hashes": {
+    "tools/build_bootstrap_report.py": "2890f9ddfd2a3381d552b25a70048c272d25f1f237895109eb264badb743c518",
+    "tools/bootstrap_io.py": "34eb5da8f75c50ac3576aa8946899fb7a725e49addafdee6e140722143900c87",
+    "tools/geometry_io.py": "c1922444a30edfe7e5d1c8d29d91db636b0182fa600106df380a01dd3b6095fc"
+  },
+  "raw_artifacts": {
+    "runs/paired-bootstrap/analysis/block-000.json": "ed066be63bd5051155856d4e1b0a8a8649903b7b1e811037c38d8b2d4cc1fc85",
+    "runs/paired-bootstrap/analysis/block-000-weights.npz": "01a11d40afaa0cda2a531c187519baecbf45e6c7ac85c3cbb6f5bd8c13d71742",
+    "runs/paired-bootstrap/analysis/block-000-metrics.npz": "9bfea9ddf47185d57fd36d3210be0e5e21f836d5f9fe31282f3969bae5eb6004",
+    "runs/paired-bootstrap/analysis/block-001.json": "792a815f52697a4762238c7f8a6c54ada57906a7aae0f4a1469995a2757db3e7",
+    "runs/paired-bootstrap/analysis/block-001-weights.npz": "e416d2d252164b4700db4a4008fa23c5f5dc73a35264bfd4a2a02b51cb1bd4ea",
+    "runs/paired-bootstrap/analysis/block-001-metrics.npz": "e5955c43fb9f783a32e28f7856e06c488f77648d61fd0601bdf8882245850746",
+    "runs/paired-bootstrap/analysis/block-002.json": "8b1c8b0258bfc297e8c1142ca4a3c3d7d714ffa6cb6173406c3a611fa45af45b",
+    "runs/paired-bootstrap/analysis/block-002-weights.npz": "9ca680c86726a1933ddcfbdd6c5388062f122631471eec0d87bc937de6a4335b",
+    "runs/paired-bootstrap/analysis/block-002-metrics.npz": "1cc7a2e5e0f181cdd2a0e6d0c80223fee57e6bea62f4be9e658283935178b72c",
+    "runs/paired-bootstrap/analysis/block-003.json": "df1a855f92875c7b4504b1e6d7943e00e809e245cf4d5919275f82f3207a43d3",
+    "runs/paired-bootstrap/analysis/block-003-weights.npz": "d42d09bec9ff99aeada5808f8df910beea49ea4c300cee85f64bc2337bdf186b",
+    "runs/paired-bootstrap/analysis/block-003-metrics.npz": "a3137e48a968c7c9091ada900c898c1e78a1f3caa134e769fc84179141c0c4cc",
+    "runs/paired-bootstrap/analysis/block-004.json": "ae167f2b587f5161b600c7f0f3e05158cb0346c1107edbdca278be534e7bb993",
+    "runs/paired-bootstrap/analysis/block-004-weights.npz": "55d7b2ad4ea375aaf31dca305491fd55b2b338938dd77bc986992e91d14e61b1",
+    "runs/paired-bootstrap/analysis/block-004-metrics.npz": "474eba18e9d4a54b25a8444168809dafe21a9a8a6f7a05f53b1715fd71ed5fa9",
+    "runs/paired-bootstrap/analysis/block-005.json": "576048f21d15c403bf9971f94abd78dd826d8acaca71a7715f598d1510a37fb5",
+    "runs/paired-bootstrap/analysis/block-005-weights.npz": "2bfb86e7722400d42c5e7f073a5103db410cb35fc220a7dda8b110cf4090d71b",
+    "runs/paired-bootstrap/analysis/block-005-metrics.npz": "9fee43b75108eb3f225366e7280e7481f11699953d60a8ba7aad7b8822307c4e",
+    "runs/paired-bootstrap/analysis/block-006.json": "1d3243a5b973d387932a7880e64a26572d28bc19e60289f79a646346df391421",
+    "runs/paired-bootstrap/analysis/block-006-weights.npz": "87916f15f8c7f9d0a380308fa3441f358488ce0991976139a37f4e1192747d6d",
+    "runs/paired-bootstrap/analysis/block-006-metrics.npz": "897edea5bd640ef1d25d431140c82de6e80872b9742ba57885ef12a69c97b7c0",
+    "runs/paired-bootstrap/analysis/block-007.json": "dc32120d1eafdd1cf64308f83961b4de2c00d5fa92941be586a271c8fbb00b4b",
+    "runs/paired-bootstrap/analysis/block-007-weights.npz": "6170c915491c6f38aa67b8cc84f010814b18325c2da7d578effe567f3eb6ee8f",
+    "runs/paired-bootstrap/analysis/block-007-metrics.npz": "6fab12980fe529baee6977e46bcdd194d9dad83e724dcf18845e16b75387bd12",
+    "runs/paired-bootstrap/analysis/block-008.json": "e0b6ad3636b6a2a5c0695bc04490279efda47ee14714dcfe8fd5a7b73d99828f",
+    "runs/paired-bootstrap/analysis/block-008-weights.npz": "255cc98a2803e592c3d4fa56d3c812e7d34241e3e0e2dda557229a8c9a65da63",
+    "runs/paired-bootstrap/analysis/block-008-metrics.npz": "26b069329ca78810229dfc11073213dec1a3f5b18973b07c2945bac0ea47d3df",
+    "runs/paired-bootstrap/analysis/block-009.json": "6ca43bc907f3b7988e87bb332953b6dc772253fd0af8f13a88456f52188c221e",
+    "runs/paired-bootstrap/analysis/block-009-weights.npz": "3fa29027b1c27ef8e317df43a1d09d9e4a6dafba02f75316670fe9845f438cff",
+    "runs/paired-bootstrap/analysis/block-009-metrics.npz": "bce19c6b9fc114e5d8c5ec8a5a9e9ea4d5cca6b70be67f55c1990c5bd8b882f0"
+  }
+}

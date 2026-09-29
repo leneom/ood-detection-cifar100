@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-27T17:41:38.004770+00:00",
+  "figures": {
+    "joint-components.png": "ff4e4ce739f016e8c8e067762b7790e5d690a55e4090013f59cceac730df7a83",
+    "natural-transitions.png": "84d1d5e917998ab1588cee958832ae54c25fdf4f6a647a73cbcef482622c7382"
+  },
+  "inspection": "Both local PNGs inspected as rendered JPEG previews. Seed/population legends, fixed threshold lines, axes, all dataset/reference panels and per-seed/sample-SD meanings are visible without overlap/cropping. Scatter colours are intentionally translucent and plots are marked subsampled; all quantitative endpoints use full populations."
+}

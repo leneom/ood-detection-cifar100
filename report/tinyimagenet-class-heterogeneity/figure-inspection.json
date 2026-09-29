@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-28T03:41:52.035472+00:00",
+  "images": {
+    "class-auroc.png": {
+      "dimensions": [
+        1710,
+        990
+      ],
+      "sha256": "202405f420b22cc1cae75c1384eb51e04054e355b9b2e148228cc8bec06427d2"
+    },
+    "class-fixed95-acceptance.png": {
+      "dimensions": [
+        1710,
+        990
+      ],
+      "sha256": "6a1d615c44d63eb232a0e9b1bf4265f9c5144625d94e2f172006a1ebb4536082"
+    }
+  },
+  "observation": "Both corrected PNGs opened; class distribution boxes, whiskers, method order, axes and upper-left legend are readable with no overlap or clipping.",
+  "render_history": "Initial lower-right legend obscured the bottom row. PowerShell archive-copy command failed, then PNGs were exactly reconstructed from unchanged arrays/source; original audit hash record preserved. SVG rerender had different metadata hashes. Corrected figures independently audited."
+}

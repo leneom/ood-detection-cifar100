@@ -1,0 +1,11 @@
+{
+  "state": "independently_audited",
+  "declaration_sha256": "ff6e1bd73780a98d04afb9e4456609ee8eb628205f03933586e9450473076927",
+  "group_counts_checked": 5616,
+  "source_masks_checked": 144,
+  "csv_rows_checked": 1872,
+  "summary_cells_checked": 48,
+  "display_rows_checked": 12,
+  "breed_groups": 37,
+  "species_groups": 2
+}

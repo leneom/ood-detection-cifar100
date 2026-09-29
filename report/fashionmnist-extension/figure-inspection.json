@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "inspected_at": "2026-09-28T07:12:50.062182+00:00",
+  "images": {
+    "auroc.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "33b67701cdda95623da3143c8444ce9f70259e58bee48608df0558f9f85f0d66"
+    },
+    "fixed95-acceptance.png": {
+      "size": [
+        1710,
+        917
+      ],
+      "sha256": "d3900cc45ca11bbdb5bd67f1181aa6e2f7316b6db52db91b8e81e642d4ba39d5"
+    }
+  },
+  "observations": "Both actual PNG figures were visually inspected: all six method labels, horizontal axes, uncertainty bars, titles and outside legends are readable; no clipping or reversed method order. Mahalanobis is visibly separated from the other methods, so a common 0-100 axis is retained.",
+  "scope": "Display quality only. All plotted values are independently reconstructed in display-audit.json."
+}

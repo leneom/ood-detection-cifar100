@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-final",
+  "seed": 0,
+  "selected_epoch": 89,
+  "best_id_validation_accuracy": 0.7552,
+  "id_test_accuracy": 0.7610999941825867,
+  "independent_sklearn_checks": 54,
+  "maximum_metric_error": 2.220446049250313e-16,
+  "checkpoint_sha256": "f6c164834b98b8c3cca2a301a2288efbe3dc700b2680e09aee4f9694669d5f7e",
+  "checks": [
+    "full schedule and ID-only selection",
+    "checkpoint/source/split hashes",
+    "feature fitting population",
+    "raw logits and scores",
+    "independent AUROC/AP",
+    "empirical thresholds and acceptance",
+    "all saved arrays finite"
+  ],
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "sklearn": "1.7.2"
+  },
+  "audited_at": "2026-09-27T12:19:20.608473+00:00"
+}

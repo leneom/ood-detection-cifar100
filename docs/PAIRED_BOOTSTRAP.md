@@ -1,0 +1,33 @@
+# Fixed full-benchmark paired image bootstrap
+
+Declare after complete audited ASH diagnostics and before any full-benchmark bootstrap weights, weighted detector metrics or intervals. This is post-result uncertainty description of the already frozen experiment, not method selection or a new confirmatory hypothesis. Prior exploratory comparisons are known. Do not train, fit a detector/temperature, change score orientation/percentile, recompute an operational calibration threshold or select a method from intervals.
+
+## Fixed scope and meaning
+
+Use every phase-5 column in protocol order: MSP, Energy, MaxLogit, Entropy, KNN, Mahalanobis, ViM, Residual, ReAct Energy, affine Energy numerical control, RMD, matched CPU MD numerical control, ASH-P, ASH-B, ASH-S. Three frozen seeds 0/1/2 and all natural populations CIFAR-10/MNIST/SVHN/Textures partition-1 test; noise remains separate. Use the canonical test ID population, original classifier correctness, saved scores and all four frozen 2,500-ID-calibration-target masks [0.80,0.90,0.95,0.99]. No new validation resampling or threshold fitting.
+
+Draw B=1,000 image bootstrap replicates with replacement, population sizes unchanged: ID 10,000; C10 10,000; MNIST 10,000; SVHN 26,032; Textures 1,880; noise 10,000. Verify executed input/row provenance and alignment across seeds before treating rows as shared observations. One ID row-count vector is shared across every method, dataset and classifier seed in a replicate. Each OOD population has its own count vector, shared across methods and seeds. This preserves paired image uncertainty and the common ID population in natural macros. Resample neither seed IDs nor classes; frozen training seeds are not independent image samples.
+
+RNG: for replicate b=0..999 use NumPy default_rng(8939+b). Draw ID first, then C10, MNIST, SVHN, Textures, noise in that order with rng.integers(0,n,size=n); convert each to np.bincount(minlength=n), save uint32 counts and verify exact sum n. Retain every count vector and replicate index in immutable blocks of 100 with hashes. Indexed RNG makes block resume deterministic; reject duplicate/incompatible/partial block reuse. Use a single CPU controller with bounded thread count and no GPU workload. Source/input snapshots precede any weighted calculation.
+
+## Weighted ranking metrics and tie semantics
+
+For each seed/method/dataset/replicate, recompute AUROC, AP-out, AP-in and benchmark FPR95-ID on the resampled test populations. Group all equal scores before integration. Scores remain higher-is-OOD. For ascending score groups g, weighted AUROC is sum_g wOOD_g*(cumID_below_g+0.5*wID_g)/(N_ID*N_OOD). AP-out uses descending grouped scores: sum_g (wOOD_g/N_OOD)*(cumOOD_g/cumAll_g), skipping zero-total-mass groups. AP-in analogously uses ascending scores and ID as positive. These are repeated-image empirical metrics, not newly defined scores.
+
+Benchmark FPR95-ID is recomputed only as its original test benchmark definition: select the smallest weighted ID-score threshold with accepted ID weight >= ceil(0.95*N_ID), and include ties together; save that threshold and achieved weighted ID TPR. This benchmark threshold is separate from the frozen ID-validation operational thresholds and never becomes a deployable calibrated setting.
+
+At each of the four original operational targets, reuse saved masks exactly and compute weighted original-ID coverage and retained-error risk, each OOD acceptance and the equal-weight four-natural-population acceptance macro. Zero accepted weight makes retained risk undefined; preserve None and do not impute or silently drop replicates. All exact weighted numerators/denominators are retained. Shaped classifier predictions never replace original correctness.
+
+## Paired summaries and conditional intervals
+
+Save all per-seed replicate metrics/counts and original audited point estimates. Natural ranking/acceptance macros are first computed over the four datasets within each seed. Also average the three fixed classifiers within replicate using the same resampled image rows; do not bootstrap independent rows per seed and thereby erase cross-model image dependence. Report per-seed and fixed-three-classifier means separately.
+
+For every method and every later-minus-earlier pair among the fifteen protocol columns (105 unordered pairs with fixed sign/order), retain paired replicate differences for all dataset endpoints, natural macros and all four operational targets. Do not select only a favorable reference or variant. Differences use the same draw before any seed/macro averaging. Raw method replicate arrays define the full paired difference arrays exactly; optional pair copies are not required.
+
+Nominal 95% descriptive percentile intervals use fixed quantiles [0.025,0.975], NumPy linear interpolation, all 1,000 replicates. Save original point, bootstrap mean, bootstrap sample SD (ddof=1), quantiles, defined count and explicit paired sign/order. Undefined draws make a complete-case interval unavailable rather than silently using fewer draws. Preserve all intervals, even wide or crossing zero; no significance decisions, multiplicity-adjusted claim or winning method selection.
+
+These intervals describe image-sampling variability conditional on the fixed three trained models, fixed populations/row bootstrap assumptions and already reused-validation thresholds. They are not uncertainty over training seeds, not guaranteed population coverage, and do not fix validation reuse, posthoc method development, semantic overlap or limited benchmark diversity. Original three-seed sample SD remains a separate descriptive statistic, never replaced by the bootstrap SD/interval. Noise never enters a natural macro.
+
+## Verification and completion
+
+Before production verify weighted/tied metrics against independently expanded small-sample examples, undefined denominators, and all-weight-one parity with every original saved metric/mask. Independent audit regenerates all 1,000 count vectors, validates every weight/count/row/hash and recomputes all weighted operating endpoints. Independently expand at least the first ten fixed resamples for every seed/method/population and compare all ranking metrics with sklearn, including achieved benchmark TPR/order statistic. Use Python statistics/manual quantiles to audit all method/pair/within-seed/three-model summaries and displayed fields; inspect scientific PNG/SVG. Do not claim completion until all 1,000 replicates, all fixed settings/pairs, audits and regression pass. Failed attempts and partial blocks remain local; original experiment sources/raw outputs are unchanged.

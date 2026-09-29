@@ -1,0 +1,6 @@
+{
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.6",
+  "scikit_learn": "1.7.2",
+  "independent_metric_checks": 54
+}

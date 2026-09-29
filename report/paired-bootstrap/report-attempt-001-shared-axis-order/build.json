@@ -1,0 +1,15 @@
+{
+  "state": "built_pending_independent_audit",
+  "built_at": "2026-09-27T21:50:40.681253+00:00",
+  "statistic_records": 31680,
+  "inputs_sha256": "cef52ebf09b63ea057fad478ad2775a62b82e79707e930fe8994475c28e471b1",
+  "artifacts": {
+    "summary.json": "4ad1bccd9d18cc5049f126e1b75f5c4cfca9c86dbf0d960d8eb90c5b2d60d274",
+    "REPORT.md": "401878ffb17826d44afe05b40714d1986b95cc3490fbdec91fd35354847601d6",
+    "plot-data.json": "f23a2082a60d89d30836e78854b88ad27a82fdf0b989cbeec0ea9f98d323b69c",
+    "fixed95-operation.png": "484a21f11d172c16477d381cb0e4dbc6c518219e0b99805f06dcc360e52c9c48",
+    "natural-auroc.png": "3799a6730f5283090656b9c990227f3a1bc52b468872afb08e6cef4f0daa88fb",
+    "fixed95-operation.svg": "d534afb1fb6cfb8079ca393ad441a4d1b635353542ee2b2b48d936bc4f5a5539",
+    "natural-auroc.svg": "d0857ccc664a4e513af3be3ef4b21e144c72770229fcf641125160eeeb0cdceb"
+  }
+}

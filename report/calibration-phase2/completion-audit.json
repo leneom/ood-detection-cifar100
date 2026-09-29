@@ -1,0 +1,35 @@
+{
+  "state": "complete_and_verified",
+  "verified_at": "2026-09-27T16:07:15.992590+00:00",
+  "status_sha256": "f6dd6d4a5029b57eef645fd495924c8cf1ccef71fef702fc27fa6efd088b16cd",
+  "raw_audit_sha256": "df67414957394b36c5f3244fb62ea26323e82bd578143c3b81724d272ad10e96",
+  "summary_audit_sha256": "ca0581ce012ec73347ef2952960700f1bcb7d29b3b816dd2c6fcb0d184969277",
+  "original_artifacts_unchanged": true,
+  "tests": {
+    "GPU_environment_full_suite": {
+      "total": 44,
+      "passed": 42,
+      "skipped": 2,
+      "skip_reason": "SciPy unavailable; optimizer tests executed in CPU environment",
+      "CUDA_VISIBLE_DEVICES": ""
+    },
+    "CPU_environment_calibration_suite": {
+      "total": 7,
+      "passed": 7,
+      "skipped": 0
+    },
+    "unique_project_tests_verified_across_environments": 44
+  },
+  "scientific_figures_visually_checked": [
+    "id-calibration.png",
+    "ood-calibration.png"
+  ],
+  "figure_QA": "axes, ticks, seed pairing, SD bars, legends and captions legible; no clipped labels",
+  "analysis_source_hashes": {
+    "audit_calibration.py": "8453c46e110ad0039a6ffdb585913ea24811d552f32055d9857e406d6a7ba006",
+    "build_calibration_report.py": "ab6e3db2675c8af7810f2aace955b783d217fdf63e1d3854b74ac7a3adb63a1b",
+    "audit_calibration_report.py": "bdedcb3eef6c7a71b6cb300ca5a0f01ed5c3696e23a81306d8f72b7bf59f2b80"
+  },
+  "GPU_workload_started": false,
+  "external_publication": false
+}

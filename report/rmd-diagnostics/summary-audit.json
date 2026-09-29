@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "audited_at": "2026-09-27T18:34:55.490714+00:00",
+  "statistic_records_checked": 4305,
+  "displayed_table_fields_checked": 486,
+  "scatter_points_and_bounds_checked": 21000,
+  "raw_audit_sha256": "50fd58899c88136ebb5e8632b6b5fca95aa7a92af20cdb7ee09b142736a545bd",
+  "artifacts": {
+    "summary.json": "221c632efba782dcc4983d2d93ca7ff73bdbb7b30bc71f697741fe02c9429805",
+    "REPORT.md": "76a880479917b17ea34bd26194430b95fd7547f2c7adbc0f2f4dac1ef2dc7405",
+    "plot-manifest.json": "81a62519b25f5619c8e1772daa8309c773f2001473374f5b4caaf517347ea67e",
+    "joint-components.png": "0a18c21b890c361c041f2a33f54a981ac0485d1af6bc7cb8bc0c6aba87f87340",
+    "joint-components.svg": "09e24f6493f95faa4a7f1fdceb88209786654a3d2ac065d00ae570a0424a9551",
+    "natural-transitions.png": "a9d2ecd5fa2f38fec82a9f6b956d621ad3b669bc1e88a57823b8636d8bd0aa8e",
+    "natural-transitions.svg": "2fa5ad0e0a949392b2bb04c775102010e4c5c9263c4aaa7fc3bfd8c18dcce530"
+  },
+  "independent_source_sha256": "dc57a1e940429321f3751ec482c02d948bd9b40dca634b20720fb3fce58df950",
+  "boundary": "Python statistics; no missing seeds or undefined-value imputation; every fixed comparison and target retained"
+}

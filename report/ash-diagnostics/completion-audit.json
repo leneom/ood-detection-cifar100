@@ -1,0 +1,49 @@
+{
+  "state": "complete",
+  "completed_at": "2026-09-27T21:08:52.616095+00:00",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "population_count": 7,
+  "seed_comparison_target_settings": 432,
+  "input_hash_checks": 640,
+  "raw_checks": {
+    "component_arrays": 378,
+    "moment_fields": 1890,
+    "quantile_fields": 2646,
+    "joint_fields": 378,
+    "mean_difference_fields": 324,
+    "sampled_indices": 21,
+    "transition_code_arrays": 2592,
+    "transition_fields": 40176,
+    "per_class_cells": 345600,
+    "original_label_arrays": 21,
+    "per_class_denominators": 1800,
+    "classification_code_arrays": 18,
+    "classification_cells": 7200,
+    "classification_fields": 252,
+    "independent_head_arrays": 63
+  },
+  "summary_statistic_records": 15654,
+  "displayed_table_fields": 1678,
+  "test_verification": {
+    "full_suite_tests": 80,
+    "passed": 78,
+    "skipped": 2,
+    "skip_reason": "SciPy-only optimizer tests already passed in unchanged base CPU calibration suite",
+    "test_environment_sha256": "7e7944bed24416ed0124d586640c93ee2a5c8548ea8766db034c6e1ec309ee18",
+    "regression_log_sha256": "d717f9cf0524dcd6b9e876c3fd91d73d5122d64105acd49a35fd13dadc30659e",
+    "CPU_ASH_diagnostics_tests_passed": 5,
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "torch_cuda_is_available_before_suite": false
+  },
+  "audits": {
+    "audit.json": "96a9bac79e36e13e3f30b0b5af571001403540cb0c15357fe7075e764796e15a",
+    "summary-audit.json": "1cfa7583cda87bba0ece7e67e6600ab5d3fa27bc6f9a12a30ff3704d8a36fa37",
+    "visual-qa.json": "d1da841ec872a76d2276cf05ae23ded0388a40bf301e51c28294e38ab458e546"
+  },
+  "source_sha256": "ff82ae3d88ffca48d41a70e3dd4bc2bcbcba46c607572ffbe0956f03908da8ad",
+  "boundary": "complete posthoc descriptive diagnostic; no fitting, tuning or causal claim"
+}
