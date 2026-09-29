@@ -4,6 +4,8 @@
 
 **2026-09-29 新增 — [ASH-S / RMD 预声明对比检验](report/posthoc-confirmation/REPORT.md)：** 在打分前冻结协议（[协议](docs/POSTHOC_CONFIRMATION.md)、git 提交 59e914f），用三颗隔离模型在 Tiny ImageNet、Fashion-MNIST、Places365、Oxford Pets 这四个从未算过 ASH/RMD 的人口上检验。结论：**H2「RMD > 匹配 Mahalanobis」确认**（四个人口、三 seed 全部为正，+20–28 pp AUROC）；**H1「ASH-S > Energy」未确认**（Tiny ImageNet 三 seed 全负 −0.24 pp，Fashion/Places 为正，Pets 混合）。RMD 也并不优于简单的 Energy/KNN。独立审计与 33 文件完成记录见 [completion.json](report/posthoc-confirmation/completion.json)。
 
+**2026-09-30 新增 — [LogitNorm 表示实验](report/logitnorm-representation/REPORT.md)：** 只把训练损失换成 LogitNorm（τ=0.04），其余设置与三颗隔离 CE 模型一致，训练前冻结协议（[协议](docs/LOGITNORM_REPRESENTATION.md)、提交 3b734e6）。**H3「MSP 变好」与 H4「KNN-50 变好」均未确认**：MSP 在 4/8 个人口三 seed 全正、3/8 全负；KNN 仅 2/8 全正、5/8 全负；ID 准确率 −2.0 pp。增益只出现在灰度来源（Fashion-MNIST 95% 阈值下 OOD 通过率 54%→15%、MNIST 87%→36%），四个自然照片人口的通过率仍都不低于约 76%。独立审计与 128 文件完成记录见 [completion.json](report/logitnorm-representation/completion.json)。
+
 独立的 Out-of-Distribution Detection 研究项目。第一阶段的问题是：**固定同一个 ID classifier，仅替换 post-hoc score，MSP、Energy、MaxLogit 对自然图像 OOD 的表现如何？**
 
 当前进度：原四个自然 OOD 测试人口上的完整基准和后续诊断、三路 ID validation 隔离复验均已完成；这些已看过的 OOD 测试仍属探索性。新增的 [Tiny ImageNet-200 冻结检验](report/tinyimagenet-confirmation/REPORT.md) 使用事先声明的完整 10,000 张官方 validation、三个已冻结模型和只由 ID 拟合的温度/阈值。全部六个主要 detector × T=1/校准版本、四个接受目标均保存三 seed 结果和原始逐图输出，并通过独立复算与 91 项回归（89 通过、2 项已知跳过）。这是单个新 OOD 人口，不是完整 OpenOOD 复现或普适泛化结论。见 [机器可读结果](report/tinyimagenet-confirmation/summary.json)、[完成证据](report/tinyimagenet-confirmation/completion.json)、[实时进展](docs/PROGRESS.md) 和 [中文学习指南](docs/LEARNING_GUIDE.zh-CN.md)。

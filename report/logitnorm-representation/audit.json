@@ -1,0 +1,61 @@
+{
+  "state": "passed",
+  "failure_count": 0,
+  "failures": [],
+  "counts": {
+    "score_vectors": 180,
+    "auroc_values": 288,
+    "operating_cells": 1152,
+    "contrast_values": 288
+  },
+  "overall": {
+    "H3": "not confirmed",
+    "H4": "not confirmed"
+  },
+  "per_population": {
+    "H3": {
+      "cifar10": "contradicted",
+      "mnist": "supported",
+      "svhn": "mixed",
+      "textures": "contradicted",
+      "tinyimagenet": "supported",
+      "fashionmnist": "supported",
+      "places365": "supported",
+      "oxford_pets": "contradicted"
+    },
+    "H4": {
+      "cifar10": "contradicted",
+      "mnist": "supported",
+      "svhn": "mixed",
+      "textures": "contradicted",
+      "tinyimagenet": "contradicted",
+      "fashionmnist": "supported",
+      "places365": "contradicted",
+      "oxford_pets": "contradicted"
+    }
+  },
+  "id_test_accuracy": {
+    "0": {
+      "ce": 0.7609,
+      "logitnorm": 0.7411
+    },
+    "1": {
+      "ce": 0.7556,
+      "logitnorm": 0.7403
+    },
+    "2": {
+      "ce": 0.7576,
+      "logitnorm": 0.7328
+    }
+  },
+  "summary_sha256": "7326e34adcd9a18a972970bd6fb8e749f448439aacc82d94b979a768558a2234",
+  "report_sha256": "b9827659d192665f42cae5116dfd5bc96c37b4212606a0e14a2ba13a32eca653",
+  "independent_implementations": {
+    "logit_scores": "scipy softmax/logsumexp in float64",
+    "knn": "sklearn NearestNeighbors brute force on L2-normalised features",
+    "mahalanobis": "per-class centring, Cholesky whitening, cdist",
+    "auroc": "sklearn.metrics.roc_auc_score",
+    "threshold": "sorted order statistic ceil(q*n)-1"
+  },
+  "audited_at": "2026-09-29T16:33:24.238744+00:00"
+}

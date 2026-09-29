@@ -46,3 +46,11 @@ The [ASH-S / RMD contrast confirmation](../report/posthoc-confirmation/REPORT.md
 In WSL's base env, 92 tests pass. The one failure, the resume test, needs `torch.amp.GradScaler`, which torch 2.0.1 lacks. That test passes in the `cifar-cl` env (torch 2.13). No GPU was used.
 
 Next planned increment: change the representation rather than the score. For example, predeclare a training-time change and test it on the class-holdout protocol, where the post-hoc spread among the usable methods is small and absolute OOD acceptance stays high.
+
+## Update — 2026-09-30 00:40 local (WSL)
+
+The [LogitNorm representation study](../report/logitnorm-representation/REPORT.md) is complete. Its [protocol](LOGITNORM_REPRESENTATION.md) was frozen before training (commit 3b734e6), and its evaluation code before any LogitNorm OOD output existed (b8f8703). Three LogitNorm ResNet-18s (τ = 0.04) were trained under the three-way ID-isolated protocol, differing from the CE models only in the loss. **H3, MSP improves, is not confirmed:** supported on 4 of 8 populations and contradicted on 3. **H4, KNN-50 improves, is not confirmed:** supported on 2 and contradicted on 5. ID-test accuracy fell 2.00 ± 0.48 pp. The gains are confined to grayscale sources; the lowest fixed-95% OOD acceptance is 14.8% on Fashion-MNIST and 36.0% on MNIST. On the four natural-photo populations, no method under either objective goes below about 76%.
+
+The frozen ID-only rule selected LogitNorm epochs 57/55/54 (CE: 92/96/98), because LogitNorm validation accuracy peaked soon after the first learning-rate drop. This confound is stated in the report. An independent audit recomputed every LogitNorm score, 288 AUROCs, 1,152 operating cells and all decisions; the [128-file completion record](../report/logitnorm-representation/completion.json) binds the study. Seed 0 was paused once by the user after epoch 80 and resumed unchanged.
+
+Both recent interventions, ASH-S and LogitNorm, help only where a low-level source cue exists. That post-hoc pattern is the next candidate hypothesis. The same-source class-holdout protocol removes the cue and is the natural test.
