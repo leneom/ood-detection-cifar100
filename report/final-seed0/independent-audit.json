@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-final",
+  "evaluation": "runs/cifar100-seed0/eval-final",
   "seed": 0,
   "selected_epoch": 89,
   "best_id_validation_accuracy": 0.7552,

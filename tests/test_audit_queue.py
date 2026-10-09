@@ -13,6 +13,7 @@ SPEC.loader.exec_module(queue)
 
 class AuditQueueTests(unittest.TestCase):
     def setUp(self):
+        (ROOT / 'runs').mkdir(exist_ok=True)
         self.temporary = tempfile.TemporaryDirectory(dir=ROOT / 'runs', prefix='audit-queue-test-')
         self.root = Path(self.temporary.name).resolve()
         assert self.root.is_relative_to((ROOT / 'runs').resolve())

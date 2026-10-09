@@ -14,6 +14,7 @@ from ood.textures_cache import DTD_TEST_MD5, TEXTURES_TRANSFORM, load_textures_c
 
 class TexturesCacheTests(unittest.TestCase):
     def setUp(self):
+        (ROOT / 'runs').mkdir(exist_ok=True)
         self.temporary = tempfile.TemporaryDirectory(dir=ROOT / 'runs', prefix='textures-cache-test-')
         self.root = Path(self.temporary.name).resolve()
         assert self.root.is_relative_to((ROOT / 'runs').resolve())

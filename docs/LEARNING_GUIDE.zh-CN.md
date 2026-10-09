@@ -47,7 +47,7 @@ Mahalanobis 用训练 ID 的类均值与共享 covariance 计算到最近类的�
 
 ## 7. 用真实失败样本检查直觉
 
-[完整 seed 0 的本地图册](../runs/cifar100-seed0/failure-gallery/REPORT.md) 为六种方法分别保存三行图片：被拒绝但分类正确的 ID、被拒绝且分类错误的 ID、被错误接受的 CIFAR-10 OOD。图册记录官方 test index、原标签、classifier 输出、confidence、score 和阈值。
+完整 seed 0 的失败样本图册（含原图，只保存在本地 `runs/cifar100-seed0/failure-gallery/`，不随仓库发布）为六种方法分别保存三行图片：被拒绝但分类正确的 ID、被拒绝且分类错误的 ID、被错误接受的 CIFAR-10 OOD。图册记录官方 test index、原标签、classifier 输出、confidence、score 和阈值。
 
 MSP 的 validation 阈值是 τ=0.66525656。因为 s=1−max p，接受条件 s≤τ 等价于 max p≥1−τ≈0.33474344。这个阈值由 5,000 张 ID validation 校准；在 10,000 张 ID test 上拒绝了 109 张正确分类图片和 322 张错误分类图片，同时接受了 8,218 张 CIFAR-10 OOD。
 
@@ -77,7 +77,7 @@ MSP 的 validation 阈值是 τ=0.66525656。因为 s=1−max p，接受条件 s
 
 ## 完整原始三 seed 基准怎么读
 
-三个模型都完成固定的 100 epochs，只按 ID validation accuracy 选择 checkpoint。ID test accuracy 为 75.77% ± 0.30%（训练 seed mean ± sample SD）。全部六种方法的逐 seed 指标、自然 OOD macro 与配对差值已通过独立审计；[汇总](../runs/matrix/summary/SUMMARY.md)、[审计](../report/matrix-audit/REPORT.md) 和 [科学图](../report/matrix-comparison/REPORT.md) 保留完整比较，不使用测试结果挑选参数。
+三个模型都完成固定的 100 epochs，只按 ID validation accuracy 选择 checkpoint。ID test accuracy 为 75.77% ± 0.30%（训练 seed mean ± sample SD）。全部六种方法的逐 seed 指标、自然 OOD macro 与配对差值已通过独立审计；[汇总](../report/baseline-complete/REPORT.md)、[审计](../report/matrix-audit/REPORT.md) 和 [科学图](../report/matrix-comparison/REPORT.md) 保留完整比较，不使用测试结果挑选参数。
 
 | 自然 OOD | MSP AUROC % | Energy AUROC % | MSP FPR95-ID % | Energy FPR95-ID % |
 |---|---:|---:|---:|---:|
@@ -301,7 +301,7 @@ ID-test accuracy的同seed配对差是+0.03±0.08pp，Energy AUROC配对差-0.20
 
 [完整报告](../report/fashionmnist-extension/REPORT.md)覆盖官方 test 全 10,000 张，并与同一 10,000 张 CIFAR-100 ID test 比较。例子：T=1 Energy AUROC 为 90.42±0.16%，KNN-50 为 90.48±0.44%，Pooled Mahalanobis 为 60.51±2.72%（三训练 seed 均值±样本 SD）；固定 95% ID-validation 阈值下，它们的 Fashion OOD 接受率分别是 58.76±5.65%、54.00±1.20%、97.72±0.78%。这是对固定方法的描述，不据此选择赢家；实际 ID-test 接受率、所有方法/温度/阈值与每颗 seed 见[机器可读结果](../report/fashionmnist-extension/summary.json)。
 
-这组结果强烈混合了语义与图像来源差异：[逐像素来源审计](../runs/fashionmnist-extension/source-shift-descriptive.json)显示，重复 RGB 后全部 10,000 张 Fashion 图像严格为灰度，CIFAR-100 ID test 只有 153/10,000 张严格为灰度。均值亮度也不同。检测分数不能单独归因于“衣物类别语义”。全部 raw logits/features/scores/masks、三 seed 独立特征与评分审计、图表人工检查、91 项回归（89 通过、2 项既有跳过）和[76 文件完成校验](../report/fashionmnist-extension/completion.json)均已保存。首次 GPU 拥堵尝试与后来按四项负载门槛顺序恢复的证据保留，不算额外 seed 或模型结果。
+这组结果强烈混合了语义与图像来源差异：逐像素来源审计（本地 `runs/fashionmnist-extension/source-shift-descriptive.json`）显示，重复 RGB 后全部 10,000 张 Fashion 图像严格为灰度，CIFAR-100 ID test 只有 153/10,000 张严格为灰度。均值亮度也不同。检测分数不能单独归因于“衣物类别语义”。全部 raw logits/features/scores/masks、三 seed 独立特征与评分审计、图表人工检查、91 项回归（89 通过、2 项既有跳过）和[76 文件完成校验](../report/fashionmnist-extension/completion.json)均已保存。首次 GPU 拥堵尝试与后来按四项负载门槛顺序恢复的证据保留，不算额外 seed 或模型结果。
 
 
 ## CIFAR-100 同源 held-out-class：完整三 seed 结果
