@@ -8,11 +8,11 @@ Use only `tools/run_fashionmnist_extraction_recovery.py` with the verified CUDA 
 
 Example command (only after a fresh state check):
 
-```powershell
-$env:OMP_NUM_THREADS='4'
-$env:MKL_NUM_THREADS='4'
-$env:OPENBLAS_NUM_THREADS='4'
-& 'C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe' -X utf8 tools\run_fashionmnist_extraction_recovery.py
+```bash
+export OMP_NUM_THREADS=4
+export MKL_NUM_THREADS=4
+export OPENBLAS_NUM_THREADS=4
+python tools/run_fashionmnist_extraction_recovery.py
 ```
 
 The initial recovery preflight returned `deferred_gpu_busy_no_mutation` on three samples of 11.5 GiB / 98–99% utilization; no retry extraction began. Once all three seeds finish, independently audit the 45k training-ID KNN/Mahalanobis probes, then score only with saved ID temperatures/thresholds. Keep all raw logits/features/scores/masks, audit and report evidence local. Fashion-MNIST is a sequential extension, not part of the previously frozen four-population macro.

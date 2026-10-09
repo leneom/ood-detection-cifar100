@@ -28,8 +28,8 @@
       "checkpoint_epoch": 92,
       "checkpoint_sha256": "e4c6672bd28d32dfff09455b3a800022341e01b48e3921ce9f8a6bb93e5a02e0",
       "temperature": 1.3225258577076677,
-      "scoring_manifest_sha256": "5c7650052786627ab109659ddd9b18d2dae7fb36516ac05d01b7822b19abebb3",
-      "score_audit_sha256": "ff951ad5c119d45f5d382f94c5e3a76826afb9574cde20ac6b3e70f6de357095",
+      "scoring_manifest_sha256": "bde4e1c641dc5b449e1e1364785f4ec821bf2ee5659da37b3b4484096613e75a",
+      "score_audit_sha256": "03fdeb1bb1410afa0ffe5b688ce701d9bf61273d9d8024d1921741bbb52d9176",
       "raw_logits_features": "runs/places365-extension/extract-seed0/raw.npz",
       "per_image_scores": "runs/places365-extension/score-seed0/scores.npz",
       "acceptance_masks": "runs/places365-extension/score-seed0/acceptance_masks.npz"
@@ -39,8 +39,8 @@
       "checkpoint_epoch": 96,
       "checkpoint_sha256": "b7119754e0f1141a45a08b0cf7fee845b2d59006b741271589d9b6759be52955",
       "temperature": 1.3174977200125948,
-      "scoring_manifest_sha256": "52fe954af686da620faba818858882508dfa1fbb7680a4589f54dc0de721f92d",
-      "score_audit_sha256": "251c31209219e4527d69a74a148987dfc7718380409fa9a954814dd4d8a82f36",
+      "scoring_manifest_sha256": "e862371dbd4dec3e8f368ca2c7925676fca0681be356adade79d26a9f494efd4",
+      "score_audit_sha256": "1c0fcb8aba7215632fe08897dd3e1a990677bbe0186a4718bc385c0d8aee8a0c",
       "raw_logits_features": "runs/places365-extension/extract-seed1/raw.npz",
       "per_image_scores": "runs/places365-extension/score-seed1/scores.npz",
       "acceptance_masks": "runs/places365-extension/score-seed1/acceptance_masks.npz"
@@ -50,8 +50,8 @@
       "checkpoint_epoch": 98,
       "checkpoint_sha256": "27f3b5e8a79d48a72e3ac5984cabddf306d97f0e46a15b8733f19184485076b8",
       "temperature": 1.3131369515891902,
-      "scoring_manifest_sha256": "d4f01eda5fd876a6673c0273853c4693b3dc9565ffe8e4bfabbe7c1a92898b84",
-      "score_audit_sha256": "c9c0c918cad152790f7a9a4c5ffcb7022eb11197866cdc324f73683e0368c1f4",
+      "scoring_manifest_sha256": "0b70ebcb4a9735f15d0b6fcec6483cc7cf19e932c5afcf51d86c08fc1b59e4d0",
+      "score_audit_sha256": "bc3fd9606581fbbd54b3779ca90eed402be7d9d227565012416cda75a079f049",
       "raw_logits_features": "runs/places365-extension/extract-seed2/raw.npz",
       "per_image_scores": "runs/places365-extension/score-seed2/scores.npz",
       "acceptance_masks": "runs/places365-extension/score-seed2/acceptance_masks.npz"

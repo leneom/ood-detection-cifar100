@@ -1,7 +1,7 @@
 {
   "state": "descriptive_complete_pending_independent_audit",
-  "declaration_sha256": "ab944b7b8767e4169a2d8cb72a999805ddf5ca64ebbe46027b06fed9aeb5401b",
-  "baseline_completion_sha256": "5a1ee7857b5b71bd4d9ace07a238e06bd23b020a0532eb3103ef94ba1abb61fc",
+  "declaration_sha256": "7b152c02488c954b14804a49bdd0cd2cdc51c5676ee6374b136b9366cbdb7f40",
+  "baseline_completion_sha256": "3a5dc8ac77ed7c0f7bdcfa5c4154e11f727f08e099a4d55936516a814a49b479",
   "class_values_sha256": "6bc3ec55ec1256ae8f644689ca7609f98a5fd0e4d3ea745bea6fc7f51e0dc6db",
   "producer_source_sha256": "2d3fa6c9039b00713a36269de3f14918bae1084d0e8250bb10dda75fe9a48b02",
   "class_count": 20,

@@ -1,6 +1,6 @@
 {
   "state": "passed",
-  "summary_sha256": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
+  "summary_sha256": "7355071d6d21d074b5da4f495cf5c95dee26153224237de529d1b1f40bd606dc",
   "summary_source_sha256": "c7166f29f11f7526160fdf8bfc058363a62f63edd5f9637803b727fcd9f4ac59",
   "audit_source_sha256": "981bcb918cc1812c003c5c2c53dcc79be341f6bce28899354d70114faf35909f",
   "cells": 72,

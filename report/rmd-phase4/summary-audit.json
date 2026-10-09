@@ -3,10 +3,10 @@
   "audited_at": "2026-09-27T18:18:19.727518+00:00",
   "statistic_records_checked": 2205,
   "displayed_table_fields_checked": 333,
-  "raw_audit_sha256": "7ff5045c62648881d41657fb0e478654bcb6b704307ede50b284c6adc7613bbc",
+  "raw_audit_sha256": "520f51c64685f6ecc215b01d45953f058f870beba81127dc1e6a4a9ad85b18bb",
   "artifacts": {
-    "summary.json": "2d8364dfb4f97d32ca85d3b74093c05fcf98bd33d38071667c5961f8fbaae044",
-    "REPORT.md": "43bd86889ebedb5493bd2c3e3c606d40cdfe896209ddb21e730988736dafccfa",
+    "summary.json": "977eb255b68b50c1ffbc13ab812909784940b38613a9a0502d24cad9204a9fde",
+    "REPORT.md": "f67a5f0312269e1b1f3a12cc54509cbe3436e2ddcf309b60e1d9ae92bc725e50",
     "natural-auroc.png": "7e423fb6239ef0314d4a8306f5ebccec11673497d8c6208af38fc9689027ce13",
     "natural-auroc.svg": "fecf04719c2deadf13ebbb6e2e8e60799cb11672c42207a644bdfa66d2054a61",
     "operating-grid.png": "f7a5e013f2060d136091ff6613012243ed9d85f88f0e75ec64dfcae61e642a83",

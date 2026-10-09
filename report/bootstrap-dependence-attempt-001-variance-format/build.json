@@ -1,7 +1,7 @@
 {
   "state": "built_pending_independent_display_audit",
   "built_at": "2026-09-27T22:13:47.077166+00:00",
-  "inputs_sha256": "9fe064ddee6e1b25f52f0d6cc674544f94679f853cc7e0936ddd69d2cad1deb3",
+  "inputs_sha256": "4cf9b743205ad1c0f7cc5be3b126c4f3e8eae2933dfe70ccaba4eaee6242366f",
   "outputs": {
     "REPORT.md": "ceae334a0b5826358d3330acb83fc6ae5371a42878fb6e27d43b87906c7c28c3",
     "plot-data.json": "ae3ed41081f83ef39d1cbed3eb5d44953e26a18cfc5a77813d42120fb4007c77",

@@ -10263,12 +10263,12 @@
   "operating_points": 144,
   "threshold_calibration_population": 2500,
   "results_sha256": {
-    "seed0": "8f730c4b6b159a6bcdac155f38b00344b1812d963908f631992d1e9cf7838226",
-    "seed1": "6dcadeb99fe393b57a063c598a7ea75aa78a9e61817bd2f9416b57ab962f416f",
-    "seed2": "98cdf695ac0cecd4d964a8ea848f2b4345e5f6462add4a4ea879bd287f803ed0"
+    "seed0": "9d4b30a1642a81489cc448ac900ece9c5bf8f2e00a361316ae62bb9100bf7316",
+    "seed1": "582effe6437eee6b39aee5178d7e1030ee44446c9463e6ad1452faa9e089ccb6",
+    "seed2": "93af0f0bc61fa98eed6ad63f7bd6161c0a349773c577ee8b9517d291aab4cca6"
   },
-  "inputs_sha256": "93983313cc9c478a2ac61887142a381366c059dce44f2584d9258bc4b9dab0cf",
-  "raw_audit_sha256": "e871ecf95597f7383d6b97c33c827f87c3bc7e61d50ee8a8fec046b0859a6da1",
+  "inputs_sha256": "284b60fc2e5ff40427d28523d4c15c7a5989484401d895fdf954a1350e73d40d",
+  "raw_audit_sha256": "9e94636382cf400ba3d94a9372d10aa0104195b47331a1711176dc51f88e97ad",
   "report_source_sha256": "819d1216e523827881527b47935ee7622428e8270009b8d9137ac617e1ec7c5a",
   "created_at": "2026-09-27T16:24:44.025829+00:00",
   "boundary": "all four fixed targets; actual test coverage distinct from calibration target; reused selection validation; sample SD not CI"

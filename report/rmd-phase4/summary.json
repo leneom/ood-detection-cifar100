@@ -20564,12 +20564,12 @@
       "sample_sd": 20.1745744417576
     }
   },
-  "raw_audit_sha256": "7ff5045c62648881d41657fb0e478654bcb6b704307ede50b284c6adc7613bbc",
+  "raw_audit_sha256": "520f51c64685f6ecc215b01d45953f058f870beba81127dc1e6a4a9ad85b18bb",
   "result_sha256": [
-    "c581e998fc1550a276b51cf15b1d3a1237e12cbaddbec2aae5d3280edbbcb0d0",
-    "6f7c07b87080a0602ef346b9ce0ba946a892cbd9f3c88e3d06572b00ef261853",
-    "27da7274e10c704e2204d34254cf37dd3650d6f1ee7cb690bebe0a8ad7193f6c"
+    "2cb84e37df8d90c23b6b2b24f2a95fbb9a56ee081bfb2af3eaf60ade45bec442",
+    "8cec3184a466e5f8af55b6b96be441c01f51decff057b6406ace75bdd273b464",
+    "ddcecb9b40adb382830f92f7fc41b0e045bc053f39a11a675d97ae34daf2e351"
   ],
-  "source_sha256": "aa257aba6f53db397736a596c76ff121d36be200757a2fd3f505e39e8c295a25",
+  "source_sha256": "d1091d5b848f0a754f6001f329925f21fa805bbc9315ebda0c3e4678bab0937d",
   "boundary": "fixed exploratory extension; seed SD is descriptive, not CI; all methods reported"
 }

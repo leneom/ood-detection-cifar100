@@ -22,8 +22,8 @@
     99
   ],
   "protocol_sha256": "0f7ffe8c117efac8d742bd4c9b2652d8e4987e4f792dad45deb68f490712c04e",
-  "declaration_sha256": "3460dc8bb21409a35c6952c0bb6684fcb0efc43cea04489272ce2d9012ebd600",
-  "aggregate_completion_sha256": "8048f388f0df1c294e1496767c51c7ead2db90facfc4b03b10c295b0d70d6221",
+  "declaration_sha256": "3ad57a4375b275d6e7993ba9c9c42169aa459b29e8e880806cef937dafebaed5",
+  "aggregate_completion_sha256": "6521b4dba9ae9fdd71579c2a7862b928be194d26be02e455224e81bc6062f189",
   "source_hashes": {
     "runs/tinyimagenet-confirmation/extract-seed0/raw.npz": "abaf5c2ac3357941849400b4da75adea604ce19d739db17c9f5242e15fe019cf",
     "runs/tinyimagenet-confirmation/score-seed0/scores.npz": "2ec63f6da53f549756142338e73e0740fabfc3d1e94d97c04c8f44b06ec81afb",

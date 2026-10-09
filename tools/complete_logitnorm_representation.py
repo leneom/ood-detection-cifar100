@@ -42,7 +42,7 @@ def main():
     record = {"state": "complete", "decisions": audit["overall"], "audit_counts": audit["counts"],
               "selected_epochs": {f"seed{s}": read(PHASE / f"seed{s}" / "final-selection.json")["epoch"]
                                   for s in (0, 1, 2)},
-              "interruption": "seed 0 paused by the user after epoch 80 and resumed unchanged from last.pt",
+              "interruption": "seed 0 paused after epoch 80 and resumed unchanged from last.pt",
               "regression": {"base_env": "96 passed; 1 failed only because torch 2.0.1 lacks torch.amp.GradScaler",
                              "cifar_cl_env": "tests.test_protocol + tests.test_logitnorm 9/9 passed (torch 2.13)"},
               "files": {name: sha(ROOT / name) for name in files},

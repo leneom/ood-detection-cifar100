@@ -2,7 +2,7 @@
   "state": "built_pending_independent_audit",
   "built_at": "2026-09-27T21:50:40.681253+00:00",
   "statistic_records": 31680,
-  "inputs_sha256": "cef52ebf09b63ea057fad478ad2775a62b82e79707e930fe8994475c28e471b1",
+  "inputs_sha256": "4c741a4c2dba419278ab451118d5556e3f73b089148cbe196b25b39f16f5d97a",
   "artifacts": {
     "summary.json": "4ad1bccd9d18cc5049f126e1b75f5c4cfca9c86dbf0d960d8eb90c5b2d60d274",
     "REPORT.md": "401878ffb17826d44afe05b40714d1986b95cc3490fbdec91fd35354847601d6",

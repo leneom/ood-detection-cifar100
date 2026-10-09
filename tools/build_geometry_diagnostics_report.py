@@ -92,10 +92,10 @@ def main():
             'The next figure shows acceptance changes for all natural datasets against every fixed reference, with per-seed points and mean/sample SD. Noise and ID transition tables remain separate; no result is promoted as a selected method.','',
             '![Natural decision changes at the fixed primary target](natural-transitions.png)','',
             '## Reproduction and evidence','',
-            '```powershell','& C:/Users/zxzx/anaconda3/python.exe tools/run_geometry_diagnostics.py',
-            '& C:/Users/zxzx/anaconda3/python.exe tools/audit_geometry_diagnostics.py',
-            '& C:/Users/zxzx/anaconda3/python.exe tools/build_geometry_diagnostics_report.py',
-            '& C:/Users/zxzx/anaconda3/python.exe tools/audit_geometry_diagnostics_report.py','```','',
+            '```bash','python tools/run_geometry_diagnostics.py',
+            'python tools/audit_geometry_diagnostics.py',
+            'python tools/build_geometry_diagnostics_report.py',
+            'python tools/audit_geometry_diagnostics_report.py','```','',
             'Raw vectors/sampled indices and original ID labels: runs/geometry-diagnostics/seedN/analysis/*_components.npz. Transition codes and [addition,reference,target,ID_class,state,correctness] counts: transitions.npz. Original masks are reused byte-for-byte. Completed audits bind all source/input/raw artifact hashes; completion is recorded separately after summary audit and visual QA.','',
             'No causal explanation, significance claim, OOD tuning or fresh-validation coverage guarantee follows from this posthoc diagnostic. A future method study needs a separate declared ID-only development protocol.']
     (OUT/'REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')

@@ -1,6 +1,6 @@
 # LogitNorm representation study
 
-Three new ResNet-18 classifiers trained with LogitNorm (τ = 0.04), with every other setting identical to the three ID-isolated cross-entropy (CE) models, which serve as seed-matched comparators. The [protocol](../../docs/LOGITNORM_REPRESENTATION.md) was frozen before training, and the evaluation code before any LogitNorm OOD output existed (evaluation declaration `bdec874c2fd74eb7b27bd5da6e6161438945566bc4be8f7c677e4e1cf9c28b67`).
+Three new ResNet-18 classifiers trained with LogitNorm (τ = 0.04), with every other setting identical to the three ID-isolated cross-entropy (CE) models, which serve as seed-matched comparators. The [protocol](../../docs/LOGITNORM_REPRESENTATION.md) was frozen before training, and the evaluation code before any LogitNorm OOD output existed (evaluation declaration `42846df474846a01f9f2e4af256bf247152d9de5fb2ce5d6c2c9784bebf2becd`).
 
 ID-test accuracy: CE 75.80 ± 0.27%, LogitNorm 73.81 ± 0.46%, seed-matched difference -2.00 ± 0.48 pp.
 

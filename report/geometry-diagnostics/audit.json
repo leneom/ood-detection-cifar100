@@ -25,7 +25,7 @@
     "runs/geometry-diagnostics/seed0/analysis/training_id_components.npz": "cb93a7c92aa7a7123bd89ebc662b453ff5c1060a14cf61c4dbdb36ff6d8055ec",
     "runs/geometry-diagnostics/seed0/analysis/transitions.npz": "80b8012f1c25b830038987c72a31b7bcdeedd7de127b4acbcd74e2183df07ed7",
     "runs/geometry-diagnostics/seed0/analysis/validation_id_components.npz": "abcaeca3589fe75da815f792705897f4199f2a3373ad19285c28f67ccc92796a",
-    "runs/geometry-diagnostics/seed0/analysis/results.json": "8630c16cf69b77588ee5901c76e0ad7bfe7712bd4c56c0b864a0a0acbbac92d0",
+    "runs/geometry-diagnostics/seed0/analysis/results.json": "9368f79ab0a061277377f85a6a2b0830a3a553765ea90039296c48dc09fc7a32",
     "runs/geometry-diagnostics/seed1/analysis/cifar10_components.npz": "faa913ea8661f596abcbfe309c9c2e087e4fe01478b31c34c9852ca90aa9d43e",
     "runs/geometry-diagnostics/seed1/analysis/mnist_components.npz": "c064b0ea3ac9dc99f949b4bd90568ffc20b82fbb484e6fa68efe9f7d9eeb7e05",
     "runs/geometry-diagnostics/seed1/analysis/noise_components.npz": "882d6ad3e0f8e3582612b8b22a24e8b50571af1dcdcaa912728f5f2c9e300cf2",
@@ -35,7 +35,7 @@
     "runs/geometry-diagnostics/seed1/analysis/training_id_components.npz": "ebdb6984881fbcf7210a78eb8cfa507b74e8f07e41602cb0eef7d3a424e5c839",
     "runs/geometry-diagnostics/seed1/analysis/transitions.npz": "e256c455e8552c0b9b89e45b88e9b17a5f340cb23ee05d677b474959644da732",
     "runs/geometry-diagnostics/seed1/analysis/validation_id_components.npz": "80308bef682862074d6d792a020dae3ffe17423b102a314f27796604d73b8736",
-    "runs/geometry-diagnostics/seed1/analysis/results.json": "2ce7a213881e2470c7cc9d3c233e6df54ac614da65396c6d732971dfc7c8c50c",
+    "runs/geometry-diagnostics/seed1/analysis/results.json": "fe42643e118a9e4cadef3e912c96f8f5269e9f1f766f3f960c92a8e7eff83036",
     "runs/geometry-diagnostics/seed2/analysis/cifar10_components.npz": "848c4cac742ebc1dc553f3de250f2e963a6448b87cde547fa30da1ec6b1279f6",
     "runs/geometry-diagnostics/seed2/analysis/mnist_components.npz": "ba07cb134097e1a948616e6d0aa6a180953d2e8af897572f5fcc46a1c1c12eee",
     "runs/geometry-diagnostics/seed2/analysis/noise_components.npz": "cdee7778ac22e7c899fb7fd87517e61462ebb08dde7eae82b2b917553b2fbab2",
@@ -45,9 +45,9 @@
     "runs/geometry-diagnostics/seed2/analysis/training_id_components.npz": "116cad4230dc344a995ba9b90ad0ade8c0c021db9fd37ab86d42d8443df1931a",
     "runs/geometry-diagnostics/seed2/analysis/transitions.npz": "197cf262e5fba76e688f26cd5eb3c8a30acfe9a6665fdba93b85043185791410",
     "runs/geometry-diagnostics/seed2/analysis/validation_id_components.npz": "424679eb9f92aa8c794e82b7f16f6b1b9ce6c6cda0f92be1423ce872b2951e18",
-    "runs/geometry-diagnostics/seed2/analysis/results.json": "53eb8a2dd74afbc097fdd926ae8bb0870b16934adb9a3b3834e7e7d5f593e907"
+    "runs/geometry-diagnostics/seed2/analysis/results.json": "18a3c70c1315a83449342c54ca77e05a06d256a75079d13ad64a44d812a7270d"
   },
-  "inputs_sha256": "8a30e1392ed4621154d32d6cee9ba773bbd0de3b5c93e462c089b7c30ee14523",
+  "inputs_sha256": "c801e1684999c95d841540540805f77c0b5acdf426912c9d5a8377b45779a995",
   "independent_source_sha256": "2c333859b28eeb89d4e250bf0a32237580513ec326817a62e36319e2429705f6",
   "boundary": "posthoc descriptive components and fixed original masks; all seeds/populations/comparisons verified"
 }

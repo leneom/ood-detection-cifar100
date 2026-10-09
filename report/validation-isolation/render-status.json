@@ -1,11 +1,11 @@
 {
   "state": "rendered_pending_independent_visual_audit",
-  "summary_sha256": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
-  "summary_audit_sha256": "9d3c2cbab477170165beb13c022aaae0e2382213bf8f85cc01881bf23edda115",
+  "summary_sha256": "7355071d6d21d074b5da4f495cf5c95dee26153224237de529d1b1f40bd606dc",
+  "summary_audit_sha256": "b61ed99a7ee4bb21ea5f317a002b4f54481096ad25bc0a9a50c80027a2ad8a6c",
   "render_source_sha256": "1bd5c43a5ee4ab542be2c6c68ea4959e2b0f73e01ec4b1c5f61c2ae35169914a",
   "outputs_sha256": {
     "REPORT.md": "e1e038476f81c396dcc16d0f02d3ef08ce3ed28ead916738eb01135d8f693f09",
-    "plot-data.json": "19718aa470f4f77b9ed067c67512a489d365030ce480a74e04bdc56e4ebdfb0d",
+    "plot-data.json": "dfe8237ca4e8fea99923a121bdcd512b6dc13c2f95a82e7733f1834fc5bc8141",
     "paired-auroc.png": "97fbcd3a7dae10822d354e55294ae8212121446c58a3e7de5f598b133cf3eff3",
     "paired-auroc.svg": "fd9412108626e33578964892144fd39ed7584485e3bd1498587b1ee6d034918d",
     "fixed95-acceptance.png": "06bafaa28cc7cab0a50c34bd4c732f5b5cd2de3fbdee04a5a7ba2b8bdfad7509",

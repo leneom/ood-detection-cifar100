@@ -28,8 +28,8 @@
       "checkpoint_epoch": 92,
       "checkpoint_sha256": "e4c6672bd28d32dfff09455b3a800022341e01b48e3921ce9f8a6bb93e5a02e0",
       "temperature": 1.3225258577076677,
-      "scoring_manifest_sha256": "62a3a58bd0c925ebff085aad1aad7bb2c46253fcc1a2928628e557545fc7c51e",
-      "score_audit_sha256": "af03b31672110487e64128e18df26c6b5f809fe98e09b7cd857af73aeba1ae9f",
+      "scoring_manifest_sha256": "54135d51125c2968eec5fbf4b621d92b4362bf792ac89f54d3abdea5d3046b7a",
+      "score_audit_sha256": "c69f8ff2a7b724122b695a509f4e7b5ff7ba435328a51a8ee8b773d8be5e6f84",
       "raw_logits_features": "runs/tinyimagenet-confirmation/extract-seed0/raw.npz",
       "per_image_scores": "runs/tinyimagenet-confirmation/score-seed0/scores.npz",
       "acceptance_masks": "runs/tinyimagenet-confirmation/score-seed0/acceptance_masks.npz"
@@ -39,8 +39,8 @@
       "checkpoint_epoch": 96,
       "checkpoint_sha256": "b7119754e0f1141a45a08b0cf7fee845b2d59006b741271589d9b6759be52955",
       "temperature": 1.3174977200125948,
-      "scoring_manifest_sha256": "afec2faace43add0c54573b48e4b31be6bf3cb790678b81a3e3cf285b3b7e989",
-      "score_audit_sha256": "267218726d9cd304d0e0b2469a5172c5ee983b1f36315d81e000f03562a35eb5",
+      "scoring_manifest_sha256": "92db6844d780cc7f2f89235573f312bac7df640d4ab5fa832fff5f5e27f9e197",
+      "score_audit_sha256": "414542a1f5fa1e5cbbfc5d4e26cc8d410bbe77d2c17c0de63bc89582ddceb515",
       "raw_logits_features": "runs/tinyimagenet-confirmation/extract-seed1/raw.npz",
       "per_image_scores": "runs/tinyimagenet-confirmation/score-seed1/scores.npz",
       "acceptance_masks": "runs/tinyimagenet-confirmation/score-seed1/acceptance_masks.npz"
@@ -50,8 +50,8 @@
       "checkpoint_epoch": 98,
       "checkpoint_sha256": "27f3b5e8a79d48a72e3ac5984cabddf306d97f0e46a15b8733f19184485076b8",
       "temperature": 1.3131369515891902,
-      "scoring_manifest_sha256": "001179d5fd3aaacc894de9759848b27e16df773165525d49bfda4000d840f830",
-      "score_audit_sha256": "e45a7dd4dd695cead224353fd7adaf886e86011d1ea053258a43e61599283466",
+      "scoring_manifest_sha256": "0dc46f42ec0af8e3bc172590caddc315e7bfab5a2d014c97c297162d55347461",
+      "score_audit_sha256": "a5f1cf6fb3a14a511f2f25f20618f174efd6a003945c3c76bea8963f243f78cf",
       "raw_logits_features": "runs/tinyimagenet-confirmation/extract-seed2/raw.npz",
       "per_image_scores": "runs/tinyimagenet-confirmation/score-seed2/scores.npz",
       "acceptance_masks": "runs/tinyimagenet-confirmation/score-seed2/acceptance_masks.npz"

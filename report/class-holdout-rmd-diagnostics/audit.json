@@ -5,8 +5,8 @@
   "component_rows": 54,
   "summary_comparisons": 28,
   "all_row_transition_vectors": 18,
-  "declaration_sha256": "d81aec71dfafb9e81495e78b391f28cbf9200153894cb78326afe409cc8b0e91",
-  "manifest_sha256": "18f56eaffc56ad144548404f6c2f1c7c135d4d038b5f9b82f4a79a0e45a321ae",
+  "declaration_sha256": "3bc2d5fe3409b926c8e7e6f2d9fc662f797cde9469b70885f39a0f4907e47e52",
+  "manifest_sha256": "b7dd5284352cc7875b35b802d8832c0c1bb6b7a24dfe328f3d18735aad10ec1b",
   "source_sha256": "1ef6ecd49deacec0997c027521ce5758c928897ede86dd18257bbae8c5c1272b",
   "boundary": "Post-result descriptive diagnostic; no score, threshold or model changed."
 }

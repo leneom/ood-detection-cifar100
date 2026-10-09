@@ -33,15 +33,15 @@
     "passed": 78,
     "skipped": 2,
     "skip_reason": "SciPy-only optimizer tests already passed in unchanged base CPU calibration suite",
-    "test_environment_sha256": "7e7944bed24416ed0124d586640c93ee2a5c8548ea8766db034c6e1ec309ee18",
+    "test_environment_sha256": "7ca66692963018ac24e46cde690bd821bb25f5d3534d777579fbe3a862a9469e",
     "regression_log_sha256": "d717f9cf0524dcd6b9e876c3fd91d73d5122d64105acd49a35fd13dadc30659e",
     "CPU_ASH_diagnostics_tests_passed": 5,
     "CUDA_VISIBLE_DEVICES": "-1",
     "torch_cuda_is_available_before_suite": false
   },
   "audits": {
-    "audit.json": "96a9bac79e36e13e3f30b0b5af571001403540cb0c15357fe7075e764796e15a",
-    "summary-audit.json": "1cfa7583cda87bba0ece7e67e6600ab5d3fa27bc6f9a12a30ff3704d8a36fa37",
+    "audit.json": "418922c47470453ad854e5a9c136ff991bcb4f290a5f5e3a85a9bb34a56a7890",
+    "summary-audit.json": "0439aefd5944c6a3d895037afeda793f3cb0734916d5453ed46872eae5c14d18",
     "visual-qa.json": "d1da841ec872a76d2276cf05ae23ded0388a40bf301e51c28294e38ab458e546"
   },
   "source_sha256": "ff82ae3d88ffca48d41a70e3dd4bc2bcbcba46c607572ffbe0956f03908da8ad",

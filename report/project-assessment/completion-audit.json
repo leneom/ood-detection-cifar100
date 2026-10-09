@@ -4,11 +4,11 @@
   "phase_count": 11,
   "bound_phase_inputs": 40,
   "artifact_hashes": {
-    "report/project-assessment/inputs.json": "26ad0c11f47113f78537b5e3d8d1b6892ad3c0d3a987b870968f06ee464f91dd",
-    "report/project-assessment/index.json": "78d056f62d9832cbb9acc6c34e6d0b8f0d939c7145461832b2cb2bea9b3368de",
+    "report/project-assessment/inputs.json": "6202f3e0afab7d4fc812d5cb32a49f498959850e808b1fb33bb7a7adf6083b5c",
+    "report/project-assessment/index.json": "77c86586b8039b8227f20ff955a8b59ed4ff387d588968a6626cc3feb1e366ff",
     "report/project-assessment/REPORT.md": "5fb0f2fd7a76dae3a877cf414b071a154edcb82db9a2b7d3023e949aeed488a2",
-    "report/project-assessment/build.json": "4186df66721f6ab0f648a66111fa72e39c79f08ae6a9c488a52be40c6c204825",
-    "report/project-assessment/audit.json": "0501dce091f1c9ad1c45869d3d36ac393f7e42144062631ddbac719d10340812",
+    "report/project-assessment/build.json": "f2305b3ea62ed52f369ba7c400b5668a394afa9cb0fef3353ec2499ee67307eb",
+    "report/project-assessment/audit.json": "ee8405a9ce516317df5c64164514498e0c0504aaf6fa74bdb3c77df4137dc0cd",
     "docs/PROTOCOL.md": "081a1aeaaefeac54d9eb9e0e29dc978e32ac446c8c442af3d0f73e16315028b4"
   },
   "completion_source_sha256": "d2c8995308744f57f0974cbdb2f95cc5c70fc64effdc0cfe7b1070a7bf9f74e7",

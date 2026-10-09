@@ -657,73 +657,73 @@
     {
       "phase": "matrix",
       "summary_sha256": "77572b8e74b39f05360a70dfaac4485479f32292d3fb370e2538e46bdb5d1c7e",
-      "audit_sha256": "2717181e1fcb75f4b47bdd32d2b0e7bcd56cb1f09bb4daafb8e78d01fff1c6fb",
+      "audit_sha256": "803f2155773c7f784fdc4171ed9219c1d21cb044278109692b5f7ca466667e80",
       "results": [
         {
           "seed": 0,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-final\\results.json",
-          "results_sha256": "b5e131bb8fe86878ccde9a39f8f94460fb180a9a03a9aa83f4b30ebae5481d69"
+          "path": "runs/cifar100-seed0/eval-final/results.json",
+          "results_sha256": "dac3b4902d463f738d4a82848cffb1a797943dde7f21e47571be56d819e6b188"
         },
         {
           "seed": 1,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-final\\results.json",
-          "results_sha256": "f146c52d89be30c412e6eed75fa418900446fed2f7ac1a391ef452d07ba37a88"
+          "path": "runs/cifar100-seed1/eval-final/results.json",
+          "results_sha256": "7e61645b331e300fd39fefd904c03e2a34011b6a1f35ba8d5e27e305636d012e"
         },
         {
           "seed": 2,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-final\\results.json",
-          "results_sha256": "02706a62a0f92b6bec96caded4a07556c819d680e3c7ec8ba372dc1433a46a1d"
+          "path": "runs/cifar100-seed2/eval-final/results.json",
+          "results_sha256": "91bb559e740cb1e82d741d5eadf9ac6419bee9150ff55bd0d263123b87ed88f7"
         }
       ]
     },
     {
       "phase": "svhn-extension",
       "summary_sha256": "006799d753a82a27344a5c8b3db630385004b93adae90b879c78c1638b8a25ab",
-      "audit_sha256": "b2d6bc681c887ad1260d33e830253ae639d257f5e9a6370b8cd2a2920e9462cb",
+      "audit_sha256": "359911e7251492f5a8336b0291a0fce26034a4af16cc5b226deda0412d8813e9",
       "results": [
         {
           "seed": 0,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-extension-svhn\\results.json",
-          "results_sha256": "e46cc2b6e4c59d206a7ecb788a982683c5dabe3b2b5b767d22207d47fbff92e9"
+          "path": "runs/cifar100-seed0/eval-extension-svhn/results.json",
+          "results_sha256": "fb0cde00754a63d32c0b7dfedcf7ff35d3bc4ef08469560bb6be338491e75816"
         },
         {
           "seed": 1,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-extension-svhn\\results.json",
-          "results_sha256": "3ca32ee8d9d5548642c26a1e82f2cc41c7871c97da8baaa79c389421223bf385"
+          "path": "runs/cifar100-seed1/eval-extension-svhn/results.json",
+          "results_sha256": "de2d130d7eb3e8efdbc0daff96de650b642787deddab33d1f26912d680a3b876"
         },
         {
           "seed": 2,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-extension-svhn\\results.json",
-          "results_sha256": "702728bec5c3abf6d8c7eab9550e7c8d41f14dbde58e54c0e94bb2e968cdaba8"
+          "path": "runs/cifar100-seed2/eval-extension-svhn/results.json",
+          "results_sha256": "24b6c044e78315fd0938ce5f46984de50d643598ec8e76afb7174000e79b8a36"
         }
       ]
     },
     {
       "phase": "textures-extension",
       "summary_sha256": "007980a702dc41a757b30e66a3896a14e60240574f909d01ee223a1cc8aeeb5b",
-      "audit_sha256": "42b195eb2c8d9048bccf6806d40bed6956671e434281fff65dd738be3e26dbca",
+      "audit_sha256": "f37948c81ff2945251cf11a64da88e4e1888a38c3b8f27fc7762936e672c2412",
       "results": [
         {
           "seed": 0,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-extension-textures\\results.json",
-          "results_sha256": "8adc75b82b8f6046785c8bba0e3cce6ef743e28c4d1d3d50a93d1db9daf8af8a"
+          "path": "runs/cifar100-seed0/eval-extension-textures/results.json",
+          "results_sha256": "ea4a6ed134196a24c61747a6d40ece4c1659b9091ea5bd1da2d2e1d110f1e6c2"
         },
         {
           "seed": 1,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-extension-textures\\results.json",
-          "results_sha256": "04822572241184b1bfbd41ff4af8616d15b2d32fe82ff69b874691dfe751df22"
+          "path": "runs/cifar100-seed1/eval-extension-textures/results.json",
+          "results_sha256": "860d99a3d1cfe08d4e631f8bd61941a72ba5a4e86005fcc20c7be7eb0403d49f"
         },
         {
           "seed": 2,
-          "path": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-extension-textures\\results.json",
-          "results_sha256": "67e0d96e4d034e0e7293d4b2c83650fa4e24f8d66a44c0a435f996fea20dfb4d"
+          "path": "runs/cifar100-seed2/eval-extension-textures/results.json",
+          "results_sha256": "481b7fb78e00ce4e492e2719970217bccae7c8bdf834b24e82c6a8a40a78a1c3"
         }
       ]
     }
   ],
   "phase_audit_statistics_checked": 291,
   "macro_statistic_checks": 12,
-  "executed_input_audit_sha256": "d63043a7438d9426a13ad647967f45ce9ddd1177867f50129e1df7c8d455621b",
+  "executed_input_audit_sha256": "51eff6c94c197202b4b176874bffddda0a50e8625a98a561ebd12f0ce647c5b8",
   "tool_sha256": "65f7e770f95d5416f926127f12e8b0d419e9786c6a41d6c650c20316edb09229",
   "boundary": "independent local protocol; descriptive sample SD, not confidence intervals or method selection"
 }

@@ -48,8 +48,8 @@
       "logitnorm": 0.7328
     }
   },
-  "summary_sha256": "7326e34adcd9a18a972970bd6fb8e749f448439aacc82d94b979a768558a2234",
-  "report_sha256": "b9827659d192665f42cae5116dfd5bc96c37b4212606a0e14a2ba13a32eca653",
+  "summary_sha256": "a854678a30fdc88adbaa74e1d232415c013704a0d7423ff0a9f4899af59ad6e5",
+  "report_sha256": "dfaa2db67b344997cd5532f0005e967a10a7675ed97ef00f727405ea81a020ac",
   "independent_implementations": {
     "logit_scores": "scipy softmax/logsumexp in float64",
     "knn": "sklearn NearestNeighbors brute force on L2-normalised features",

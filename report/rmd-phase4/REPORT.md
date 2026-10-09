@@ -137,10 +137,10 @@ Synthetic noise is saved in summary.json and raw artifacts, explicitly excluded 
 
 Run with the verified base CPU Python; set OMP_NUM_THREADS, MKL_NUM_THREADS and OPENBLAS_NUM_THREADS to 4 for bounded local computation. For torch CPU auditing on Windows, CUDA_VISIBLE_DEVICES=-1 was verified to hide CUDA; an empty value was ineffective in the observed shell. Historical frozen reports remain unchanged.
 
-```powershell
-& C:/Users/zxzx/anaconda3/python.exe tools/audit_rmd_evaluation.py
-& C:/Users/zxzx/anaconda3/python.exe tools/build_rmd_report.py
-& C:/Users/zxzx/anaconda3/python.exe tools/audit_rmd_report.py
+```bash
+python tools/audit_rmd_evaluation.py
+python tools/build_rmd_report.py
+python tools/audit_rmd_report.py
 ```
 
 Raw: original banks are runs/geometry-phase3/seedN/training-bank.npz; new fits are runs/rmd-phase4/seedN/fit-state.npz, evaluation/*_scores.npz, *_intermediates.npz and decisions.npz. Provenance and independent fit audit: runs/rmd-phase4/*.json. This report audit.json binds all raw artifacts; summary-audit.json independently checks every statistical record. Completion is recorded separately after both audits and visual inspection.

@@ -1,6 +1,6 @@
 # Additional class partitions: local runbook
 
-Frozen scientific plan: [CLASS_HOLDOUT_REPLICATION.md](CLASS_HOLDOUT_REPLICATION.md). This page records commands and audit order, not new method choices. All commands run from the `ood_detection` root in Windows PowerShell with `C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe` unless stated otherwise.
+Frozen scientific plan: [CLASS_HOLDOUT_REPLICATION.md](CLASS_HOLDOUT_REPLICATION.md). This page records commands and audit order, not new method choices. All commands run from the repository root with the CUDA PyTorch environment's `python` unless stated otherwise.
 
 ## Current schedule
 
@@ -10,19 +10,19 @@ The single locked controller `tools/run_class_holdout_replication_training.py` w
 
 After the selected `final-best.pt`, `final-selection.json`, all 100 history rows and `status.json: complete` exist for a model, run the independent training audit with CUDA hidden. For example, for split 2032 seed 0:
 
-```powershell
-$env:CUDA_VISIBLE_DEVICES = '-1'
-& 'C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe' -X utf8 tools/audit_class_holdout_replication_training.py --class-seed 2032 --seed 0
-& 'C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe' -X utf8 tools/audit_class_holdout_replication_checkpoint_cpu.py --class-seed 2032 --seed 0
-Remove-Item Env:CUDA_VISIBLE_DEVICES
+```bash
+export CUDA_VISIBLE_DEVICES=-1
+python tools/audit_class_holdout_replication_training.py --class-seed 2032 --seed 0
+python tools/audit_class_holdout_replication_checkpoint_cpu.py --class-seed 2032 --seed 0
+unset CUDA_VISIBLE_DEVICES
 ```
 
 The first audit checks the exact 100-epoch trace, learning-rate milestones, first maximum on the 1,600-row checkpoint-ID role, all original row indices/class labels, source snapshots, full resume state and checkpoint hash. The second independently recomputes the frozen checkpoint's full 1,600-row ID-role logits on CPU and saves them. A CPU/CUDA borderline argmax difference occurred in the original split, so a CPU discrepancy is preserved as `cpu_cuda_discrepancy_requires_cuda_audit`, never silently treated as a failed or different ID-only checkpoint selection.
 
 After **all six** schedules finish and the controller exits, a discrepant model may be checked on the original CUDA channels-last inference path under the same three-sample idle guard:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe' -X utf8 tools/audit_class_holdout_replication_checkpoint_cuda.py --class-seed 2032 --seed 0
+```bash
+python tools/audit_class_holdout_replication_checkpoint_cuda.py --class-seed 2032 --seed 0
 ```
 
 The CUDA audit must reproduce the training-selected ID-role correct count exactly; it saves CUDA logits and all CPU/CUDA differing original training rows. It is only applicable when the CPU audit explicitly flagged a discrepancy. All these audits use CIFAR-100 **training-file ID role only**, never official ID test or OOD test. They are write-once; do not overwrite a failed or passing record.
@@ -41,16 +41,16 @@ The independent CPU inference of split2032 seed0 gives 1,227/1,600 correct, vers
 
 Use the verified Windows CUDA Python for the source-bound GPU extractor, one model at a time and only after all six schedules, all training audits, all consolidated ID checkpoint audits, and the independent 8,000/2,000 test-population audits pass. The extractor itself repeats the three-sample low-load GPU guard and reuses the unchanged original extraction/ID-only feature-fit implementation:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\envs\ece488_clip\python.exe' -X utf8 tools/extract_class_holdout_replication.py --class-seed 2032 --seed 0
+```bash
+python tools/extract_class_holdout_replication.py --class-seed 2032 --seed 0
 ```
 
-The independent full raw-pixel/ID feature-bank audit and subsequent temperature/threshold scoring need SciPy/sklearn from base Anaconda, so use `C:\Users\zxzx\anaconda3\python.exe` for these CPU-only commands:
+The independent full raw-pixel/ID feature-bank audit and subsequent temperature/threshold scoring need SciPy/scikit-learn, so run these CPU-only commands with the analysis environment's `python`:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/audit_class_holdout_replication_features.py --class-seed 2032 --seed 0
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/score_class_holdout_replication.py --class-seed 2032 --seed 0
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/audit_class_holdout_replication_scores.py --class-seed 2032 --seed 0
+```bash
+python tools/audit_class_holdout_replication_features.py --class-seed 2032 --seed 0
+python tools/score_class_holdout_replication.py --class-seed 2032 --seed 0
+python tools/audit_class_holdout_replication_scores.py --class-seed 2032 --seed 0
 ```
 
 These adapters invoke the unchanged original six-method extractor/scorer and independent auditors with source-bound class context. The feature auditor uses a declared per-split compatibility view containing only the official training-file hash it expects; this does not replace the frozen root replication declaration. Check every output manifest and write-once audit before proceeding to a three-partition summary. The scripts must not be run on an incomplete schedule or while a GPU trainer is active.
@@ -59,17 +59,17 @@ These adapters invoke the unchanged original six-method extractor/scorer and ind
 
 The report specification was frozen in `docs/CLASS_HOLDOUT_REPLICATION_REPORT.md` and the write-once `runs/cifar100-class-holdout-replication/report-declaration.json` before either new split had an OOD score. For each new split, first prepare and independently audit all 10,000 official CIFAR-100 test rows **after** its full three-model train/ID gate:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/prepare_class_holdout_replication_test.py --class-seed 2032
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/audit_class_holdout_replication_test.py --class-seed 2032
+```bash
+python tools/prepare_class_holdout_replication_test.py --class-seed 2032
+python tools/audit_class_holdout_replication_test.py --class-seed 2032
 ```
 
 Repeat for split 2033, then use the one-model-at-a-time GPU extraction and base-Anaconda CPU score audit commands above for every new model seed 0/1/2. Once all six new score audits pass, run:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/build_class_holdout_replication_report.py
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/audit_class_holdout_replication_report.py
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/verify_class_holdout_replication_completion.py --write
+```bash
+python tools/build_class_holdout_replication_report.py
+python tools/audit_class_holdout_replication_report.py
+python tools/verify_class_holdout_replication_completion.py --write
 ```
 
 The builder independently gates the old 160-file baseline and all six new source-bound model/partition/test/score audits. It saves all nine points, each split's three-seed mean/sample SD, and the grand mean/sample SD of the three split means for all 48 ranking and 144 operating rows. The second script numerically rebuilds every reported point, CSV field and displayed all-method row without using the builder's statistics implementation. The report is not complete until this audit passes. No OOD result can select a method, checkpoint, temperature or threshold.
@@ -80,9 +80,9 @@ The final write-once completion command can be rerun without `--write` to rehash
 
 The full-grid report remains the numerical source of truth. A separate display specification was frozen before the two new partitions had OOD test scores in `docs/CLASS_HOLDOUT_REPLICATION_FIGURES.md`. Only **after** the nine-model report's independent audit and write-once completion gate pass, base Anaconda can render one 3×2 all-method figure (AUROC, actual ID acceptance and OOD acceptance at the same fixed95 ID-validation target; both temperature variants):
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/plot_class_holdout_replication.py
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/audit_class_holdout_replication_figures.py
+```bash
+python tools/plot_class_holdout_replication.py
+python tools/audit_class_holdout_replication_figures.py
 ```
 
 It refuses an incomplete report, saves separate PNG/PDF/figure-data and source hashes in `report/cifar100-class-holdout-replication-figures/`, and its independent numeric/file auditor checks all 108 figure-data rows, 324 seed values, hashes and PNG/PDF dimensions. Rendered-image inspection is still required before calling it a completed presentation artifact. No plot or OOD figure result exists yet.
@@ -94,8 +94,8 @@ The six fixed new 100-epoch schedules, all ID-only checkpoint audits, both offic
 
 Numerical results: `report/cifar100-class-holdout-replication/SUMMARY.md`, `metrics.csv`, `operating.csv`, and `summary.json`. Source/raw completion: `report/cifar100-class-holdout-replication/completion.json`. The visually reviewed optional presentation is the versioned `report/cifar100-class-holdout-replication-figures-v2/all-methods.png` and PDF, with separate numeric audit and manual visual-review records. The first figure rendering is retained as the audited pre-layout-correction artifact. Recheck the 351-file completion chain read-only with:
 
-```powershell
-& 'C:\Users\zxzx\anaconda3\python.exe' -X utf8 tools/verify_class_holdout_replication_completion.py
+```bash
+python tools/verify_class_holdout_replication_completion.py
 ```
 
 This is descriptive fixed-partition sensitivity; partition 2031 was viewed earlier, and the three fixed partitions do not form a confidence interval or a new untouched confirmation.

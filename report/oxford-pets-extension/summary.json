@@ -28,8 +28,8 @@
       "checkpoint_epoch": 92,
       "checkpoint_sha256": "e4c6672bd28d32dfff09455b3a800022341e01b48e3921ce9f8a6bb93e5a02e0",
       "temperature": 1.3225258577076677,
-      "scoring_manifest_sha256": "0cb18fa8c8c7acd3932cc16e5ec2566ba16899b476f7b31a91f0a7ba52b4406a",
-      "score_audit_sha256": "86601b230b089fdfbd2f9629f89305684dbb71ef5bf8ab86fdc45d36acb00786",
+      "scoring_manifest_sha256": "a3250f5dbed67ae8bffb8d6b7107ad38ac3698edc4a0085f50f40af62b418679",
+      "score_audit_sha256": "5724233bdd65fe38850713b099f4decff0684f3bfb7fca76faa4f8c057d13f3e",
       "raw_logits_features": "runs/oxford-pets-extension/extract-seed0/raw.npz",
       "per_image_scores": "runs/oxford-pets-extension/score-seed0/scores.npz",
       "acceptance_masks": "runs/oxford-pets-extension/score-seed0/acceptance_masks.npz"
@@ -39,8 +39,8 @@
       "checkpoint_epoch": 96,
       "checkpoint_sha256": "b7119754e0f1141a45a08b0cf7fee845b2d59006b741271589d9b6759be52955",
       "temperature": 1.3174977200125948,
-      "scoring_manifest_sha256": "f16c71a611e0ede544818e36fc4c77054104bd89d61d8a37275065239a39c552",
-      "score_audit_sha256": "a5a78339db2dc248f94a8ce0b0586ae099507a7d90d410698faa66f156a87a36",
+      "scoring_manifest_sha256": "0a6228f85b206ca52beb738d049a3bdaffbfc4566900e61fc5ec84c00d2641e7",
+      "score_audit_sha256": "c639f17c0ebc9dc8355f35b1d1a761ffeddb4bfda31961a9c1296582746d4173",
       "raw_logits_features": "runs/oxford-pets-extension/extract-seed1/raw.npz",
       "per_image_scores": "runs/oxford-pets-extension/score-seed1/scores.npz",
       "acceptance_masks": "runs/oxford-pets-extension/score-seed1/acceptance_masks.npz"
@@ -50,8 +50,8 @@
       "checkpoint_epoch": 98,
       "checkpoint_sha256": "27f3b5e8a79d48a72e3ac5984cabddf306d97f0e46a15b8733f19184485076b8",
       "temperature": 1.3131369515891902,
-      "scoring_manifest_sha256": "71713f3a94d38284dd6bd74e5a0351a795e3b087a865670ace2cd19f634adbeb",
-      "score_audit_sha256": "15bf221ec308acbccec9e2b22063a8ad8db5cbcfc8d6c9e2b567eb3666cee11f",
+      "scoring_manifest_sha256": "54a930709726ab4b307de05f77bc8a8127ef7a52ff7768694ed60b1c720fe748",
+      "score_audit_sha256": "5671081f3730e9b99de9a793522341025d6b7d2f7b99a12b2e75acd5783a2d9a",
       "raw_logits_features": "runs/oxford-pets-extension/extract-seed2/raw.npz",
       "per_image_scores": "runs/oxford-pets-extension/score-seed2/scores.npz",
       "acceptance_masks": "runs/oxford-pets-extension/score-seed2/acceptance_masks.npz"

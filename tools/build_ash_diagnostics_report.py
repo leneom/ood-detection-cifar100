@@ -118,7 +118,7 @@ def main():
             '![All populations, variants and seeds](support-scale.png)','',
             '![All natural populations and twelve references](natural-transitions.png)','',
             '## Reproduction and evidence','',
-            '```powershell','& C:/Users/zxzx/anaconda3/python.exe tools/run_ash_diagnostics.py','& C:/Users/zxzx/anaconda3/python.exe tools/audit_ash_diagnostics.py','& C:/Users/zxzx/anaconda3/python.exe tools/build_ash_diagnostics_report.py','& C:/Users/zxzx/anaconda3/python.exe tools/audit_ash_diagnostics_report.py','```','',
+            '```bash','python tools/run_ash_diagnostics.py','python tools/audit_ash_diagnostics.py','python tools/build_ash_diagnostics_report.py','python tools/audit_ash_diagnostics_report.py','```','',
             'Raw: runs/ash-diagnostics/seedN/analysis/*_components.npz, *_classification.npz, transitions.npz and results.json. Full classification and acceptance state codes, per-class cells and explicit original-correct/incorrect denominators are saved. Immutable score/mask/head inputs come from completed phase 5. Audits bind source/input/raw/summary hashes; completion is separate after visual QA and regression.','',
             'No causal, significance, deployment or fresh-validation coverage claim follows from this posthoc descriptive phase.']
     (OUT/'REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')

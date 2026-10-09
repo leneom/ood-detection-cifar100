@@ -5,10 +5,10 @@
   "cause": "Stats normalizes per_seed count list to float, while independent displayed-count check uses original integer counts. No metric, source raw score or tolerance failed.",
   "repair": "Use original integer argmax-change counts in displayed lists; rerun report and independent audit.",
   "artifacts": {
-    "tools\\build_ash_report.py": "bf4447a536467fe1ad5e771b45d79640533bbc884cdab8ba959ea715ccb50e67",
+    "tools\\build_ash_report.py": "805e42d6f3767b9c242ce26af695da00758922fde7ee15d8298d98d10d80f461",
     "tools\\audit_ash_report.py": "a68e49c51b1b0fa35453d6f0a90fd9ec6f1cdb15a57d85413a99238ceb2a9de8",
-    "report\\ash-phase5\\summary.json": "7098d80fe43a13369937e4e43aba450030a8cffe478f6cceed58fc92d3a2a033",
-    "report\\ash-phase5\\REPORT.md": "4c7cc7a1c5d07730edd0106d73ac8b6c68e12624b1d153a69e630f90a2f3c092",
+    "report\\ash-phase5\\summary.json": "f18332f30005faf13b7148ef1f84270bf41c1369d16b37ed184b2d296ff66575",
+    "report\\ash-phase5\\REPORT.md": "daf84dacf28dea2ce8731151201d46a739d27ab219f60f1c30e0b24dd8f55afc",
     "report\\ash-phase5\\natural-auroc.png": "df6218162e4f7b48ee3dd722f2a51982b7d3299f7c9fa1b00795e23b18c03c34",
     "report\\ash-phase5\\natural-auroc.svg": "71c2ea4514243972054eefca47b7b3a38d7ac63ef40cd4ba040586f6abb719a5",
     "report\\ash-phase5\\operating-grid.png": "ec326e3bbe2092f42f62c1caf3f3d47fad1b6e24a1bf6a366fdd15c63d50c09c",

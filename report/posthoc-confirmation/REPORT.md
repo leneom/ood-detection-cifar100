@@ -1,6 +1,6 @@
 # ASH-S / RMD contrast confirmation
 
-Predeclared test of two exploratory post-hoc methods on four populations where these method × population pairs had never been scored. The [frozen protocol](../../docs/POSTHOC_CONFIRMATION.md) and declaration (SHA-256 `831483f8b068dbdb3a5d1c94bbcd7789f9de16c9a9309600615d92dc401cd331`) were committed before scoring. The same three ID-isolated CIFAR-100 classifiers, their 45,000 training-ID features and their 1,500-row ID threshold role were reused. No OOD row fitted anything.
+Predeclared test of two exploratory post-hoc methods on four populations where these method × population pairs had never been scored. The [frozen protocol](../../docs/POSTHOC_CONFIRMATION.md) and declaration (SHA-256 `b1aa7ec9d8c66df109c9cbbbb6d1350cd21d64751ff22255e2d24c533eac659d`) were committed before scoring. The same three ID-isolated CIFAR-100 classifiers, their 45,000 training-ID features and their 1,500-row ID threshold role were reused. No OOD row fitted anything.
 
 ## Decisions
 

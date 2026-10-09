@@ -4,9 +4,9 @@
   "completed_endpoints": 66,
   "method_or_pair_decompositions": 7920,
   "natural_decompositions": 360,
-  "raw_manifest_sha256": "5c39459a23ded9df5ccf77834543dedc77dd28fbc4813ae1ae6fe44ea7b28a23",
+  "raw_manifest_sha256": "cbac9f4ee7564fe885fe4d941e2f0f68fb9fbd30de127c2032f9c667f1f1715f",
   "updated_at": "2026-09-27T22:10:25.032053+00:00",
   "completed_at": "2026-09-27T22:15:53.092104+00:00",
   "report": "report/bootstrap-dependence/REPORT.md",
-  "completion_audit_sha256": "99aac6ca990df27ea407d3d58ba83ca493c7e26e529b11a4a73e4b25e8c100cd"
+  "completion_audit_sha256": "1f5bad5413ea8229765a1ae4d31388647d2dc4e04f7d6bc7334a6e054c36b6df"
 }

@@ -10,8 +10,8 @@
   ],
   "png_nonwhite_pixels": 310571,
   "figure_spec_sha256": "a11f94971baae700894f1613ac8fe6a025891535cc169ca75edcb2562cf82919",
-  "report_completion_sha256": "1dbee16581fabce00a94d6acdd82e6245e15c92c2597e4269fd2aee3480ff3b6",
-  "manifest_sha256": "0e6a803d04da397adec546d1abc65d6e2e154a6e49eac88daeb7189f1eec1d2a",
+  "report_completion_sha256": "f99fd5ea767eab76498daa656a95a0849b7f3e07e2f89abe5210535181cb6d88",
+  "manifest_sha256": "5938eaaf49770ff17a59324324930233f6861da1514925b576fde07746319777",
   "audit_source_sha256": "90549f320499a00f6ac9266a93e7320d838c29ad29579819919e6f556fce6fae",
   "audited_at": "2026-09-28T22:55:24.178709+00:00",
   "boundary": "Independent numeric and rendered-file audit only; visual inspection is still required before presentation completion."

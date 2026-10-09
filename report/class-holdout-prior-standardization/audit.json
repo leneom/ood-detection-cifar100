@@ -9,10 +9,10 @@
     "heldout_identities": 72
   },
   "source_sha256": {
-    "summary": "561ea4bd29f100af5ca57b26b9d0d56ac821ceb37d09c4b9920a690e26c5e3b8",
+    "summary": "59a8a554fad9dd54c7ed74f1a9ae6f62a982213e3559885cbfa1169ae323b22b",
     "statistics_csv": "2755fd6601d81f7b6c23e9feca9e63a57c3221912d83035cbbbd9333aa3fb8be",
     "report": "d8c4dce66fdfeb4df88fd71ea9778476903ed05dcfd2748b715750a4d18e4511",
-    "raw_audit": "7d3fa6ee55a6cd4b5c3573a0976a76ce25ba49a8a88051ba49d55ca334556c63",
+    "raw_audit": "2e5fb1ff985615ef7c1e8a6a61b18470e371a047dd4bdc958d3234d736b3bbfe",
     "audit_source": "02847e8a66ea7acfcb72e31809b78b20325bb93a6cd9f05682632597b23e3ad3"
   },
   "boundary": "All 48 report rows, 144 standardized and 144 natural seed values, CSV and all-method display independently checked."

@@ -39,11 +39,11 @@
   "summary_records_checked": 1834,
   "frozen_input_hash_checks": 295,
   "audits": {
-    "audit.json": "f685c0776705aa0808e6aae4df07862e0d6273de710e469ae84b1eeb3d56e954",
-    "summary-audit.json": "cc9d749558d34a11f814d06f9cb72655d975d2465beebc8c3aac0a6cfab186e6",
+    "audit.json": "e17f3f82e48e2248db777acbc5ba71a67f1c4e2a3580a89ce78a7804fc7456c8",
+    "summary-audit.json": "d5090b1a1616cbdfc47c70b042e9e3b4ab29aeea6b97725c5f6db675f438583d",
     "visual-qa.json": "fe677f6d545f8acfb3ce5c68f9d39e5965cabedc0f506712f96009a5b5e9c10a"
   },
-  "training_fit_audit_sha256": "65ee3b5254324167513ba146fd4b8475aa177d816238b8d13e316d979ef8f0ab",
+  "training_fit_audit_sha256": "dab80bb25344e6ac1293cf7ede431864779a641c205117b04327ebc7e9bf84c6",
   "source_sha256": "985cd44c90bb83fc7e84d2d32508888959b3407593b8d5798f03d50bcbd87483",
   "boundary": "local exploratory extension; all parameters fixed before new OOD scoring"
 }

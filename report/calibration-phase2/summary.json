@@ -8395,13 +8395,13 @@
       "ood_prevalence": 0.5
     }
   },
-  "inputs_sha256": "0790b3b34332f67e95e1ff5d66a40de153cb12aa5751e76f921a2131b0bf730b",
+  "inputs_sha256": "66fce2d8b31acbbf5c241e5ad013fbd90c4a20d308b23a54b78402c2c83a4025",
   "result_sha256": {
-    "seed0": "3f72d299534f6e10dad75cc48eff9ba4eccf1070bb7875ae634edb5a4acdc541",
-    "seed1": "d2fffcba16000e78fcde68e67a4b61bf1017a571518c1438b00e2242e8374cf1",
-    "seed2": "b07eb0fa2efd11ac35c4e3116ee8b4929ba9282b00cd14c955bc898db91f32e6"
+    "seed0": "2e46b8a3af4c357193317626703c87d5257aea86b523645c1568e4ffeed0c0ae",
+    "seed1": "b9824aa81c1ea5b77a1cf271483b364bbf2478571f20034e79b982b97f740af1",
+    "seed2": "150385fa8106309e1ade2dab4d94267de4ce64dee90485d8decb6068b54795b5"
   },
-  "raw_audit_sha256": "df67414957394b36c5f3244fb62ea26323e82bd578143c3b81724d272ad10e96",
+  "raw_audit_sha256": "21eff9853614a0f590446f101f9edbc38798e45a028cf80a542f2be0df87947d",
   "report_source_sha256": "ab6e3db2675c8af7810f2aace955b783d217fdf63e1d3854b74ac7a3adb63a1b",
   "created_at": "2026-09-27T16:00:51.295158+00:00",
   "boundary": "matched 2500-row ID threshold calibration; descriptive paired seed SD; no confidence interval/significance/method selection; noise excluded from macro"

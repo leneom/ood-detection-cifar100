@@ -28,7 +28,7 @@
     "runs/rmd-phase4/seed0/evaluation/textures_intermediates.npz": "d306ee932113ec2a847fcf7e59ac64c0b33225fb570f055d8ebaeb089cea802b",
     "runs/rmd-phase4/seed0/evaluation/textures_scores.npz": "d7cb1261502c8ec3ee1f3d5133850fa74637638e59299e86ef827a1465e9471f",
     "runs/rmd-phase4/seed0/evaluation/validation_intermediates.npz": "1a8ae90b12f7cc81805c811fe4b3aaf7a0f0e35d0875f7322d936389ad8ade1f",
-    "runs/rmd-phase4/seed0/evaluation/results.json": "c581e998fc1550a276b51cf15b1d3a1237e12cbaddbec2aae5d3280edbbcb0d0",
+    "runs/rmd-phase4/seed0/evaluation/results.json": "2cb84e37df8d90c23b6b2b24f2a95fbb9a56ee081bfb2af3eaf60ade45bec442",
     "runs/rmd-phase4/seed1/evaluation/cifar10_intermediates.npz": "12ad4d3ec757a479840af215b4283a3cf747a3c92b799d237d80f54e985ee4fb",
     "runs/rmd-phase4/seed1/evaluation/cifar10_scores.npz": "126c3db3a8e18425cf232c0efb4ffbc03de744d226253c418e34bcd4aeb7e2b7",
     "runs/rmd-phase4/seed1/evaluation/decisions.npz": "9f2de0854409712bb0024e3c5406b5d3d9e5999df208b275cb0a4fcc3abeef18",
@@ -42,7 +42,7 @@
     "runs/rmd-phase4/seed1/evaluation/textures_intermediates.npz": "f8c9b22b8b2b338d52f364ee24be2fc526a9305ccb1384dd0687f915ad4db746",
     "runs/rmd-phase4/seed1/evaluation/textures_scores.npz": "73a7a18c63f0f02e0f262607d024c9fd27580638e5a8df46bb0598433057d66f",
     "runs/rmd-phase4/seed1/evaluation/validation_intermediates.npz": "85d585a753654c561f0dfdecdc86265a7548a458f71712d536d180d6f5e6f196",
-    "runs/rmd-phase4/seed1/evaluation/results.json": "6f7c07b87080a0602ef346b9ce0ba946a892cbd9f3c88e3d06572b00ef261853",
+    "runs/rmd-phase4/seed1/evaluation/results.json": "8cec3184a466e5f8af55b6b96be441c01f51decff057b6406ace75bdd273b464",
     "runs/rmd-phase4/seed2/evaluation/cifar10_intermediates.npz": "262a0ce86285be5d51ddf8773b981173c6e0624089c22daa39e7dc80cae1af5f",
     "runs/rmd-phase4/seed2/evaluation/cifar10_scores.npz": "789e8f44bbb4cdfe31bda2da5f0e470b8e4a9be4b3b95f8cd9dc2de5e25ac91e",
     "runs/rmd-phase4/seed2/evaluation/decisions.npz": "62e96e29b00491b698dcd0e47b8c55dd67fa630fab2565414c866fdbd1aebdcb",
@@ -56,10 +56,10 @@
     "runs/rmd-phase4/seed2/evaluation/textures_intermediates.npz": "ce56690392b6a0539753f8005b3612a017f5334a31620a4367b08b0a37955c64",
     "runs/rmd-phase4/seed2/evaluation/textures_scores.npz": "9eaa71f50e8ae3f799da443578d029e7470f787ea1a0d2b67b8309a9c26c2ebe",
     "runs/rmd-phase4/seed2/evaluation/validation_intermediates.npz": "8da11ea1cd280a0b6e0ca721a3027047276c4343ec23b9f1f88e052890763049",
-    "runs/rmd-phase4/seed2/evaluation/results.json": "27da7274e10c704e2204d34254cf37dd3650d6f1ee7cb690bebe0a8ad7193f6c"
+    "runs/rmd-phase4/seed2/evaluation/results.json": "ddcecb9b40adb382830f92f7fc41b0e045bc053f39a11a675d97ae34daf2e351"
   },
-  "evaluation_inputs_sha256": "c4b3087dc7507997713cc11651987e4e3f1dce53edf693fd70d359a2adba929b",
-  "fit_audit_sha256": "e9c02dff297c4e2c35c8be982b0d4cea5fe6655ceed14525053cb2302f906380",
+  "evaluation_inputs_sha256": "163e4c2f9e321bdfb3a98682d2dc42e9da9e3f1fc0e1e417a4f4f04fec9b2b87",
+  "fit_audit_sha256": "405446df5dbe073841ee759684c9baa191f2f6679aa237131b8d1a9f944f7e6d",
   "independent_source_sha256": "5784da1d2c43d7bfa36478ae95f7fdcae44d97803f6c3fe770701fc3377d8480",
   "per_seed_diagnostics": [
     {

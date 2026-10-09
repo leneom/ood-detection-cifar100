@@ -1,9 +1,9 @@
 {
   "state": "rendered_pending_visual_audit",
   "figure_spec_sha256": "a11f94971baae700894f1613ac8fe6a025891535cc169ca75edcb2562cf82919",
-  "report_summary_sha256": "78fc00733cbb09c587fb7d2a8c4c45eaef1931cabaab492763f85b4ed4c4badc",
-  "report_audit_sha256": "d49e855bbc15808b699447477cd9f795a664fc6c07497aed1b1de533db9936a1",
-  "report_completion_sha256": "1dbee16581fabce00a94d6acdd82e6245e15c92c2597e4269fd2aee3480ff3b6",
+  "report_summary_sha256": "3a7b8b0abc9e185701eb9f9f54f54d0981e98494cb9bb5d48ec1ae9437b505da",
+  "report_audit_sha256": "55fe16ac10adcadb3178ee6bab344e6925268d8d3430c02d1aa9e6050d013ea9",
+  "report_completion_sha256": "f99fd5ea767eab76498daa656a95a0849b7f3e07e2f89abe5210535181cb6d88",
   "source_sha256": "d29932dc91b7a9e3ec61be87bd129a95fbb05ad588986cdf8a2900b0c20c2cd2",
   "outputs_sha256": {
     "all-methods.png": "b7f38004c022b7a0c81cc2816df829d376804fcae107bc1cb1857a255bdb0ae7",

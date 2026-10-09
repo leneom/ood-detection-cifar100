@@ -3,7 +3,7 @@
   "recorded_at": "2026-09-27T17:17:24.678672+00:00",
   "unique_tests": 56,
   "full_suite_training_python": {
-    "python": "C:/Users/zxzx/anaconda3/envs/ece488_clip/python.exe",
+    "python": "python",
     "run_this_turn": true,
     "tests": 56,
     "passed": 54,

@@ -16,7 +16,7 @@ import traceback
 
 ROOT = Path(__file__).resolve().parents[1]
 PHASE = ROOT / "runs" / "validation-isolation"
-CPU_PYTHON = Path(r"C:\Users\zxzx\anaconda3\python.exe")
+CPU_PYTHON = Path(os.environ.get("OOD_CPU_PYTHON", sys.executable))
 STAGES = (("extract", "tools/extract_isolated_eval.py", "gpu"),
           ("feature-audit", "tools/audit_isolated_features.py", "cpu"),
           ("score", "tools/score_isolated_eval.py", "cpu"),

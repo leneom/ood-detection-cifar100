@@ -1,6 +1,6 @@
 {
   "state": "frozen_before_evaluation",
-  "training_declaration_sha256": "d8587ca9a2c0bf9be82de70ff89731704934b3e41d24f2b400a754f0f9ea579c",
+  "training_declaration_sha256": "f059174ec1af06f055caecd3c353cccd56a5eceab19cd79925c93d3ba5bb7bd9",
   "sources": {
     "tools/extract_logitnorm_eval.py": "78b65186d02d7f7bdf17d22fc50be8de49ca3ebf9173e7a9629316d4e70500ac",
     "tools/score_logitnorm_representation.py": "37fac0916fb69858fae019f068c4b80c82301734dfe82655ef0fa16bf3380d83",

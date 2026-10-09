@@ -28,7 +28,7 @@
   "independent_summary_fields": 1296,
   "independent_plot_coordinates": 120,
   "regression": {
-    "command": "CUDA_VISIBLE_DEVICES=-1 ece488_clip/python.exe -X utf8 -m unittest discover -s tests -q",
+    "command": "CUDA_VISIBLE_DEVICES=-1 python -m unittest discover -s tests -q",
     "total": 91,
     "passed": 89,
     "skipped": 2,
@@ -36,23 +36,23 @@
     "note": "Two unchanged SciPy optimizer skips were previously verified in the base CPU environment."
   },
   "inputs_sha256": {
-    "training_status": "6e7a24e1c16f5f50996d6ce8beaf63b69dc26815a29cf1a4aa8f560d6b0cacd2",
-    "evaluation_status": "88e6b9a9c98b19698c358297319a36818a6c0ebbebcce20f4554afb661af3a54",
-    "evaluation_launch": "79196f0346eb6cf499e7186894ad70aa8d70bf7bd2c8c05a35bf79980c71e752",
-    "summary": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
-    "summary_audit": "9d3c2cbab477170165beb13c022aaae0e2382213bf8f85cc01881bf23edda115",
-    "render_status": "657a37a31d98177b332ca6e8493dd22d76a4486d324dcb60a14fb5702dbcd44b",
-    "visual_audit": "777edc66670d519fe5c3a04ddc3dc6a0906d28e7512e727663e81317ea6858a0",
+    "training_status": "232efb37956ea5250505ef580c467812bf6a64b4c3b8f2ba485c30e5cdc01810",
+    "evaluation_status": "474ab7e47f27759984d9d8ce382f338a73be76228bdb21aea4e5c5fc73486a2c",
+    "evaluation_launch": "44f8ff29f7c4fe429ce89dfdc2fe53aadb849490b120736a93424bb7759ebc35",
+    "summary": "7355071d6d21d074b5da4f495cf5c95dee26153224237de529d1b1f40bd606dc",
+    "summary_audit": "b61ed99a7ee4bb21ea5f317a002b4f54481096ad25bc0a9a50c80027a2ad8a6c",
+    "render_status": "c1dfc5cc56f7eb593150b93281e17150198009e78b9450e317d77e5df3108e00",
+    "visual_audit": "adc5a7c01c359ca5e854013de7e106dc7560d2b24b38eb7f6baa49ebe28ba7b2",
     "figure_inspection": "56a3ac4f3451d186ebc8cd7efd12ff0dc2b6880fc3b954e832fc03529203b018",
     "train-audit_seed0": "e200855357dbb7d9f1c91ba741dd8e41fe8587597da869da88d8c778d2b0f422",
-    "feature-audit_seed0": "017764980a2e5bb77110ddead744a9a6f9c92b45009132bb3b2cae9e11bd8318",
-    "audit_seed0": "9ca9700de15304b6d4d424ddd7c543a9a20206bdd8c2cbd2efa2dab4c3fcc282",
+    "feature-audit_seed0": "d0485d364fa01fb5232fd09c7858070b8b752c5176a1795e04f4d788d7742fef",
+    "audit_seed0": "5676c70c2241f16768dc434e5a57da294bfa9b069c1516f76ffc4e142efe1b1d",
     "train-audit_seed1": "11cc5ab75452c0db829c0d802781b161afd531db919bea6f27ef158b8c519023",
-    "feature-audit_seed1": "261b9b95ded12ea3c143965ce6a20c2ed208b44b70c9cf596e59fc0e99426193",
-    "audit_seed1": "c3532d22e86de512a2462602d406bcbf008ea1094b99a3d91dcf4cecccb2ab3d",
+    "feature-audit_seed1": "de10616548ed0b16a20ccf162630df3080eb3d738fc27b025cc543ece12363bb",
+    "audit_seed1": "b4d2d5dff91265ab281f66e4ac5f13ab3e0889ad7c27827875cadb0eb2705be6",
     "train-audit_seed2": "290f8741103ae6045e6dac7e546f839b48c2dcade576b5915e7e97c5803df6a7",
-    "feature-audit_seed2": "117e47c5cfd9313689047d9ffbf87d6027d725a6dffcb16474b49563cdcf5f72",
-    "audit_seed2": "7156382b4fd7b44a7f659f771c1b84130a8e25f903f531684a70de5f66cd8995"
+    "feature-audit_seed2": "c323c42bb5160fc6afbad3a5bb96a1fbc6ca8a168b117d87d2afc2f19f257c37",
+    "audit_seed2": "acd5a0c0ee5c9ec91e692cc510fc8efc6a8d0e745e90742dd27d2ff035e16209"
   },
   "boundary": "Previously inspected OOD test populations; exploratory paired replication, not fresh OOD confirmation, method selection, causality, or deployment validation."
 }

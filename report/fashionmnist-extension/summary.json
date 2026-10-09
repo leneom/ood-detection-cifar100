@@ -28,8 +28,8 @@
       "checkpoint_epoch": 92,
       "checkpoint_sha256": "e4c6672bd28d32dfff09455b3a800022341e01b48e3921ce9f8a6bb93e5a02e0",
       "temperature": 1.3225258577076677,
-      "scoring_manifest_sha256": "2e1eec601133b1bd33b58718a966786c31e6b16ce249c86341fa7e3d937e4d7e",
-      "score_audit_sha256": "980448c0b72471d144197c0848cb4630012639bd93f48fbc28e6b58bdacfee9e",
+      "scoring_manifest_sha256": "359dfeff779fc48f111ce8210f74d6360f52899e39d52a8aabbbb8fe487c3c2f",
+      "score_audit_sha256": "1cb50276a6e5933ddf49862bc598dfef7bbcc2c93c38f472138c89a3b6e7000b",
       "raw_logits_features": "runs/fashionmnist-extension/extract-seed0/raw.npz",
       "per_image_scores": "runs/fashionmnist-extension/score-seed0/scores.npz",
       "acceptance_masks": "runs/fashionmnist-extension/score-seed0/acceptance_masks.npz"
@@ -39,8 +39,8 @@
       "checkpoint_epoch": 96,
       "checkpoint_sha256": "b7119754e0f1141a45a08b0cf7fee845b2d59006b741271589d9b6759be52955",
       "temperature": 1.3174977200125948,
-      "scoring_manifest_sha256": "62ddb2ab02eb5aa7fa5818f6d1fc8699f007bdd2fcff9219ec86adec34111fc3",
-      "score_audit_sha256": "926d65e28b8a7387696f4ee5167781d9d65af7bc55f18a78861bc90373b4b729",
+      "scoring_manifest_sha256": "4620a8c9fc80f965adf74af2fe0a02a9254ad73d91530ccee7090bf3e1e617de",
+      "score_audit_sha256": "eddd6811597ca7e0a6bb380cc83fd325cb2188ec294b1cd7d6f8792d316280f0",
       "raw_logits_features": "runs/fashionmnist-extension/extract-seed1/raw.npz",
       "per_image_scores": "runs/fashionmnist-extension/score-seed1/scores.npz",
       "acceptance_masks": "runs/fashionmnist-extension/score-seed1/acceptance_masks.npz"
@@ -50,8 +50,8 @@
       "checkpoint_epoch": 98,
       "checkpoint_sha256": "27f3b5e8a79d48a72e3ac5984cabddf306d97f0e46a15b8733f19184485076b8",
       "temperature": 1.3131369515891902,
-      "scoring_manifest_sha256": "700d7f97c2314f1a33b199301ca9b96ef86f333828cc3a83719a97b894bd693f",
-      "score_audit_sha256": "9fd001ef429a1dab6ef99eee3eaf943df615dd70eb63b2ec9b25ad923a625c30",
+      "scoring_manifest_sha256": "fcf66a8670e6fea55881dc25ff6646eaab3da9711b35379c4be1a18987efc95a",
+      "score_audit_sha256": "0c242433f2e01833c4eae7b0b06c4e447900abadf0de3b1eb8adb0078460a5cd",
       "raw_logits_features": "runs/fashionmnist-extension/extract-seed2/raw.npz",
       "per_image_scores": "runs/fashionmnist-extension/score-seed2/scores.npz",
       "acceptance_masks": "runs/fashionmnist-extension/score-seed2/acceptance_masks.npz"

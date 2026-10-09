@@ -123,9 +123,9 @@ def main():
               '![Fixed ID calibration grid with separate seed panels](operating-grid.png)', '',
               '## Reproduction and evidence', '',
               'Run with the verified base CPU Python; set OMP_NUM_THREADS, MKL_NUM_THREADS and OPENBLAS_NUM_THREADS to 4 for bounded local computation. For torch CPU auditing on Windows, CUDA_VISIBLE_DEVICES=-1 was verified to hide CUDA; an empty value was ineffective in the observed shell. Historical frozen reports remain unchanged.', '',
-              '```powershell', '& C:/Users/zxzx/anaconda3/python.exe tools/audit_ash_evaluation.py',
-              '& C:/Users/zxzx/anaconda3/python.exe tools/build_ash_report.py',
-              '& C:/Users/zxzx/anaconda3/python.exe tools/audit_ash_report.py', '```', '',
+              '```bash', 'python tools/audit_ash_evaluation.py',
+              'python tools/build_ash_report.py',
+              'python tools/audit_ash_report.py', '```', '',
               'Raw: original banks are runs/geometry-phase3/seedN/training-bank.npz; training preflight and new evaluation are runs/ash-phase5/seedN/preflight.npz, evaluation/*_scores.npz, *_intermediates.npz and decisions.npz. Full shaped features are exactly reconstructible from saved selected indices/values, sums/scales and frozen inputs. Provenance and independent preflight audit: runs/ash-phase5/*.json. This report audit.json binds all raw artifacts; summary-audit.json independently checks every statistical record. Completion is recorded separately after both audits and visual inspection.']
     (OUT / 'REPORT.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     colors = ['#006d77', '#e29526', '#9b3a62']

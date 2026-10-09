@@ -142,11 +142,11 @@ The next figure shows acceptance changes for all natural datasets against every 
 
 ## Reproduction and evidence
 
-```powershell
-& C:/Users/zxzx/anaconda3/python.exe tools/run_rmd_diagnostics.py
-& C:/Users/zxzx/anaconda3/python.exe tools/audit_rmd_diagnostics.py
-& C:/Users/zxzx/anaconda3/python.exe tools/build_rmd_diagnostics_report.py
-& C:/Users/zxzx/anaconda3/python.exe tools/audit_rmd_diagnostics_report.py
+```bash
+python tools/run_rmd_diagnostics.py
+python tools/audit_rmd_diagnostics.py
+python tools/build_rmd_diagnostics_report.py
+python tools/audit_rmd_diagnostics_report.py
 ```
 
 Raw vectors/sampled indices and original ID labels: runs/rmd-diagnostics/seedN/analysis/*_components.npz. Transition codes and [addition,reference,target,ID_class,state,correctness] counts: transitions.npz. Original masks are reused byte-for-byte. Completed audits bind all source/input/raw artifact hashes; completion is recorded separately after summary audit and visual QA.

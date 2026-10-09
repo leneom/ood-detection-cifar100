@@ -1,6 +1,6 @@
 {
-  "summary_sha256": "1076dbc2f70c169a8e896cc4fe576efb70651675fb5da953a9185a246a6944cb",
-  "audit_sha256": "9d3c2cbab477170165beb13c022aaae0e2382213bf8f85cc01881bf23edda115",
+  "summary_sha256": "7355071d6d21d074b5da4f495cf5c95dee26153224237de529d1b1f40bd606dc",
+  "audit_sha256": "b61ed99a7ee4bb21ea5f317a002b4f54481096ad25bc0a9a50c80027a2ad8a6c",
   "methods": [
     "msp",
     "energy",

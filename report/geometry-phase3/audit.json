@@ -28,7 +28,7 @@
     "runs/geometry-phase3/seed0/evaluation/textures_intermediates.npz": "f23f242baa823f23824f914abf71ccb33eb7c11badb9fb339f2ea916aa546fce",
     "runs/geometry-phase3/seed0/evaluation/textures_scores.npz": "643bffbf12c7bc60a6157b324371fb2e06aa22ce10f06139309834ea969254cd",
     "runs/geometry-phase3/seed0/evaluation/validation_intermediates.npz": "2b98692f909847209f28b63f9b3cbe9047f1ac5db3f2a445112a9298117f95d4",
-    "runs/geometry-phase3/seed0/evaluation/results.json": "dc3ba3765096fda5cb21f96412876019eb1ca0599e5f1d5d6f391db5d79eb325",
+    "runs/geometry-phase3/seed0/evaluation/results.json": "8bd5b9876a070aa0e36e8cdb8a4297a147404b2f74910716f6a3eaa68e625dcb",
     "runs/geometry-phase3/seed1/evaluation/cifar10_intermediates.npz": "8de3d4b05402209e83f460341b586cb5d779c5fd0469d56f316cc74f8a531ba3",
     "runs/geometry-phase3/seed1/evaluation/cifar10_scores.npz": "873882c12347d68288898280d5ad9812acec5445d81412aa439ec18847ac89ed",
     "runs/geometry-phase3/seed1/evaluation/decisions.npz": "bc5f8583d067293eba393b47a15f2536319278c4f6cefb26280993a96d9d9c70",
@@ -42,7 +42,7 @@
     "runs/geometry-phase3/seed1/evaluation/textures_intermediates.npz": "c704dbfcce84474475f46bfc266d86e491c9edd25837bfd24f0e0f86a0a1b2e2",
     "runs/geometry-phase3/seed1/evaluation/textures_scores.npz": "7587abc22d2dca1d2636cf39d7ba0f584af56f9b12682d72e166e8ec0ce7167f",
     "runs/geometry-phase3/seed1/evaluation/validation_intermediates.npz": "3987fad9dd9c8d8c0cdc6f79162ab3561cf9737f9491194a0e880b3e43884620",
-    "runs/geometry-phase3/seed1/evaluation/results.json": "dd1faa05f9d5626e09c1fb757ace1d2a3d0a1253ef01153867c2035bef293566",
+    "runs/geometry-phase3/seed1/evaluation/results.json": "ff9c41b5a9dfc898a620e19732265639e132206e973a59d1f54880ba70d04ebf",
     "runs/geometry-phase3/seed2/evaluation/cifar10_intermediates.npz": "0b15f96ba3afd4b91084cc81f6af01308855cec11542bceb8e4d7441674e1c34",
     "runs/geometry-phase3/seed2/evaluation/cifar10_scores.npz": "d45397e8ddf0f1121070cbdd6a3402aca0be3c79594757ed73f98d0407b8aef8",
     "runs/geometry-phase3/seed2/evaluation/decisions.npz": "701ade257898a57a24b4d3dd76c66604a90e1db622f65b6b28710283a0454218",
@@ -56,10 +56,10 @@
     "runs/geometry-phase3/seed2/evaluation/textures_intermediates.npz": "0eb5c29ea19faa259b0a3b3b48432151dc80ae5fde4d67e90491b7cb70338714",
     "runs/geometry-phase3/seed2/evaluation/textures_scores.npz": "4a7e2ac8e043dc84e140f72c70c7e0786dac3c099251dbbaacbe4c4020a90c3c",
     "runs/geometry-phase3/seed2/evaluation/validation_intermediates.npz": "34caab2f6e7708be65cb1f717776a8a3ed2987e632c85c8dc600636d8872eb6a",
-    "runs/geometry-phase3/seed2/evaluation/results.json": "70570c2807b284361e926c04b87491be3bc997040987e12dc1d95365fc05af19"
+    "runs/geometry-phase3/seed2/evaluation/results.json": "136b7eaf8c8bdfd618fb27569f73ca3cd0286f7c38db7f11022cb3287f0e7900"
   },
-  "evaluation_inputs_sha256": "4fbef7ecd000cdc05c493ea29e53653062f777f1e07792cc4d00997d099426c2",
-  "fit_audit_sha256": "65ee3b5254324167513ba146fd4b8475aa177d816238b8d13e316d979ef8f0ab",
+  "evaluation_inputs_sha256": "3e5de97fbde1ff0f7245a72418b8a48485bbb6ab687d5031902decc9d93f24f2",
+  "fit_audit_sha256": "dab80bb25344e6ac1293cf7ede431864779a641c205117b04327ebc7e9bf84c6",
   "independent_source_sha256": "b0d3a45165a0eacc25503b0259833c478ea26afeb770a7ec1e0307a500501b2f",
   "per_seed_diagnostics": [
     {

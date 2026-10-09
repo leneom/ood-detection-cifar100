@@ -8,7 +8,7 @@
   "method_pairs": 105,
   "endpoints": 66,
   "summary_sha256": "fcef1dd80c0d43cfce75538e6decbed7861772f03ef3c3dbbe4272e93351255b",
-  "build_sha256": "cda0ef989fca1cd5446d1af0c4ab5cc4911cc41df4f8e0458168b39ac9530dc5",
+  "build_sha256": "bb7436aff196546fc2b47c4173850d03b9cd6e077199262a3816f1df68c8e87b",
   "independent_source_sha256": "11dbe8a5e6a9d063acbf94361f55138bde05500d838e4c003e188ac1e64d5b97",
   "boundary": "Independent Python statistics/sample-SD/manual linear quantiles, every method/pair/seed/endpoint; plot coordinates audited, visual inspection remains required"
 }

@@ -28,7 +28,7 @@
     "runs/ash-phase5/seed0/evaluation/textures_intermediates.npz": "aa177aa9da564ae8d3d8d2fd2892c7db4480b30b0bf07791ea70884dfb500db2",
     "runs/ash-phase5/seed0/evaluation/textures_scores.npz": "eeb5c5b1a8fb5c12a2958d4f7d151b41c96d830b7ae89477b42ade760e68d7fe",
     "runs/ash-phase5/seed0/evaluation/validation_intermediates.npz": "f3351128b6b4e191349ac1dc3c46bf2f5ea208a79a6826633dec591d1385920a",
-    "runs/ash-phase5/seed0/evaluation/results.json": "86204a40b6c70691e76026a0764033c49a50d016da787cb034fdccae48f8b76a",
+    "runs/ash-phase5/seed0/evaluation/results.json": "ca90e3875e6f28ee896df529c4ad324361788c89ad90b7ee83d771e6ab933733",
     "runs/ash-phase5/seed1/evaluation/cifar10_intermediates.npz": "1f4b248636305b34022f4f37e5abf2039d399d31d8b44728172feb3b5f625d1a",
     "runs/ash-phase5/seed1/evaluation/cifar10_scores.npz": "8b1906ba1915f0e2c4ea04913b3da2c6d57e746c0490ad595643883934c1f6fd",
     "runs/ash-phase5/seed1/evaluation/decisions.npz": "d7626018bb1b0bddc7293da0a760bcfe5a23619a21915f0e796b81d6de5391a1",
@@ -42,7 +42,7 @@
     "runs/ash-phase5/seed1/evaluation/textures_intermediates.npz": "5b5ea221c087f4773663bdb047c5f6bfe6d107d758ff9bb43e7da58bae8e3e0e",
     "runs/ash-phase5/seed1/evaluation/textures_scores.npz": "cdd782f55e473df32350e63b14a3a8b6ec155ec5a9bc6fae8a4e4a903cbaddd7",
     "runs/ash-phase5/seed1/evaluation/validation_intermediates.npz": "eed7dee818e47e8d04e34576e81fe8f7f8de6c293db866cef99ed8c042ded2ae",
-    "runs/ash-phase5/seed1/evaluation/results.json": "f8ba8d19c1dfa8541851b5da0626c1d79585fb89b78f2c563335b2e1b2faa4ce",
+    "runs/ash-phase5/seed1/evaluation/results.json": "8bc1883015eedd4c52547f5afc30dca2b5055994d8dd85d2d1ec30234b812c24",
     "runs/ash-phase5/seed2/evaluation/cifar10_intermediates.npz": "ff58ad40c8bd82890c5919d326fe8e895d3144dda33019f46a53a72f3bc1232f",
     "runs/ash-phase5/seed2/evaluation/cifar10_scores.npz": "52f54e5abaf11125fc910859b06cc1b64aa8f63e0775c0718d4bccc3e77de29f",
     "runs/ash-phase5/seed2/evaluation/decisions.npz": "d7070e255102a308dc8f693fe5c7385d48188aedeb3a7337dfbf14d1036a1a26",
@@ -56,10 +56,10 @@
     "runs/ash-phase5/seed2/evaluation/textures_intermediates.npz": "2cf06734f8b6628578910f0f78823499c7c5d94520ec25eabe8d39988a7b43ba",
     "runs/ash-phase5/seed2/evaluation/textures_scores.npz": "bf77853aec7051508b52331de96de9a397f6014b46369ad3b1c8cce9b94cfa05",
     "runs/ash-phase5/seed2/evaluation/validation_intermediates.npz": "75b7a644adf6ad421dec798b0b40662337fdb10611a5d34757ad6a5dc84980be",
-    "runs/ash-phase5/seed2/evaluation/results.json": "4d825809ecaa129f502e926f718c39a5e73852cb532cd6dd63388d2f14eebb1b"
+    "runs/ash-phase5/seed2/evaluation/results.json": "a9c529def062b66f6ac75c1533214b1375378c9df83a27751cef4c600709d466"
   },
-  "evaluation_inputs_sha256": "96a3e4ecff5656bf24d30015e394d4360fa1bac8f7ce59250fa8b123f869224f",
-  "preflight_audit_sha256": "61055700a710a1520770b96c48a187904a87ebe1aaa9ff909793fe4d7bd836e5",
+  "evaluation_inputs_sha256": "d8150cc9dbc68e2bd7ec28dec9fc7e5c93bda15d664a175d9c3a1aad689511f6",
+  "preflight_audit_sha256": "0481c4ed2e29bd584e64d091f189f590c792996deafb6fac6291fb57095b18ee",
   "independent_source_sha256": "79bbade947adfbfc1937eaef66802066ac8028946b5d3850e5675d95af502816",
   "per_seed_diagnostics": [
     {

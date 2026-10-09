@@ -4,11 +4,11 @@
   "independent_AUROC_AP_checks": 270,
   "new_phase_input_population_hash_checks": 12,
   "four_dataset_macro_checks": 12,
-  "overview_sha256": "0fee8a2d0f0bd572b4fdeb630f0d64094a1ef7085fa3ae0a10b465bcb16c191e",
+  "overview_sha256": "49f9d981081db577ff4c35c001c56f3c06676de1bb3fb8803702e33c4184399b",
   "summary_sources": {
-    "matrix": "2717181e1fcb75f4b47bdd32d2b0e7bcd56cb1f09bb4daafb8e78d01fff1c6fb",
-    "svhn-matrix": "b2d6bc681c887ad1260d33e830253ae639d257f5e9a6370b8cd2a2920e9462cb",
-    "textures-matrix": "42b195eb2c8d9048bccf6806d40bed6956671e434281fff65dd738be3e26dbca"
+    "matrix": "803f2155773c7f784fdc4171ed9219c1d21cb044278109692b5f7ca466667e80",
+    "svhn-matrix": "359911e7251492f5a8336b0291a0fce26034a4af16cc5b226deda0412d8813e9",
+    "textures-matrix": "f37948c81ff2945251cf11a64da88e4e1888a38c3b8f27fc7762936e672c2412"
   },
   "scientific_figures_visually_checked": [
     "matrix-comparison",

@@ -2,7 +2,7 @@
   "state": "visual_review_passed",
   "reviewed_at": "2026-09-28T22:57:10.110997+00:00",
   "png_sha256": "eb997b7ec2af3eeece86fbc6847ab056572dbef45b2d8d22fa9b2e0536408d46",
-  "numeric_audit_sha256": "0dcac33065c8428438896fbbe9741fca0c2771d28622cc03b4095bffe8ad6b6e",
+  "numeric_audit_sha256": "ce015798f211677f4947b22466dc3e6a395b5a2ede2d35ec78ec05db3f9bd72b",
   "observations": [
     "The global title is fully visible and does not overlap the legend.",
     "The legend is inside the unused upper region of the first AUROC panel and does not cover observations.",

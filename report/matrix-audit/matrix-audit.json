@@ -348,7 +348,7 @@
   "per_seed_raw_audits": [
     {
       "status": "passed",
-      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed0\\eval-final",
+      "evaluation": "runs/cifar100-seed0/eval-final",
       "seed": 0,
       "selected_epoch": 89,
       "best_id_validation_accuracy": 0.7552,
@@ -375,7 +375,7 @@
     },
     {
       "status": "passed",
-      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed1\\eval-final",
+      "evaluation": "runs/cifar100-seed1/eval-final",
       "seed": 1,
       "selected_epoch": 96,
       "best_id_validation_accuracy": 0.7528,
@@ -402,7 +402,7 @@
     },
     {
       "status": "passed",
-      "evaluation": "C:\\Users\\zxzx\\Documents\\ChatGPT\\continue learning\\ood_detection\\runs\\cifar100-seed2\\eval-final",
+      "evaluation": "runs/cifar100-seed2/eval-final",
       "seed": 2,
       "selected_epoch": 92,
       "best_id_validation_accuracy": 0.749,
